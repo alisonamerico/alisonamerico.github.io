@@ -1,0 +1,44 @@
+# Site settings
+title: alisonamérico
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Se preocupe menos em provar que é bom e mais em aprender algo novo.
+  Seja hoje melhor do que você foi ontem.
+
+baseurl: ""  # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+repository: alisonamerico/alisonamerico.github.io
+
+JEKYLL_ENV: production bundle exec jekyll build
+
+# Build settings
+markdown: kramdown
+# plugins:
+# - jekyll-feed
+
+
+# Author Info
+author:
+  name     : Alison Américo
+  image    : /assets/image/profile.jpg
+  email    : alison.americo@gmail.com
+  github   : alisonamerico
+  twitter  : alisonamerico
+  linkedin : alisonamerico
+
+
+# Posts default Permalink
+permalink: articles/:title
+
+
+# Exclude from processing.
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
+
+
+# Disqus comments
+shortname: alisonamerico
