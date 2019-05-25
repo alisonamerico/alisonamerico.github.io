@@ -1,9 +1,9 @@
 # Site Settings
-title: Alison Américo | Back-end Developer
+title: Alison Américo
 email: alison.americo@gmail.com
 description: Some text about your blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://alisonamerico.github.io/"
 google_analytics: "UA-XXXXXXXX-X"
 
 # User Settings
