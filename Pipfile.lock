@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "af40773bdbeebf7afaf3aed737a9f449da4ae98d7c34656ff7dd3cc8128f2195"
+            "sha256": "28106cee80510c1012d2b3d4275ecded7483eb674847eb044b52445a8de98da0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,19 +16,18 @@
         ]
     },
     "default": {
-        "bundle": {
+        "npm": {
             "hashes": [
-                "sha256:e0212778fe83ade02e12eea2f888aa1da253b9b1910314861bc59e7a157036f4"
+                "sha256:84aefc83a3486d034c4c14f8bcd4b746b95b529289b0d042c268f6201c3034e9"
             ],
             "index": "pypi",
-            "version": "==1.1.2"
+            "version": "==0.1.1"
         },
-        "yolk": {
+        "optional-django": {
             "hashes": [
-                "sha256:1c07eb4001dc133c08e66e38c5d58faa7616ae804f8d0ab02dd44a1044e7ddb8",
-                "sha256:d788454bc1d217f55bb790628d09f4c3b53885c9ad6fd2d202e0c8a25aacc75c"
+                "sha256:77d6b9fb74bda30583e1af4683a39e0af725cea6003252bba75838f4939326c5"
             ],
-            "version": "==0.4.3"
+            "version": "==0.1.0"
         }
     },
     "develop": {}

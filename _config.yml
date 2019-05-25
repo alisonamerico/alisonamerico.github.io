@@ -1,44 +1,43 @@
-# Site settings
-title: alisonamérico
+# Site Settings
+title: Alison Américo | Back-end Developer
+email: alison.americo@gmail.com
+description: Some text about your blog.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
 
-description: >- # this means to ignore newlines until "baseurl:".
-  Se preocupe menos em provar que é bom e mais em aprender algo novo.
+# User Settings
+username: Alison Américo
+user_description: Se preocupe menos em provar que é bom e mais em aprender algo novo.
   Seja hoje melhor do que você foi ontem.
+disqus_username: alisonamerico
 
-baseurl: ""  # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-repository: alisonamerico/alisonamerico.github.io
-
-JEKYLL_ENV: production bundle exec jekyll build
+# Social Media
+# Remove the item if you don't need it
+github_username: alisonamerico
+twitter_username: alisonamerico
+linkedin_username: alisonamerico
 
 # Build settings
 markdown: kramdown
-# plugins:
-# - jekyll-feed
+highlighter: rouge
+permalink: /:title/
+paginate: 12
+paginate_path: "/page/:num/"
+svg_color: "#ff0a16"
 
+# Plugins
+plugins:
+  - jemoji
+  - jekyll-paginate
 
-# Author Info
-author:
-  name     : Alison Américo
-  image    : /assets/image/profile.jpg
-  email    : alison.americo@gmail.com
-  github   : alisonamerico
-  twitter  : alisonamerico
-  linkedin : alisonamerico
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
 
-
-# Posts default Permalink
-permalink: articles/:title
-
-
-# Exclude from processing.
-exclude:
-- README.md
-- CONTRIBUTING.md
-- LICENSE
-- Gemfile
-- Gemfile.lock
-
-
-# Disqus comments
-shortname: alisonamerico
+# Exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']

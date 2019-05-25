@@ -1,15 +1,18 @@
-<div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+<header class="bar-header">
+    <a id="menu">
+        <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+    </a>
+    <a id="search" class="dosearch">
+        <svg class="icon-search"><use xlink:href="#icon-search"></use></svg>
+    </a>
+    <h1 class="logo">
+        <a href="{{ site.baseurl }}/">
+            {{ site.username }}
+        </a>
+    </h1>
+</header>
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
-      </div>
-    </div>
+<div id="mask" class="overlay"></div>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
-
-  </div>
-</div>
+{% include menu.html %}
+{% include search.html %}
