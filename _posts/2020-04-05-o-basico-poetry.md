@@ -127,7 +127,7 @@ Criar novo projeto:
 ![new-project](/assets/img/o-basico-poetry/new-project.png)
 
 Obs.: Note que são criadas duas pastas com o mesmo nome "meuprojeto".
-O primeiro é respectivo ao nome do projeto propriamente dito, já o segungo faz referência ao nome do pacote. É importante ter esta pasta interna (pasta com o `__init__.py`) pois é ela que formará o pacote a ser distribuído.
+O primeiro é respectivo ao nome do projeto propriamente dito, já o segundo faz referência ao nome do pacote. É importante ter esta pasta interna (pasta com o `__init__.py`) pois é ela que formará o pacote a ser distribuído.
 
 Esse é o comportamento padrão, mas se assim como eu, você não gostar dessa estrutura com os nomes das pastas duplicadas, existem outras opções para configurar a estrutura do projeto.
 
@@ -147,7 +147,7 @@ A outra opção é utilizar o comando `init`.
 ❯ poetry init
 ```
 
-Este comando o ajudará a criar um arquivo `pyproject.toml` interativamente, solicitando que você forneça informações básicas sobre o seu pacote.
+Este comando o ajudará a criar um arquivo `pyproject.toml` interativamente, solicitando que você forneça informações básicas sobre o seu projeto.
 
 A saída final se parecerá com isso (vai depender de como você vai querer configurar):
 
