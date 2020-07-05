@@ -251,7 +251,7 @@ Instalar uma pacote:
 Ex.: poetry add django
 ```
 
-Instalar uma pacote de desenvolvimento (ou seja, aquele pacote que não é para ir produção):
+Instalar uma pacote de desenvolvimento (ou seja, aquele pacote que não é para ir para produção):
 
 ```bash
 ❯ poetry add --dev nome-do-pacote
