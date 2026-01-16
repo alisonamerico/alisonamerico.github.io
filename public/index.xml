@@ -9,18 +9,11 @@
     <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Entendo Mock e MagicMock em Python</title>
-      <link>http://localhost:1313/posts/entendo-mock-e-magicmock-em-python/</link>
+      <title>Entendendo Mock e MagicMock em Python</title>
+      <link>http://localhost:1313/posts/entendendo-mock-e-magicmock-em-python/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/entendo-mock-e-magicmock-em-python/</guid>
-      <description>&lt;!-- ![](images/mock-magicmock.png) --&gt;&#xA;&lt;p&gt;Este artigo foi escrito para &lt;strong&gt;qualquer pessoa entender&lt;/strong&gt;, mesmo quem ainda está começando com testes em Python.&#xA;Vamos explicar &lt;strong&gt;o que é cada conceito, por que ele existe e quando usar&lt;/strong&gt;, sempre com exemplos práticos e explicações claras.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-o-que-é-mock-explicação-simples&#34;&gt;1. O que é Mock? (explicação simples)&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;Mock&lt;/strong&gt; é um objeto &lt;strong&gt;falso&lt;/strong&gt;, criado apenas para testes, que &lt;strong&gt;finge ser outro objeto real&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Ele permite:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Simular funções, métodos, classes e objetos inteiros&lt;/li&gt;&#xA;&lt;li&gt;Definir retornos e exceções&lt;/li&gt;&#xA;&lt;li&gt;Registrar chamadas (quantidade, argumentos, ordem)&lt;/li&gt;&#xA;&lt;li&gt;Isolar a unidade de código testada&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Em vez de usar:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>首页</title>
-      <link>http://localhost:1313/_index.zh-cn/</link>
-      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/_index.zh-cn/</guid>
-      <description>&lt;p&gt;🎉 &lt;strong&gt;网站全新改版！&lt;/strong&gt; 我们对网站进行了全面升级，带来了更快的加载速度、更美观的界面设计和更流畅的用户体验。欢迎探索新功能！&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/entendendo-mock-e-magicmock-em-python/</guid>
+      <description>&lt;!-- ![](images/mock-magicmock.png) --&gt;&#xA;&lt;p&gt;Este artigo foi escrito para &lt;strong&gt;qualquer pessoa entender&lt;/strong&gt; consiga entender sobre Mock e MagicMock (se teve algo que não entendeu me fale, para que possa melhorar), mesmo quem ainda está começando com testes em Python.&#xA;Vamos explicar &lt;strong&gt;o que é cada conceito, por que ele existe e quando usar&lt;/strong&gt;, sempre com exemplos práticos e explicações claras.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-o-que-é-mock-explicação-simples&#34;&gt;1. O que é Mock? (explicação simples)&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;Mock&lt;/strong&gt; é um objeto &lt;strong&gt;falso&lt;/strong&gt;, criado apenas para testes, que &lt;strong&gt;finge ser outro objeto real&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo - The World&#39;s Fastest Framework</title>
