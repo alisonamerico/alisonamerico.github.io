@@ -1,0 +1,21 @@
+enabled: true
+
+# Cover URLs (external link or local link)
+images:
+  # Picsum Photos
+  #- "https://picsum.photos/800/600?random=1"
+  #- "https://picsum.photos/800/600?random=2"
+  #- "https://picsum.photos/800/600?random=3"
+  #- "https://picsum.photos/800/600?random=4"
+  #- "https://picsum.photos/800/600?random=5"
+  #- "https://picsum.photos/800/600?random=6&blur=1"
+  #- "https://picsum.photos/800/600?random=7&grayscale"
+  # local images
+  - "/images/mock-magicmock.png"
+  # - "/images/placeholder/2.jpg"
+  # - "/images/placeholder/3.jpg"  
+  # - "/images/placeholder/4.jpg"
+  # - "/images/placeholder/5.jpg"
+  # - "/images/placeholder/6.jpg"
+  # - "/images/placeholder/7.jpg"
+  # - "/images/placeholder/8.jpg"

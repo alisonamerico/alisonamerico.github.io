@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Alra</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Alra</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entendo Mock e MagicMock em Python</title>
+      <link>http://localhost:1313/posts/entendo-mock-e-magicmock-em-python/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/entendo-mock-e-magicmock-em-python/</guid>
+      <description>&lt;p&gt;&#xA;&lt;figure class=&#34;image-figure not-prose my-8&#34; &#xA;        data-lightbox-enabled=&#34;false&#34;&#xA;        data-gallery-type=&#34;auto&#34;&gt;&#xA;  &lt;div class=&#34;image-container&#34;&gt;&#xA;    &lt;img&#xA;    src=&#34;http://localhost:1313/images/perfil.jpg&#34;&#xA;    alt=&#34;&#34;&#xA;    &#xA;    &#xA;      &#xA;      &#xA;        &#xA;    width=&#34;6000&#34;&#xA;    height=&#34;4000&#34;&#xA;        &#xA;      &#xA;    &#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    data-gallery-src=&#34;http://localhost:1313/images/perfil.jpg&#34;&#xA;    data-gallery-alt=&#34;&#34;&#xA;    data-gallery-title=&#34;&#34; /&gt;&lt;/div&gt;&#xA;&#xA;  &lt;/figure&gt;&#xA;Este artigo foi escrito para &lt;strong&gt;qualquer pessoa entender&lt;/strong&gt;, mesmo quem ainda está começando com testes em Python.&#xA;Vamos explicar &lt;strong&gt;o que é cada conceito, por que ele existe e quando usar&lt;/strong&gt;, sempre com exemplos práticos e explicações claras.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-o-que-é-mock-explicação-simples&#34;&gt;1. O que é Mock? (explicação simples)&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;Mock&lt;/strong&gt; é um objeto &lt;strong&gt;falso&lt;/strong&gt;, criado apenas para testes, que &lt;strong&gt;finge ser outro objeto real&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Ele permite:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>首页</title>
+      <link>http://localhost:1313/_index.zh-cn/</link>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_index.zh-cn/</guid>
+      <description>&lt;p&gt;🎉 &lt;strong&gt;网站全新改版！&lt;/strong&gt; 我们对网站进行了全面升级，带来了更快的加载速度、更美观的界面设计和更流畅的用户体验。欢迎探索新功能！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo - The World&#39;s Fastest Framework</title>
+      <link>http://localhost:1313/projects/hugo-framework/</link>
+      <pubDate>Tue, 20 Feb 2024 14:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/projects/hugo-framework/</guid>
+      <description>A fast and flexible static site generator built with Go, powering thousands of websites worldwide.</description>
+    </item>
+    <item>
+      <title>Hugo Narrow Theme</title>
+      <link>http://localhost:1313/projects/hugo-narrow-theme/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/projects/hugo-narrow-theme/</guid>
+      <description>A modern Hugo theme with multiple color schemes, dark mode support, and responsive design built on TailwindCSS 4.</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/about/_index.zh-cn/</guid>
+      <description>了解 Hugo Narrow 主题及其技术栈</description>
+    </item>
+    <item>
+      <title>归档</title>
+      <link>http://localhost:1313/archives/_index.zh-cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/archives/_index.zh-cn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>项目</title>
+      <link>http://localhost:1313/projects/%E9%A1%B9%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/%E9%A1%B9%E7%9B%AE/</guid>
+      <description>&lt;p&gt;欢迎来到我的项目展示！在这里您将找到我的作品集合，包括 Web 应用程序、开源贡献和实验性项目。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

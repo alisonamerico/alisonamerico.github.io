@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on Alra</title>
+    <link>http://localhost:1313/tags/project/</link>
+    <description>Recent content in Project on Alra</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 12 Jan 2026 17:55:35 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Project</title>
+      <link>http://localhost:1313/projects/93a41d7/</link>
+      <pubDate>Mon, 12 Jan 2026 17:55:35 -0300</pubDate>
+      <guid>http://localhost:1313/projects/93a41d7/</guid>
+      <description>Project summary that appears in card previews</description>
+    </item>
+  </channel>
+</rss>

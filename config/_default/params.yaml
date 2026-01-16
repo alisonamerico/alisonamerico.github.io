@@ -1,0 +1,17 @@
+header:
+  sticky: true 
+  logo:
+    # image: "/images/a-logo-black.png"  # Logo path relative to static folder, leave empty to use site title first letter
+    image: "/images/logo.png"  # Logo path relative to static folder, leave empty to use site title first letter
+    link: "/"  # Click to home page
+  # UI Components Control (header controls)
+  showThemeSwitch: false # Set to false to hide theme style switcher (palette icon)
+  showDarkModeSwitch: true   # Set to false to hide dark mode switcher (sun/moon icon)
+  showLanguageSwitch: true   # Set to false to hide language switcher
+  languageSwitchMode: "dropdown"  # Language switch mode: "dropdown" (show panel) or "cycle" (direct cycle)
+toc:
+  enabled: true
+  position: "left"
+  maxWidth: "280px"
+  maxHeight: "80vh"
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Alra</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Alra</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entendo Mock e MagicMock em Python</title>
+      <link>http://localhost:1313/posts/entendo-mock-e-magicmock-em-python/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/entendo-mock-e-magicmock-em-python/</guid>
+      <description>&lt;p&gt;&#xA;&lt;figure class=&#34;image-figure not-prose my-8&#34; &#xA;        data-lightbox-enabled=&#34;false&#34;&#xA;        data-gallery-type=&#34;auto&#34;&gt;&#xA;  &lt;div class=&#34;image-container&#34;&gt;&#xA;    &lt;img&#xA;    src=&#34;http://localhost:1313/images/perfil.jpg&#34;&#xA;    alt=&#34;&#34;&#xA;    &#xA;    &#xA;      &#xA;      &#xA;        &#xA;    width=&#34;6000&#34;&#xA;    height=&#34;4000&#34;&#xA;        &#xA;      &#xA;    &#xA;    loading=&#34;lazy&#34;&#xA;    decoding=&#34;async&#34;&#xA;    data-gallery-src=&#34;http://localhost:1313/images/perfil.jpg&#34;&#xA;    data-gallery-alt=&#34;&#34;&#xA;    data-gallery-title=&#34;&#34; /&gt;&lt;/div&gt;&#xA;&#xA;  &lt;/figure&gt;&#xA;Este artigo foi escrito para &lt;strong&gt;qualquer pessoa entender&lt;/strong&gt;, mesmo quem ainda está começando com testes em Python.&#xA;Vamos explicar &lt;strong&gt;o que é cada conceito, por que ele existe e quando usar&lt;/strong&gt;, sempre com exemplos práticos e explicações claras.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-o-que-é-mock-explicação-simples&#34;&gt;1. O que é Mock? (explicação simples)&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;Mock&lt;/strong&gt; é um objeto &lt;strong&gt;falso&lt;/strong&gt;, criado apenas para testes, que &lt;strong&gt;finge ser outro objeto real&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Ele permite:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
