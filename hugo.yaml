@@ -3,6 +3,18 @@ baseURL: http://localhost:1313
 languageCode: en-US
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    contentDir: content/en
+
+  pt:
+    languageName: Português
+    weight: 2
+    contentDir: content/pt-br
+
 title: Alra
 theme: "hugo-narrow"
 

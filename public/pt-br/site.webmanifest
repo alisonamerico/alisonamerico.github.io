@@ -1,0 +1,18 @@
+{
+  "background_color": "#ffffff",
+  "categories": [
+    "blog",
+    "technology",
+    "education"
+  ],
+  "description": "",
+  "dir": "ltr",
+  "display": "standalone",
+  "lang": "pt-br",
+  "name": "Alra",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "Alra",
+  "start_url": "/",
+  "theme_color": "#09090b"
+}

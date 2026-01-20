@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Alra</title>
+    <link>http://localhost:1313/pt/categories/testing/</link>
+    <description>Recent content in Testing on Alra</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/testing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entendendo Mock e MagicMock em Python</title>
+      <link>http://localhost:1313/pt/posts/entendendo-mock-e-magicmock-em-python/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/posts/entendendo-mock-e-magicmock-em-python/</guid>
+      <description>&lt;!-- ![](images/mock-magicmock.png) --&gt;&#xA;&lt;p&gt;Este artigo foi escrito para &lt;strong&gt;qualquer pessoa entender&lt;/strong&gt; (se teve algo que não entendeu me fale, para que possa melhorar), mesmo quem ainda está começando com testes em Python.&#xA;Vamos explicar &lt;strong&gt;o que é cada conceito, por que ele existe e quando usar&lt;/strong&gt;, sempre com exemplos práticos e explicações claras.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-o-que-é-mock-explicação-simples&#34;&gt;1. O que é Mock? (explicação simples)&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;Mock&lt;/strong&gt; é um objeto &lt;strong&gt;falso&lt;/strong&gt;, criado apenas para testes, que &lt;strong&gt;finge ser outro objeto real&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

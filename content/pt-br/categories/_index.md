@@ -1,0 +1,4 @@
+---
+title: "Categorias"
+layout: "taxonomy"
+---

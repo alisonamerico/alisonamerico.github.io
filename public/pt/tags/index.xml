@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Alra</title>
+    <link>http://localhost:1313/pt/tags/</link>
+    <description>Recent content in Tags on Alra</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mock</title>
+      <link>http://localhost:1313/pt/tags/mock/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/mock/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/pt/tags/python/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tests</title>
+      <link>http://localhost:1313/pt/tags/tests/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/tests/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unittest</title>
+      <link>http://localhost:1313/pt/tags/unittest/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/unittest/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
