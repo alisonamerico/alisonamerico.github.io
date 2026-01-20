@@ -1,4 +1,4 @@
-baseURL: http://localhost:1313
+baseURL: https://alra.dev/
 
 languageCode: en-US
 defaultContentLanguage: en
