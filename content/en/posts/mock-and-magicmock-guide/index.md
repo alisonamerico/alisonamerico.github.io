@@ -5,9 +5,10 @@ draft: false
 tags: ["python", "tests", "unittest", "mock"]
 categories: ["testing"]
 description: "A didactic guide to Mock and MagicMock in Python, with simple explanations, practical examples, and solutions to common problems."
+cover: mock-magicmock.png
 ---
 
-<!-- ![](images/mock-magicmock.png) -->
+<!-- ![](mock-magicmock.png) -->
 
 This article was written so **anyone can understand it** (if there is anything unclear, let me know so it can be improved), even if you are just getting started with testing in Python.
 

@@ -1,0 +1,2061 @@
+<!doctype html>
+<html
+  lang="pt"
+  data-theme="default">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<title>Testing with Pytest - Fundamentals, Best Practices and Strategy | Alra</title>
+
+<meta name="description" content="Complete theoretical guide on automated testing with Pytest, covering from fundamental concepts to advanced strategies. Learn about the test pyramid, AAA..." />
+<meta name="keywords" content="python, tests, pytest" />
+<meta name="author" content="" />
+<meta name="language" content="pt" />
+
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="http://localhost:1313/pt/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/" />
+
+
+
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+
+
+<link rel="manifest" href="/site.webmanifest" />
+<meta property="og:url" content="http://localhost:1313/pt/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/">
+  <meta property="og:site_name" content="Alra">
+  <meta property="og:title" content="Testing with Pytest - Fundamentals, Best Practices and Strategy">
+  <meta property="og:description" content="Complete theoretical guide on automated testing with Pytest, covering from fundamental concepts to advanced strategies. Learn about the test pyramid, AAA pattern, fixtures, mocks, markers, and essential plugins to build a solid foundation.">
+  <meta property="og:locale" content="pt">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-30T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Tests">
+    <meta property="article:tag" content="Pytest">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Testing with Pytest - Fundamentals, Best Practices and Strategy">
+  <meta name="twitter:description" content="Complete theoretical guide on automated testing with Pytest, covering from fundamental concepts to advanced strategies. Learn about the test pyramid, AAA pattern, fixtures, mocks, markers, and essential plugins to build a solid foundation.">
+
+
+  <meta itemprop="name" content="Testing with Pytest - Fundamentals, Best Practices and Strategy">
+  <meta itemprop="description" content="Complete theoretical guide on automated testing with Pytest, covering from fundamental concepts to advanced strategies. Learn about the test pyramid, AAA pattern, fixtures, mocks, markers, and essential plugins to build a solid foundation.">
+  <meta itemprop="datePublished" content="2026-01-30T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-01-30T00:00:00+00:00">
+  <meta itemprop="wordCount" content="787">
+  <meta itemprop="keywords" content="Python,Tests,Pytest">
+
+
+
+
+
+
+
+<script>
+  window.HUGO_SEARCH_CONFIG = {
+    searchIndexURL: "\"/pt/index.json\""
+  };
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  window.HUGO_GALLERY_CONFIG = {
+    justified_gallery:  false ,
+    lightbox:  false ,
+    justified: "{}",
+    lightbox_options: "{}"
+  };
+</script>
+
+
+
+
+  
+    <link rel="stylesheet" href="/css/compiled.css" />
+  
+
+
+
+
+
+  
+    <link rel="stylesheet" href="/css/chroma.css" />
+  
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="/js/main.js"></script>
+
+
+
+    <script src="/js/gumshoe.polyfills.min.js"></script>
+
+
+
+          <script src="/js/navigation.js" defer></script>
+
+    
+          <script src="/js/sidebar-position.js" defer></script>
+
+
+
+      <script src="/js/search.js" defer></script>
+
+
+
+      <script src="/js/dock.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      
+      (function() {
+        const theme = localStorage.getItem('theme') || 'system';
+        const colorScheme = localStorage.getItem('colorScheme') || 'shadcn';
+
+        
+        document.documentElement.setAttribute('data-theme', colorScheme);
+
+        
+        function applyTheme() {
+          if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+
+        applyTheme();
+
+        
+        if (theme === 'system') {
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+        }
+      })();
+    </script>
+  </head>
+
+  <body class="bg-background text-foreground min-h-screen antialiased">
+    
+    
+  <div
+    id="reading-progress-container"
+    class="reading-progress-container pointer-events-none fixed top-0 right-0 left-0 z-50 transition-opacity duration-300 ease-out"
+    data-height="3"
+    data-smooth-scroll="true"
+    data-hide-on-complete="false">
+    
+    <div class="reading-progress-bg w-full"></div>
+
+    
+    <div
+      id="reading-progress-bar"
+      class="from-primary to-primary/80 reading-progress-bar 
+        transition-all duration-150 ease-out
+       absolute top-0 left-0 w-0 bg-gradient-to-r"></div>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      const progressContainer = document.getElementById(
+        "reading-progress-container",
+      );
+      const progressBar = document.getElementById("reading-progress-bar");
+
+      if (!progressContainer || !progressBar) return;
+
+      
+      const config = {
+        smoothScroll: progressContainer.dataset.smoothScroll === "true",
+        hideOnComplete: progressContainer.dataset.hideOnComplete === "true",
+      };
+
+      let isVisible = true;
+      let gumshoeInstance = null;
+
+      
+      function calculateProgress() {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const documentHeight = document.documentElement.scrollHeight;
+        const windowHeight = window.innerHeight;
+        const scrollableHeight = documentHeight - windowHeight;
+
+        if (scrollableHeight <= 0) return 0;
+
+        return Math.min(Math.max((scrollTop / scrollableHeight) * 100, 0), 100);
+      }
+
+      
+      function updateProgress() {
+        const progress = calculateProgress();
+        progressBar.style.width = progress + "%";
+
+        
+        if (config.hideOnComplete && progress >= 99.5) {
+          if (isVisible) {
+            progressContainer.style.opacity = "0";
+            isVisible = false;
+          }
+        } else if (!isVisible) {
+          progressContainer.style.opacity = "1";
+          isVisible = true;
+        }
+      }
+
+      
+      let ticking = false;
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            updateProgress();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+
+      
+      function init() {
+        
+        window.addEventListener("scroll", requestTick, { passive: true });
+        window.addEventListener("resize", requestTick, { passive: true });
+        document.addEventListener("visibilitychange", () => {
+          if (!document.hidden) requestTick();
+        });
+
+        
+        requestTick();
+
+        
+        window.addEventListener("beforeunload", () => {
+          window.removeEventListener("scroll", requestTick);
+          window.removeEventListener("resize", requestTick);
+        });
+      }
+
+      
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+
+    <header class="sticky top-0 z-50 mx-auto max-w-4xl px-4 py-6">
+  <div
+    class="border-border bg-card/80 flex items-center rounded-xl border px-6 py-4 shadow-sm backdrop-blur-sm">
+    
+    <div class="hidden w-full items-center md:flex md:min-w-0">
+      
+      <div class="flex items-center">
+        
+          <a
+            href="/pt/"
+            class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full transition-transform duration-200 hover:scale-105"
+            aria-label="Alra">
+            <img
+              src="/images/logo.png"
+              alt="Alra"
+              class="h-full w-full object-cover" />
+          </a>
+        
+      </div>
+
+      
+      <nav class="mx-8 flex flex-1 items-center justify-center min-w-0">
+        <div class="flex items-center space-x-1 flex-wrap justify-center">
+          
+          
+            
+            
+            
+              
+                
+              
+            
+            
+            <a
+              href="/pt/posts/"
+              class="nav-link 
+                text-muted-foreground hover:text-primary hover:bg-primary/10
+               focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+              
+                <svg class="h-5 w-5" aria-label="nav.posts" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+</svg>
+
+              
+              <span
+                >
+                  Artigos
+                </span
+              >
+            </a>
+          
+            
+            
+            
+              
+                
+              
+            
+            
+            <a
+              href="/pt/categories/"
+              class="nav-link 
+                text-muted-foreground hover:text-primary hover:bg-primary/10
+               focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+              
+                <svg class="h-5 w-5" aria-label="nav.categories" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+</svg>
+
+              
+              <span
+                >
+                  Categorias
+                </span
+              >
+            </a>
+          
+            
+            
+            
+              
+                
+              
+            
+            
+            <a
+              href="/pt/tags/"
+              class="nav-link 
+                text-muted-foreground hover:text-primary hover:bg-primary/10
+               focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+              
+                <svg class="h-5 w-5" aria-label="nav.tags" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+</svg>
+
+              
+              <span
+                >
+                  Tags
+                </span
+              >
+            </a>
+          
+            
+            
+            
+              
+                
+              
+            
+            
+            <a
+              href="/pt/archives/"
+              class="nav-link 
+                text-muted-foreground hover:text-primary hover:bg-primary/10
+               focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+              
+                <svg class="h-5 w-5" aria-label="nav.archives" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+</svg>
+
+              
+              <span
+                >
+                  Arquivos
+                </span
+              >
+            </a>
+          
+        </div>
+      </nav>
+
+      
+      <div class="flex items-center space-x-2">
+        
+        
+<div class="relative">
+  <button id="language-toggle"
+    class="dropdown-toggle border-border bg-background text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 flex h-10 w-10 items-center justify-center rounded-lg border transition-all duration-300 ease-out hover:scale-105 focus:ring-2 focus:outline-none active:scale-95"
+    data-dropdown-type="language"
+    aria-label="Switch language"
+    aria-expanded="false"
+    aria-haspopup="true">
+      <svg class="h-5 w-5 relative z-10" aria-label="Switch language" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 8l6 6m-7 0l6-6l2-3M2 5h12M7 2h1m14 20l-5-10l-5 10m2-4h6" />
+</svg></button>
+
+  
+  <div id="language-dropdown"
+    class="dropdown-menu border-border bg-popover/95 absolute top-12 right-0 z-[60] hidden w-40 rounded-lg border p-1 shadow-lg backdrop-blur-sm transition-all duration-200 ease-out"
+    data-dropdown-type="language"
+    role="menu"
+    aria-labelledby="language-toggle"><a href="/en/" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none" role="menuitem"><span class="font-medium">English</span></a><a href="/pt/" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none" role="menuitem" aria-current="true"><span class="font-medium">Português</span></a></div>
+</div>
+
+        
+        
+
+        
+        
+<div class="relative">
+  <button id="theme-toggle"
+    class="dropdown-toggle border-border bg-background text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 flex h-10 w-10 items-center justify-center rounded-lg border transition-all duration-300 ease-out hover:scale-105 focus:ring-2 focus:outline-none active:scale-95"
+    data-dropdown-type="theme"
+    aria-label="Alternar Tema"
+    aria-expanded="false"
+    aria-haspopup="true">
+      
+      <svg class="h-5 w-5 sun-icon hidden relative z-10" aria-label="Claro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+
+      
+      <svg class="h-5 w-5 moon-icon hidden relative z-10" aria-label="Escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>
+
+      
+      <svg class="h-5 w-5 system-icon hidden relative z-10" aria-label="Sistema" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>
+</button>
+
+  
+  <div id="theme-dropdown"
+    class="dropdown-menu border-border bg-popover/95 absolute top-12 right-0 z-[60] hidden w-40 rounded-lg border p-1 shadow-lg backdrop-blur-sm transition-all duration-200 ease-out"
+    data-dropdown-type="theme"><button data-theme="light" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none"><svg class="h-5 w-5 mr-3 h-4 w-4" aria-label="Claro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+<span>Claro</span></button><button data-theme="dark" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none"><svg class="h-5 w-5 mr-3 h-4 w-4" aria-label="Escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>
+<span>Escuro</span></button><button data-theme="system" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none"><svg class="h-5 w-5 mr-3 h-4 w-4" aria-label="Sistema" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>
+<span>Sistema</span></button></div>
+</div>
+      </div>
+    </div>
+
+    
+    <div class="flex w-full items-center justify-between md:hidden">
+      
+      
+<div class="relative">
+  <button
+    id="mobile-menu-toggle"
+    class="dropdown-toggle border-border bg-background text-muted-foreground hover:bg-accent hover:text-foreground flex h-10 w-10 items-center justify-center rounded-lg border transition-colors duration-200"
+    data-dropdown-type="mobile-menu"
+    aria-label="Menu"
+    aria-expanded="false"
+    aria-haspopup="true">
+    <svg class="h-5 w-5" aria-label="Menu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+
+  </button>
+
+  
+  <div
+    id="mobile-menu"
+    class="mobile-menu dropdown-menu border-border bg-popover/95 absolute top-12 left-0 z-[60] hidden w-80 max-w-[calc(100vw-2rem)] rounded-lg border p-1 shadow-lg backdrop-blur-sm transition-all duration-200 ease-out md:hidden"
+    data-dropdown-type="mobile-menu"
+    role="menu"
+    aria-labelledby="mobile-menu-toggle">
+    <nav class="flex flex-col">
+      
+      
+        
+        
+        
+          
+            
+          
+        
+        
+        <a
+          href="/pt/posts/"
+          class="nav-link 
+            text-muted-foreground hover:text-primary hover:bg-primary/10
+           focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
+          role="menuitem"
+          >
+          
+            <svg class="h-5 w-5" aria-label="nav.posts" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+</svg>
+
+          
+          <span
+            >
+              Artigos
+            </span
+          >
+        </a>
+      
+        
+        
+        
+          
+            
+          
+        
+        
+        <a
+          href="/pt/categories/"
+          class="nav-link 
+            text-muted-foreground hover:text-primary hover:bg-primary/10
+           focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
+          role="menuitem"
+          >
+          
+            <svg class="h-5 w-5" aria-label="nav.categories" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+</svg>
+
+          
+          <span
+            >
+              Categorias
+            </span
+          >
+        </a>
+      
+        
+        
+        
+          
+            
+          
+        
+        
+        <a
+          href="/pt/tags/"
+          class="nav-link 
+            text-muted-foreground hover:text-primary hover:bg-primary/10
+           focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
+          role="menuitem"
+          >
+          
+            <svg class="h-5 w-5" aria-label="nav.tags" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+</svg>
+
+          
+          <span
+            >
+              Tags
+            </span
+          >
+        </a>
+      
+        
+        
+        
+          
+            
+          
+        
+        
+        <a
+          href="/pt/archives/"
+          class="nav-link 
+            text-muted-foreground hover:text-primary hover:bg-primary/10
+           focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
+          role="menuitem"
+          >
+          
+            <svg class="h-5 w-5" aria-label="nav.archives" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+</svg>
+
+          
+          <span
+            >
+              Arquivos
+            </span
+          >
+        </a>
+      
+    </nav>
+  </div>
+</div>
+
+
+      
+      <div class="flex items-center space-x-2">
+        
+        
+<div class="relative">
+  <button id="language-toggle"
+    class="dropdown-toggle border-border bg-background text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 flex h-10 w-10 items-center justify-center rounded-lg border transition-all duration-300 ease-out hover:scale-105 focus:ring-2 focus:outline-none active:scale-95"
+    data-dropdown-type="language"
+    aria-label="Switch language"
+    aria-expanded="false"
+    aria-haspopup="true">
+      <svg class="h-5 w-5 relative z-10" aria-label="Switch language" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 8l6 6m-7 0l6-6l2-3M2 5h12M7 2h1m14 20l-5-10l-5 10m2-4h6" />
+</svg></button>
+
+  
+  <div id="language-dropdown"
+    class="dropdown-menu border-border bg-popover/95 absolute top-12 right-0 z-[60] hidden w-40 rounded-lg border p-1 shadow-lg backdrop-blur-sm transition-all duration-200 ease-out"
+    data-dropdown-type="language"
+    role="menu"
+    aria-labelledby="language-toggle"><a href="/en/" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none" role="menuitem"><span class="font-medium">English</span></a><a href="/pt/" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none" role="menuitem" aria-current="true"><span class="font-medium">Português</span></a></div>
+</div>
+
+        
+        
+
+        
+        
+<div class="relative">
+  <button id="theme-toggle"
+    class="dropdown-toggle border-border bg-background text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 flex h-10 w-10 items-center justify-center rounded-lg border transition-all duration-300 ease-out hover:scale-105 focus:ring-2 focus:outline-none active:scale-95"
+    data-dropdown-type="theme"
+    aria-label="Alternar Tema"
+    aria-expanded="false"
+    aria-haspopup="true">
+      
+      <svg class="h-5 w-5 sun-icon hidden relative z-10" aria-label="Claro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+
+      
+      <svg class="h-5 w-5 moon-icon hidden relative z-10" aria-label="Escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>
+
+      
+      <svg class="h-5 w-5 system-icon hidden relative z-10" aria-label="Sistema" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>
+</button>
+
+  
+  <div id="theme-dropdown"
+    class="dropdown-menu border-border bg-popover/95 absolute top-12 right-0 z-[60] hidden w-40 rounded-lg border p-1 shadow-lg backdrop-blur-sm transition-all duration-200 ease-out"
+    data-dropdown-type="theme"><button data-theme="light" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none"><svg class="h-5 w-5 mr-3 h-4 w-4" aria-label="Claro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+<span>Claro</span></button><button data-theme="dark" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none"><svg class="h-5 w-5 mr-3 h-4 w-4" aria-label="Escuro" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>
+<span>Escuro</span></button><button data-theme="system" class="text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex w-full items-center rounded-md px-4 py-2 text-sm transition-all duration-200 ease-out focus:outline-none"><svg class="h-5 w-5 mr-3 h-4 w-4" aria-label="Sistema" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>
+<span>Sistema</span></button></div>
+</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    
+    <main class="mx-auto max-w-4xl px-4 py-6">
+      
+  
+  <nav
+  class="breadcrumb mb-4 md:mb-6 py-1"
+  aria-label="Navegação">
+  <ol class="text-muted-foreground flex items-center space-x-1 md:space-x-2 text-sm overflow-x-auto whitespace-nowrap scrollbar-hide py-1">
+    
+    <li class="flex-shrink-0">
+      <a
+        href="/pt/"
+        class="text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-0.5 md:gap-1 rounded-lg px-1 md:px-3 py-0.5 md:py-1.5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02]">
+        <svg class="h-4 w-4" aria-label="Início" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 12 2-2m0 0 7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+</svg>
+
+        <span class="max-w-[4rem] md:max-w-none truncate">Início</span>
+      </a>
+    </li>
+
+    
+    
+      <li class="flex items-center gap-1 md:gap-2 min-w-0">
+        <span class="text-muted-foreground/50 flex-shrink-0"
+          ><svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+        </span>
+
+        
+          
+          <div class="flex items-center gap-1 md:gap-2 min-w-0">
+            
+              
+              <a
+                href="/pt/posts"
+                class="text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-0.5 md:gap-1 rounded-lg px-1 md:px-3 py-0.5 md:py-1.5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] flex-shrink-0">
+                
+                  <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+</svg>
+
+                  <span class="max-w-[3rem] md:max-w-none truncate">Artigos</span>
+                
+              </a>
+              <span class="text-muted-foreground/50 flex-shrink-0"
+                ><svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg></span
+              >
+            
+            
+            <span class="text-foreground flex items-center gap-0.5 md:gap-1 font-medium min-w-0">
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+</svg>
+              <span class="max-w-[8rem] md:max-w-[16rem] lg:max-w-none truncate">Testing with Pytest - Fundamentals, Best Practices and Strategy</span>
+            </span>
+          </div>
+        
+      </li>
+    
+
+  </ol>
+</nav>
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <header class="mb-8">
+    
+
+
+<div class="post-meta">
+  
+  <h1 class="text-foreground mb-6 text-3xl leading-tight font-bold md:text-4xl">
+    Testing with Pytest - Fundamentals, Best Practices and Strategy
+  </h1>
+
+  
+  
+
+
+  
+  <div class="bg-card border-border flex flex-col gap-4 rounded-xl border p-6">
+    
+    <div
+      class="text-muted-foreground flex flex-wrap items-center gap-4 text-sm">
+      
+      <div class="flex items-center gap-2">
+        <svg class="h-4 w-4" aria-label="Publicado em" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+        <time datetime="2026-01-30">
+          30 de janeiro de 2026
+        </time>
+      </div>
+
+      
+      
+
+
+      
+      
+        <div class="flex items-center gap-2">
+          <svg class="h-4 w-4" aria-label="Tempo de leitura" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+          <span
+            >4 minuto</span
+          >
+        </div>
+      
+
+
+      
+      
+        <div class="flex items-center gap-2">
+          <svg class="h-4 w-4" aria-label="Contagem de palavras" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+</svg>
+
+          <span>787 palavras</span>
+        </div>
+      
+
+    </div>
+
+    
+    
+    
+      <div class="flex flex-wrap items-center gap-4">
+        
+        
+
+        
+        
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4" aria-label="Categorias" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+</svg>
+            <span class="text-muted-foreground mr-2 text-sm"
+              >Categorias:</span
+            >
+            <div class="flex flex-wrap gap-2">
+              
+                <a
+                  href="/pt/categories/testing/"
+                  class="bg-primary/10 text-primary hover:bg-primary/20 focus:ring-primary/20 inline-flex items-center rounded-full px-3 py-1 text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 hover:shadow-md focus:ring-2 focus:outline-none">
+                  testing
+                </a>
+              
+            </div>
+          </div>
+        
+
+
+        
+        
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4" aria-label="Tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+		<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+		<circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+	</g>
+</svg>
+            <span class="text-muted-foreground mr-2 text-sm"
+              >Tags:</span
+            >
+            <div class="flex flex-wrap gap-2">
+              
+                <a
+                  href="/pt/tags/python/"
+                  class="bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary focus:ring-primary/20 inline-flex items-center rounded px-2 py-1 text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+                  #python
+                </a>
+              
+                <a
+                  href="/pt/tags/tests/"
+                  class="bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary focus:ring-primary/20 inline-flex items-center rounded px-2 py-1 text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+                  #tests
+                </a>
+              
+                <a
+                  href="/pt/tags/pytest/"
+                  class="bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary focus:ring-primary/20 inline-flex items-center rounded px-2 py-1 text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
+                  #pytest
+                </a>
+              
+            </div>
+          </div>
+        
+
+      </div>
+    
+
+
+    
+    
+
+  </div>
+</div>
+
+  </header>
+
+  
+  <article class="prose prose-neutral dark:prose-invert mb-12 max-w-none">
+    <h1 id="testes-com-pytest-fundamentos-boas-práticas-e-estratégia">Testes com Pytest: Fundamentos, Boas Práticas e Estratégia</h1>
+<h2 id="introdução">Introdução</h2>
+<p>Testar software não é apenas uma etapa técnica do desenvolvimento é uma <strong>estratégia de qualidade, confiança e sustentabilidade</strong>. Sistemas sem testes tendem a quebrar com frequência, gerar medo de mudanças e aumentar drasticamente o custo de manutenção.</p>
+<p>Neste post, vamos focar <strong>100% na teoria</strong>, explicando conceitos fundamentais de testes automatizados usando <strong>Pytest</strong>, o framework de testes mais popular do ecossistema Python.</p>
+
+  <blockquote
+    class="border-primary bg-muted/30 hover:bg-muted/40 my-6 rounded-r-lg border-l-4 py-4 pr-4 pl-6 italic transition-all duration-200 ease-out hover:translate-x-1">
+    <div class="prose prose-sm max-w-none">
+      <p>👉 No próximo post da série, aplicaremos tudo isso em um <strong>projeto Flask real consumindo a API pública do GitHub</strong>.</p>
+
+    </div>
+  </blockquote><script>
+function toggleAlert(alertId) {
+  const content = document.getElementById(alertId + '-content');
+  const chevron = document.getElementById(alertId + '-chevron');
+  const header = content.previousElementSibling;
+  
+  if (content.classList.contains('hidden')) {
+    content.classList.remove('hidden');
+    chevron.style.transform = 'rotate(0deg)';
+    header.setAttribute('aria-expanded', 'true');
+  } else {
+    content.classList.add('hidden');
+    chevron.style.transform = 'rotate(-90deg)';
+    header.setAttribute('aria-expanded', 'false');
+  }
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const collapsedAlerts = document.querySelectorAll('.alert-content.hidden');
+  collapsedAlerts.forEach(function(content) {
+    const alertId = content.id.replace('-content', '');
+    const chevron = document.getElementById(alertId + '-chevron');
+    if (chevron) {
+      chevron.style.transform = 'rotate(-90deg)';
+    }
+  });
+});
+</script>
+
+<hr>
+<h2 id="o-que-é-pytest">O que é Pytest?</h2>
+<p>Pytest é um framework de testes para Python que facilita a criação de testes simples, legíveis e escaláveis. Ele permite testar desde funções isoladas até sistemas completos.</p>
+<h3 id="por-que-pytest-é-tão-usado">Por que Pytest é tão usado?</h3>
+<ul>
+<li>Sintaxe simples (baseada em <code>assert</code>)</li>
+<li>Descoberta automática de testes</li>
+<li>Sistema poderoso de <strong>fixtures</strong></li>
+<li>Excelente suporte a <strong>plugins</strong></li>
+<li>Escala bem para projetos grandes</li>
+</ul>
+<p>Comparado ao <code>unittest</code>, o Pytest é mais expressivo, menos verboso e mais produtivo.</p>
+<hr>
+<h2 id="qual-é-o-objetivo-dos-testes">Qual é o objetivo dos testes?</h2>
+<p>Testes existem para <strong>reduzir incerteza</strong>.</p>
+<p>Eles ajudam a:</p>
+<ul>
+<li>Garantir que o código funciona como esperado</li>
+<li>Detectar erros rapidamente</li>
+<li>Evitar regressões</li>
+<li>Permitir refatorações seguras</li>
+<li>Servir como documentação viva do sistema</li>
+</ul>
+<p>Um código sem testes pode até funcionar hoje, mas é frágil amanhã.</p>
+<hr>
+<h2 id="quando-escrever-testes">Quando escrever testes?</h2>
+<ul>
+<li>Ao criar novas funcionalidades</li>
+<li>Ao corrigir bugs (especialmente regressões)</li>
+<li>Antes de refatorar código existente</li>
+<li>Em código crítico para o negócio</li>
+</ul>
+<h3 id="e-quando-não-escrever-testes">E quando NÃO escrever testes?</h3>
+<ul>
+<li>Provas de conceito muito rápidas (POCs)</li>
+<li>Scripts totalmente descartáveis</li>
+</ul>
+<p>Mesmo nesses casos, testes ainda podem trazer benefícios.</p>
+<hr>
+<h2 id="tipos-de-testes">Tipos de Testes</h2>
+<p>Entender os tipos de testes é essencial para criar uma <strong>estratégia equilibrada</strong>.</p>
+<h3 id="testes-unitários">Testes Unitários</h3>
+<ul>
+<li>Testam funções ou métodos isolados</li>
+<li>Não acessam banco, rede ou sistema de arquivos</li>
+<li>São rápidos e baratos</li>
+</ul>
+<p>✔️ Base da pirâmide de testes</p>
+<hr>
+<h3 id="testes-de-integração">Testes de Integração</h3>
+<ul>
+<li>Testam a comunicação entre componentes</li>
+<li>Exemplo: aplicação + banco, aplicação + API externa</li>
+</ul>
+<p>✔️ Detectam falhas reais de integração
+❌ Mais lentos</p>
+<hr>
+<h3 id="testes-funcionais">Testes Funcionais</h3>
+<ul>
+<li>Testam fluxos completos da aplicação</li>
+<li>Simulam o comportamento do usuário</li>
+</ul>
+<p>✔️ Alta confiança
+❌ Mais complexos</p>
+<hr>
+<h3 id="testes-de-sistema--end-to-end-e2e">Testes de Sistema / End-to-End (E2E)</h3>
+<ul>
+<li>Testam o sistema como um todo</li>
+<li>Incluem múltiplas camadas</li>
+</ul>
+<p>✔️ Simulam uso real
+❌ Lentos e frágeis</p>
+<hr>
+<h3 id="testes-de-regressão">Testes de Regressão</h3>
+<ul>
+<li>Garantem que bugs corrigidos não voltem</li>
+<li>Normalmente surgem após incidentes reais</li>
+</ul>
+<p>✔️ Protegem contra erros reincidentes</p>
+<hr>
+<h3 id="testes-de-performance">Testes de Performance</h3>
+<ul>
+<li>Avaliam tempo de resposta e consumo de recursos</li>
+<li>Identificam gargalos</li>
+</ul>
+<p>✔️ Importantes em sistemas críticos
+❌ Devem ser usados com critério</p>
+<hr>
+<h2 id="a-pirâmide-de-testes">A Pirâmide de Testes</h2>
+<p>Uma boa estratégia de testes segue a pirâmide:</p>
+<ul>
+<li>Muitos testes unitários</li>
+<li>Alguns testes de integração</li>
+<li>Poucos testes E2E</li>
+</ul>
+<p>Isso garante velocidade, confiança e custo controlado.</p>
+<hr>
+<h2 id="o-padrão-aaa-arrange-act-assert">O padrão AAA (Arrange, Act, Assert)</h2>
+<p>AAA é um padrão de organização de testes que melhora drasticamente a legibilidade.</p>
+<h3 id="arrange">Arrange</h3>
+<p>Preparar dados, mocks e contexto.</p>
+<h3 id="act">Act</h3>
+<p>Executar a ação que está sendo testada.</p>
+<h3 id="assert">Assert</h3>
+<p>Validar o resultado.</p>
+<h3 id="benefícios">Benefícios</h3>
+<ul>
+<li>Testes mais claros</li>
+<li>Menos ambiguidade</li>
+<li>Manutenção mais fácil</li>
+</ul>
+<hr>
+<h2 id="fixtures-no-pytest">Fixtures no Pytest</h2>
+<p>Fixtures são funções reutilizáveis responsáveis por <strong>preparar e limpar o ambiente de testes</strong>.</p>
+<h3 id="por-que-usar-fixtures">Por que usar fixtures?</h3>
+<ul>
+<li>Evitam duplicação de código</li>
+<li>Centralizam setup/teardown</li>
+<li>Tornam os testes mais legíveis</li>
+</ul>
+<h3 id="escopos-de-fixtures">Escopos de fixtures</h3>
+<ul>
+<li><code>function</code>: padrão (executa a cada teste)</li>
+<li><code>module</code>: uma vez por arquivo</li>
+<li><code>session</code>: uma vez por execução</li>
+</ul>
+<hr>
+<h2 id="pytest-marks">Pytest Marks</h2>
+<p>Marks permitem <strong>classificar e controlar</strong> testes.</p>
+<h3 id="parametrize">parametrize</h3>
+<p>Permite rodar o mesmo teste com vários dados.</p>
+<p><strong>Benefícios:</strong></p>
+<ul>
+<li>Menos código</li>
+<li>Mais cobertura</li>
+<li>Testes mais expressivos</li>
+</ul>
+<hr>
+<h3 id="skip">skip</h3>
+<p>Ignora testes conscientemente.</p>
+<p><strong>Quando usar:</strong></p>
+<ul>
+<li>Dependência externa indisponível</li>
+<li>Funcionalidade desativada</li>
+</ul>
+<hr>
+<h3 id="xfail">xfail</h3>
+<p>Marca testes que <strong>devem falhar</strong>.</p>
+<p><strong>Benefícios:</strong></p>
+<ul>
+<li>Documenta bugs conhecidos</li>
+<li>Não quebra o pipeline</li>
+</ul>
+<hr>
+<h3 id="slow">slow</h3>
+<p>Marca testes lentos.</p>
+<p><strong>Benefícios:</strong></p>
+<ul>
+<li>Execução seletiva</li>
+<li>Feedback rápido no dia a dia</li>
+</ul>
+<hr>
+<h2 id="o-que-é-mock">O que é Mock?</h2>
+<p>Mock é uma técnica usada para <strong>simular dependências externas</strong>.</p>
+<h3 id="quando-usar-mock">Quando usar mock?</h3>
+<ul>
+<li>APIs externas</li>
+<li>Banco de dados</li>
+<li>Serviços de terceiros</li>
+</ul>
+<h3 id="quando-não-usar">Quando NÃO usar?</h3>
+<ul>
+<li>Para testar lógica interna</li>
+<li>Em excesso (overmocking)</li>
+</ul>
+<hr>
+<h2 id="unittestmock-vs-pytest-mock">unittest.mock vs pytest-mock</h2>
+<h3 id="unittestmock">unittest.mock</h3>
+<ul>
+<li>Biblioteca padrão do Python</li>
+<li>Mais verbosa</li>
+<li>Usa context managers</li>
+</ul>
+<p>✔️ Não depende de plugins
+❌ Código mais difícil de ler</p>
+<hr>
+<h3 id="pytest-mock">pytest-mock</h3>
+<ul>
+<li>Plugin do Pytest</li>
+<li>Integração com fixtures</li>
+<li>Sintaxe mais limpa</li>
+</ul>
+<p>✔️ Mais produtivo
+✔️ Mais legível</p>
+<hr>
+<h2 id="plugins-essenciais-do-pytest">Plugins Essenciais do Pytest</h2>
+<h3 id="pytest-cov">pytest-cov</h3>
+<ul>
+<li>Mede cobertura de código</li>
+<li>Ajuda a identificar áreas não testadas</li>
+</ul>
+<p>⚠️ Cobertura alta ≠ código de qualidade</p>
+<hr>
+<h3 id="pytest-mock-1">pytest-mock</h3>
+<ul>
+<li>Facilita criação de mocks</li>
+<li>Reduz boilerplate</li>
+</ul>
+<hr>
+<h2 id="boas-práticas-gerais">Boas Práticas Gerais</h2>
+<ul>
+<li>Testes devem ser simples</li>
+<li>Um comportamento por teste</li>
+<li>Nomes claros e descritivos</li>
+<li>Evite lógica complexa nos testes</li>
+<li>Testes devem ser determinísticos</li>
+</ul>
+<hr>
+<h2 id="conclusão">Conclusão</h2>
+<p>Testes automatizados não são um luxo — são uma <strong>necessidade profissional</strong>. Pytest fornece as ferramentas certas para escrever testes claros, escaláveis e confiáveis.</p>
+<p>No próximo post da série, vamos <strong>aplicar todos esses conceitos em um projeto Flask real</strong>, consumindo a API pública do GitHub, com testes unitários, de integração, funcionais e de performance.</p>
+<p>👉 Continue para o <strong>Post 2: Pytest na Prática com Flask e API do GitHub</strong></p>
+
+  </article>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="post-license bg-muted/30 border-border mb-8 rounded-xl border p-6">
+    <div class="flex items-start gap-4">
+      
+      <div
+        class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+        <svg class="h-6 w-6" aria-label="许可证" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+</svg>
+      </div>
+
+      
+      <div class="flex-1 min-w-0">
+        <h3 class="text-foreground mb-2 text-lg font-semibold">
+          Copyright Notice
+        </h3>
+
+        <div class="text-muted-foreground space-y-2 text-sm">
+          
+          
+
+          
+          <p>
+            <strong>Link:</strong>
+            <a
+              href="http://localhost:1313/pt/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/"
+              class="text-primary hover:text-primary/80 transition-colors break-all hyphens-auto duration-200">
+              http://localhost:1313/pt/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/
+            </a>
+          </p>
+
+          
+          <p>
+            <strong>Licença:</strong>
+            
+              <a
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:text-primary/80 transition-colors duration-200">
+                知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
+              </a>
+            
+          </p>
+
+          
+          
+          <p class="text-xs">
+            本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  
+
+
+
+
+
+  <nav
+    class="post-navigation mb-12"
+    aria-label="Navegação de Artigos">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      
+      <div class="nav-item">
+        
+          <a
+            href="/pt/posts/entendendo-mock-e-magicmock-em-python/"
+            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+            <div>
+              <div class="mb-3 flex items-center gap-3">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+</svg>
+                <span class="text-muted-foreground text-sm font-medium">
+                  Anterior
+                </span>
+              </div>
+
+              <h3
+                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-lg leading-tight font-semibold transition-colors duration-200">
+                Entendendo Mock e MagicMock em Python
+              </h3>
+            </div>
+
+            <div
+              class="text-muted-foreground mt-auto flex items-center gap-2 text-xs">
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+              <time datetime="2026-01-13">
+                13 jan
+              </time>
+            </div>
+          </a>
+        
+      </div>
+
+      
+      <div class="nav-item">
+        
+          <div
+            class="bg-muted/30 border-border/50 flex min-h-[140px] flex-col justify-center rounded-xl border p-6">
+            <div class="mb-3 flex items-center justify-end gap-3">
+              <span class="text-muted-foreground/50 text-sm font-medium">
+                Sem próximo artigo
+              </span>
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+            </div>
+            <p class="text-muted-foreground/50 text-right text-sm">
+              Este é o artigo mais recente
+            </p>
+          </div>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  <section class="related-posts mb-12">
+    
+    <div class="mb-6 flex items-center gap-3">
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+</svg>
+      <h2 class="text-foreground text-2xl font-bold">
+        Artigos Relacionados
+      </h2>
+    </div>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+      
+        <article class="group">
+          <a href="/pt/posts/entendendo-mock-e-magicmock-em-python/" class="block">
+            <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex items-center rounded-xl border p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none min-h-[120px]">
+              <h3 class="text-foreground group-hover:text-primary text-lg font-semibold leading-snug line-clamp-3 w-full">
+                Entendendo Mock e MagicMock em Python
+              </h3>
+            </div>
+          </a>
+        </article>
+      
+    </div>
+  </section>
+
+
+
+
+  
+  
+
+
+    </main>
+
+    
+        
+
+
+  
+
+  
+
+  
+  <aside
+    id="toc-sidebar"
+    class="toc-sidebar hidden xl:block fixed toc-sidebar-left"
+    style="max-width: 280px; max-height: 80vh;"
+    aria-label="Navegação no índice">
+
+    
+    <div class="mb-4 flex items-center gap-2">
+      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="8" x2="21" y1="6" y2="6"/>
+  <line x1="8" x2="21" y1="12" y2="12"/>
+  <line x1="8" x2="21" y1="18" y2="18"/>
+  <line x1="3" x2="3.01" y1="6" y2="6"/>
+  <line x1="3" x2="3.01" y1="12" y2="12"/>
+  <line x1="3" x2="3.01" y1="18" y2="18"/>
+</svg>
+
+      <h2 class="text-foreground text-sm font-semibold">
+        Índice
+      </h2>
+    </div>
+
+    
+    <nav
+      id="toc-sidebar-content"
+      class="toc-sidebar-scroll overflow-y-auto pr-2"
+      style="max-height: calc(80vh - 3rem);">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introdução">Introdução</a></li>
+    <li><a href="#o-que-é-pytest">O que é Pytest?</a>
+      <ul>
+        <li><a href="#por-que-pytest-é-tão-usado">Por que Pytest é tão usado?</a></li>
+      </ul>
+    </li>
+    <li><a href="#qual-é-o-objetivo-dos-testes">Qual é o objetivo dos testes?</a></li>
+    <li><a href="#quando-escrever-testes">Quando escrever testes?</a>
+      <ul>
+        <li><a href="#e-quando-não-escrever-testes">E quando NÃO escrever testes?</a></li>
+      </ul>
+    </li>
+    <li><a href="#tipos-de-testes">Tipos de Testes</a>
+      <ul>
+        <li><a href="#testes-unitários">Testes Unitários</a></li>
+        <li><a href="#testes-de-integração">Testes de Integração</a></li>
+        <li><a href="#testes-funcionais">Testes Funcionais</a></li>
+        <li><a href="#testes-de-sistema--end-to-end-e2e">Testes de Sistema / End-to-End (E2E)</a></li>
+        <li><a href="#testes-de-regressão">Testes de Regressão</a></li>
+        <li><a href="#testes-de-performance">Testes de Performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-pirâmide-de-testes">A Pirâmide de Testes</a></li>
+    <li><a href="#o-padrão-aaa-arrange-act-assert">O padrão AAA (Arrange, Act, Assert)</a>
+      <ul>
+        <li><a href="#arrange">Arrange</a></li>
+        <li><a href="#act">Act</a></li>
+        <li><a href="#assert">Assert</a></li>
+        <li><a href="#benefícios">Benefícios</a></li>
+      </ul>
+    </li>
+    <li><a href="#fixtures-no-pytest">Fixtures no Pytest</a>
+      <ul>
+        <li><a href="#por-que-usar-fixtures">Por que usar fixtures?</a></li>
+        <li><a href="#escopos-de-fixtures">Escopos de fixtures</a></li>
+      </ul>
+    </li>
+    <li><a href="#pytest-marks">Pytest Marks</a>
+      <ul>
+        <li><a href="#parametrize">parametrize</a></li>
+        <li><a href="#skip">skip</a></li>
+        <li><a href="#xfail">xfail</a></li>
+        <li><a href="#slow">slow</a></li>
+      </ul>
+    </li>
+    <li><a href="#o-que-é-mock">O que é Mock?</a>
+      <ul>
+        <li><a href="#quando-usar-mock">Quando usar mock?</a></li>
+        <li><a href="#quando-não-usar">Quando NÃO usar?</a></li>
+      </ul>
+    </li>
+    <li><a href="#unittestmock-vs-pytest-mock">unittest.mock vs pytest-mock</a>
+      <ul>
+        <li><a href="#unittestmock">unittest.mock</a></li>
+        <li><a href="#pytest-mock">pytest-mock</a></li>
+      </ul>
+    </li>
+    <li><a href="#plugins-essenciais-do-pytest">Plugins Essenciais do Pytest</a>
+      <ul>
+        <li><a href="#pytest-cov">pytest-cov</a></li>
+        <li><a href="#pytest-mock-1">pytest-mock</a></li>
+      </ul>
+    </li>
+    <li><a href="#boas-práticas-gerais">Boas Práticas Gerais</a></li>
+    <li><a href="#conclusão">Conclusão</a></li>
+  </ul>
+</nav>
+    </nav>
+  </aside>
+
+
+
+    <footer class="mx-auto max-w-4xl px-4 py-8">
+  <div class="px-6 py-6">
+    
+    
+
+
+    
+    
+
+
+    
+    <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+      
+      <div class="text-muted-foreground text-sm text-center md:text-left">
+        <p class="mb-2">
+          &copy; 2026 Alra.
+          Todos os direitos reservados.
+        </p>
+        <p class="flex flex-wrap items-center justify-center gap-1 md:justify-start">
+          <span>Powered by</span>
+          <a 
+            href="https://gohugo.io/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-primary hover:text-primary/80 font-medium transition-colors duration-200 hover:underline"
+          >
+            Hugo
+          </a>
+          <span>&</span>
+          <a 
+            href="https://github.com/tom2almighty/hugo-narrow" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-primary hover:text-primary/80 font-medium transition-colors duration-200 hover:underline"
+          >
+            Narrow
+          </a>
+        </p>
+      </div>
+
+      
+      
+        <div class="flex items-center gap-3">
+          
+            <a
+              href="https://github.com/alisonamerico"
+              
+                target="_blank" rel="noopener noreferrer"
+              
+              class="text-muted-foreground hover:text-primary focus:ring-primary/20 rounded-lg p-1 transition-all duration-300 ease-out hover:scale-110 focus:ring-2 focus:outline-none"
+              title="GitHub"
+              aria-label="GitHub">
+              
+                <svg class="h-6 w-6" aria-label="GitHub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></g></svg>
+              
+            </a>
+          
+            <a
+              href="https://linkedin.com/in/alisonamerico"
+              
+                target="_blank" rel="noopener noreferrer"
+              
+              class="text-muted-foreground hover:text-primary focus:ring-primary/20 rounded-lg p-1 transition-all duration-300 ease-out hover:scale-110 focus:ring-2 focus:outline-none"
+              title="LinkedIn"
+              aria-label="LinkedIn">
+              
+                <svg class="h-6 w-6" aria-label="LinkedIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></g></svg>
+              
+            </a>
+          
+            <a
+              href="mailto:alisonlira@proton.me"
+              
+              class="text-muted-foreground hover:text-primary focus:ring-primary/20 rounded-lg p-1 transition-all duration-300 ease-out hover:scale-110 focus:ring-2 focus:outline-none"
+              title="Email"
+              aria-label="Email">
+              
+                <svg class="h-6 w-6" aria-label="Email" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+</svg>
+
+              
+            </a>
+          
+        </div>
+      
+
+    </div>
+  </div>
+</footer>
+
+    
+    
+
+
+
+
+<div
+  id="dock"
+  class="pointer-events-none fixed bottom-4 left-1/2 z-[9999] w-fit -translate-x-1/2 translate-y-24 opacity-0 transition-all duration-300 ease-out sm:right-0 sm:left-0 sm:mx-auto sm:translate-x-0"
+  data-dock-mode="scroll"
+  role="toolbar"
+  aria-label="Barra de ferramentas de ações rápidas">
+  <nav
+    class="border-border bg-card/80 scrollbar-hide xs:px-3 xs:py-2 mx-auto flex max-w-[calc(100vw-2rem)] min-w-fit items-center justify-center overflow-x-auto rounded-2xl border px-4 py-3 shadow-lg backdrop-blur-sm sm:px-4 sm:py-3">
+    
+    
+      <button
+        id="dock-back"
+        class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 xs:px-2 xs:py-1.5 flex flex-shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none sm:px-3 sm:py-2"
+        title="Voltar"
+        aria-label="Voltar">
+        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m12 19-7-7 7-7"/>
+  <path d="M19 12H5"/>
+</svg>
+
+        <span class="hidden sm:inline"
+          >Voltar</span
+        >
+      </button>
+
+      
+      <div class="bg-border xs:mx-1 mx-2 h-6 w-px sm:mx-2"></div>
+    
+
+
+    
+    
+
+        
+
+        
+
+        <button
+          id="dock-navigation"
+          class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 xs:px-2 xs:py-1.5 flex flex-shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none sm:px-3 sm:py-2 "
+          title="Índice"
+          aria-label="Índice">
+          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="8" x2="21" y1="6" y2="6"/>
+  <line x1="8" x2="21" y1="12" y2="12"/>
+  <line x1="8" x2="21" y1="18" y2="18"/>
+  <line x1="3" x2="3.01" y1="6" y2="6"/>
+  <line x1="3" x2="3.01" y1="12" y2="12"/>
+  <line x1="3" x2="3.01" y1="18" y2="18"/>
+</svg>
+
+          <span class="hidden sm:inline">Índice</span>
+        </button>
+
+        
+        <div class="bg-border xs:mx-1 mx-2 h-6 w-px sm:mx-2 "></div>
+    
+
+
+    
+    <button
+      id="dock-search"
+      class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 xs:px-3 xs:py-1.5 flex flex-shrink-0 items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none sm:px-4 sm:py-2"
+      title="Buscar"
+      aria-label="Buscar">
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+</svg>
+
+      <span class="hidden md:inline"
+        >Buscar</span
+      >
+    </button>
+
+    
+    <div class="bg-border xs:mx-1 mx-2 h-6 w-px sm:mx-2"></div>
+
+    
+    
+    
+
+
+    
+    <button
+      id="dock-top"
+      class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 xs:px-2 xs:py-1.5 flex flex-shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none sm:px-3 sm:py-2"
+      title="Voltar ao topo"
+      aria-label="Voltar ao topo">
+      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m18 15-6-6-6 6"/>
+</svg>
+
+      <span class="hidden sm:inline"
+        >Topo</span
+      >
+    </button>
+  </nav>
+</div>
+
+
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+  
+  <div
+    id="navigation-overlay"
+    class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 backdrop-blur-sm transition-all duration-300 "
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="navigation-title"></div>
+
+  
+  <div
+    id="navigation-card"
+    class="pointer-events-none fixed inset-4 z-50 flex w-auto scale-95 items-center justify-center opacity-0 transition-all duration-300 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:block sm:w-full sm:max-w-md sm:-translate-x-1/2 sm:-translate-y-1/2 "
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="navigation-title">
+    <div
+      class="bg-card border-border w-full max-w-sm overflow-hidden rounded-xl border shadow-xl sm:max-w-md">
+      
+      <div
+        class="border-border bg-muted/30 flex items-center justify-between border-b p-4">
+        <div class="flex items-center gap-3">
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="8" x2="21" y1="6" y2="6"/>
+  <line x1="8" x2="21" y1="12" y2="12"/>
+  <line x1="8" x2="21" y1="18" y2="18"/>
+  <line x1="3" x2="3.01" y1="6" y2="6"/>
+  <line x1="3" x2="3.01" y1="12" y2="12"/>
+  <line x1="3" x2="3.01" y1="18" y2="18"/>
+</svg>
+
+          <h2 id="navigation-title" class="text-foreground text-lg font-semibold">
+            
+              Índice
+            
+          </h2>
+        </div>
+
+        
+        <button
+          id="navigation-close"
+          class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 rounded-lg p-2 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
+          title="Close"
+          aria-label="Close">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+
+        </button>
+      </div>
+
+      
+
+      
+      <div class="max-h-96 overflow-y-auto p-4">
+        
+        <nav
+          id="nav-content-toc"
+          class="nav-content block"
+          aria-label="Navegação no índice">
+            <div id="toc-content">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introdução">Introdução</a></li>
+    <li><a href="#o-que-é-pytest">O que é Pytest?</a>
+      <ul>
+        <li><a href="#por-que-pytest-é-tão-usado">Por que Pytest é tão usado?</a></li>
+      </ul>
+    </li>
+    <li><a href="#qual-é-o-objetivo-dos-testes">Qual é o objetivo dos testes?</a></li>
+    <li><a href="#quando-escrever-testes">Quando escrever testes?</a>
+      <ul>
+        <li><a href="#e-quando-não-escrever-testes">E quando NÃO escrever testes?</a></li>
+      </ul>
+    </li>
+    <li><a href="#tipos-de-testes">Tipos de Testes</a>
+      <ul>
+        <li><a href="#testes-unitários">Testes Unitários</a></li>
+        <li><a href="#testes-de-integração">Testes de Integração</a></li>
+        <li><a href="#testes-funcionais">Testes Funcionais</a></li>
+        <li><a href="#testes-de-sistema--end-to-end-e2e">Testes de Sistema / End-to-End (E2E)</a></li>
+        <li><a href="#testes-de-regressão">Testes de Regressão</a></li>
+        <li><a href="#testes-de-performance">Testes de Performance</a></li>
+      </ul>
+    </li>
+    <li><a href="#a-pirâmide-de-testes">A Pirâmide de Testes</a></li>
+    <li><a href="#o-padrão-aaa-arrange-act-assert">O padrão AAA (Arrange, Act, Assert)</a>
+      <ul>
+        <li><a href="#arrange">Arrange</a></li>
+        <li><a href="#act">Act</a></li>
+        <li><a href="#assert">Assert</a></li>
+        <li><a href="#benefícios">Benefícios</a></li>
+      </ul>
+    </li>
+    <li><a href="#fixtures-no-pytest">Fixtures no Pytest</a>
+      <ul>
+        <li><a href="#por-que-usar-fixtures">Por que usar fixtures?</a></li>
+        <li><a href="#escopos-de-fixtures">Escopos de fixtures</a></li>
+      </ul>
+    </li>
+    <li><a href="#pytest-marks">Pytest Marks</a>
+      <ul>
+        <li><a href="#parametrize">parametrize</a></li>
+        <li><a href="#skip">skip</a></li>
+        <li><a href="#xfail">xfail</a></li>
+        <li><a href="#slow">slow</a></li>
+      </ul>
+    </li>
+    <li><a href="#o-que-é-mock">O que é Mock?</a>
+      <ul>
+        <li><a href="#quando-usar-mock">Quando usar mock?</a></li>
+        <li><a href="#quando-não-usar">Quando NÃO usar?</a></li>
+      </ul>
+    </li>
+    <li><a href="#unittestmock-vs-pytest-mock">unittest.mock vs pytest-mock</a>
+      <ul>
+        <li><a href="#unittestmock">unittest.mock</a></li>
+        <li><a href="#pytest-mock">pytest-mock</a></li>
+      </ul>
+    </li>
+    <li><a href="#plugins-essenciais-do-pytest">Plugins Essenciais do Pytest</a>
+      <ul>
+        <li><a href="#pytest-cov">pytest-cov</a></li>
+        <li><a href="#pytest-mock-1">pytest-mock</a></li>
+      </ul>
+    </li>
+    <li><a href="#boas-práticas-gerais">Boas Práticas Gerais</a></li>
+    <li><a href="#conclusão">Conclusão</a></li>
+  </ul>
+</nav>
+            </div>
+        </nav>
+
+        
+      </div>
+
+      
+      <div class="border-border bg-muted/20 border-t px-4 py-3">
+        <div class="text-muted-foreground text-center text-xs">
+          <span>点击标题快速跳转</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+    
+
+
+
+    
+    
+<div
+  id="search-overlay"
+  class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+
+
+<div
+  id="search-modal"
+  class="bg-card border-border pointer-events-none fixed top-1/2 left-1/2 z-50 max-h-[80vh] w-full max-w-2xl -translate-x-1/2 -translate-y-1/2 scale-95 transform overflow-hidden rounded-xl border opacity-0 shadow-xl transition-all duration-300">
+  
+  <div class="border-border flex items-center gap-3 border-b p-4">
+    
+    <div class="text-muted-foreground h-5 w-5 flex-shrink-0">
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+</svg>
+
+    </div>
+
+    
+    <div class="relative flex-1">
+      
+      <button
+        id="search-clear"
+        class="text-muted-foreground hover:text-foreground hover:bg-muted/50 pointer-events-none absolute top-1/2 left-0 z-10 h-5 w-5 -translate-y-1/2 rounded opacity-0 transition-all duration-200"
+        title="Limpar"
+        aria-label="Limpar">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+
+      </button>
+
+      
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Buscar artigos..."
+        class="text-foreground placeholder:text-muted-foreground w-full border-none bg-transparent pl-8 text-lg outline-none"
+        autocomplete="off"
+        spellcheck="false" />
+    </div>
+
+    
+    <button
+      id="search-close"
+      class="text-muted-foreground hover:text-foreground hover:bg-muted/50 flex h-6 w-6 items-center justify-center rounded-md p-0.5 transition-all duration-200"
+      title="Fechar"
+      aria-label="Fechar">
+      <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+</svg>
+
+    </button>
+  </div>
+
+  
+  <div id="search-results" class="max-h-96 overflow-y-auto">
+    
+    <div
+      id="search-empty"
+      class="flex flex-col items-center justify-center py-12 text-center">
+      <div
+        class="bg-muted/50 mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 21-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+</svg>
+
+      </div>
+      <h3 class="text-foreground mb-2 text-lg font-semibold">
+        Iniciar busca
+      </h3>
+      <p class="text-muted-foreground text-sm">
+        Digite palavras-chave para buscar
+      </p>
+    </div>
+
+    
+    <div
+      id="search-loading"
+      class="flex hidden items-center justify-center py-8">
+      <div
+        class="mr-3 h-6 w-6 animate-spin rounded-full border-2 border-current border-t-transparent"></div>
+      <span class="text-muted-foreground"
+        >Buscando...</span
+      >
+    </div>
+
+    
+    <div
+      id="search-no-results"
+      class="flex hidden flex-col items-center justify-center py-12 text-center">
+      <div
+        class="bg-muted/50 mb-4 flex h-16 w-16 items-center justify-center rounded-full">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+</svg>
+
+      </div>
+      <h3 class="text-foreground mb-2 text-lg font-semibold">
+        Nenhum resultado
+      </h3>
+      <p class="text-muted-foreground text-sm">
+        Tente palavras-chave diferentes
+      </p>
+    </div>
+
+    
+    <div id="search-results-list" class="hidden">
+      
+      <div
+        id="search-stats"
+        class="text-muted-foreground border-border border-b px-4 py-3 text-sm"
+        data-template="%d resultados encontrados">
+      </div>
+
+      
+      <div id="search-items" class="divide-border divide-y">
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="border-border bg-muted/20 border-t px-4 py-3">
+    <div
+      class="text-muted-foreground flex items-center justify-between text-xs">
+      <div class="flex items-center gap-2 md:gap-4">
+        <div class="flex items-center gap-1">
+          <kbd
+            class="bg-muted border-border rounded border px-1.5 py-0.5 text-xs"
+            >↑↓</kbd
+          >
+          <span class="hidden sm:inline"
+            >Navegar</span
+          >
+        </div>
+        <div class="flex items-center gap-1">
+          <kbd
+            class="bg-muted border-border rounded border px-1.5 py-0.5 text-xs"
+            >↵</kbd
+          >
+          <span class="hidden sm:inline"
+            >Selecionar</span
+          >
+        </div>
+        <div class="flex items-center gap-1">
+          <kbd
+            class="bg-muted border-border rounded border px-1.5 py-0.5 text-xs"
+            >ESC</kbd
+          >
+          <span class="hidden sm:inline"
+            >Fechar</span
+          >
+        </div>
+      </div>
+      <div class="search-hint-desktop flex items-center gap-1">
+        <kbd class="bg-muted border-border rounded border px-1.5 py-0.5 text-xs"
+          >⌘K</kbd
+        >
+        <span>Atalho</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

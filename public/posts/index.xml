@@ -6,14 +6,21 @@
     <description>Recent content in Posts on Alra</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing with Pytest - Fundamentals, Best Practices and Strategy</title>
+      <link>http://localhost:1313/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/</guid>
+      <description>&lt;!-- ![](testing-with-pytest.png) --&gt;&#xA;&lt;p&gt;Testing software is not just a technical development step, it&amp;rsquo;s a &lt;strong&gt;quality, confidence, and sustainability strategy&lt;/strong&gt;. Systems without tests tend to break frequently, create fear of changes, and drastically increase maintenance costs.&lt;/p&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll focus &lt;strong&gt;100% on theory&lt;/strong&gt;, explaining fundamental concepts of automated testing using &lt;strong&gt;Pytest&lt;/strong&gt;, the most popular testing framework in the Python ecosystem.&lt;/p&gt;&#xA;&#xA;  &lt;blockquote&#xA;    class=&#34;border-primary bg-muted/30 hover:bg-muted/40 my-6 rounded-r-lg border-l-4 py-4 pr-4 pl-6 italic transition-all duration-200 ease-out hover:translate-x-1&#34;&gt;&#xA;    &lt;div class=&#34;prose prose-sm max-w-none&#34;&gt;&#xA;      &lt;p&gt;👉 In the next post of the series, we&amp;rsquo;ll apply all of this to a &lt;strong&gt;real Flask project consuming the GitHub public API&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Understanding Mock and MagicMock in Python</title>
       <link>http://localhost:1313/posts/understanding-mock-and-magicmock-in-python/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/understanding-mock-and-magicmock-in-python/</guid>
-      <description>&lt;!-- ![](images/mock-magicmock.png) --&gt;&#xA;&lt;p&gt;This article was written so &lt;strong&gt;anyone can understand it&lt;/strong&gt; (if there is anything unclear, let me know so it can be improved), even if you are just getting started with testing in Python.&lt;/p&gt;&#xA;&lt;p&gt;We will explain &lt;strong&gt;what each concept is, why it exists, and when to use it&lt;/strong&gt;, always with practical examples and clear explanations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-what-is-a-mock-simple-explanation&#34;&gt;1. What is a Mock? (simple explanation)&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Mock&lt;/strong&gt; is a &lt;strong&gt;fake object&lt;/strong&gt;, created only for tests, that &lt;strong&gt;pretends to be a real object&lt;/strong&gt;.&lt;/p&gt;</description>
+      <description>&lt;!-- ![](mock-magicmock.png) --&gt;&#xA;&lt;p&gt;This article was written so &lt;strong&gt;anyone can understand it&lt;/strong&gt; (if there is anything unclear, let me know so it can be improved), even if you are just getting started with testing in Python.&lt;/p&gt;&#xA;&lt;p&gt;We will explain &lt;strong&gt;what each concept is, why it exists, and when to use it&lt;/strong&gt;, always with practical examples and clear explanations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-what-is-a-mock-simple-explanation&#34;&gt;1. What is a Mock? (simple explanation)&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Mock&lt;/strong&gt; is a &lt;strong&gt;fake object&lt;/strong&gt;, created only for tests, that &lt;strong&gt;pretends to be a real object&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
