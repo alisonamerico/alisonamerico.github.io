@@ -292,5 +292,5 @@ Testes automatizados não são um luxo, são uma **necessidade profissional**. P
 
 No próximo post da série, vamos **aplicar todos esses conceitos em um projeto Flask real**, consumindo a API pública do GitHub, com testes unitários, de integração, funcionais e de performance.
 
-👉 Continue para o **Post 2: Pytest na Prática com Flask e API do GitHub**
+👉 Continue para o **Post 2: [Testando APIs do GitHub com Pytest - Prática](https://alra.dev/pt/posts/testando-apis-do-github-com-pytest-pratica/)**
 
