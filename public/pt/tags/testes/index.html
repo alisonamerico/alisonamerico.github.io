@@ -9,15 +9,15 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<title>Testes com Pytest - Fundamentos, Boas Práticas e Estratégia | Alra</title>
+<title>Testes | Alra</title>
 
-<meta name="description" content="Guia teórico completo sobre testes automatizados com Pytest, cobrindo desde conceitos fundamentais até estratégias avançadas. Aprenda sobre pirâmide de testes,..." />
-<meta name="keywords" content="python, tests, pytest" />
+<meta name="description" content="Testes - Alra" />
+<meta name="keywords" content="" />
 <meta name="author" content="" />
 <meta name="language" content="pt" />
 
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="http://localhost:1313/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/" />
+<link rel="canonical" href="http://localhost:1313/pt/tags/testes/" />
 
 
 
@@ -27,33 +27,28 @@
 
 
 <link rel="manifest" href="/site.webmanifest" />
-<meta property="og:url" content="http://localhost:1313/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/">
+<meta property="og:url" content="http://localhost:1313/pt/tags/testes/">
   <meta property="og:site_name" content="Alra">
-  <meta property="og:title" content="Testes com Pytest - Fundamentos, Boas Práticas e Estratégia">
-  <meta property="og:description" content="Guia teórico completo sobre testes automatizados com Pytest, cobrindo desde conceitos fundamentais até estratégias avançadas. Aprenda sobre pirâmide de testes, padrão AAA, fixtures, mocks, markers e plugins essenciais para construir uma base sólida.">
+  <meta property="og:title" content="Testes">
   <meta property="og:locale" content="pt">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-01-30T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-01-30T00:00:00+00:00">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="Tests">
-    <meta property="article:tag" content="Pytest">
+  <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Testes com Pytest - Fundamentos, Boas Práticas e Estratégia">
-  <meta name="twitter:description" content="Guia teórico completo sobre testes automatizados com Pytest, cobrindo desde conceitos fundamentais até estratégias avançadas. Aprenda sobre pirâmide de testes, padrão AAA, fixtures, mocks, markers e plugins essenciais para construir uma base sólida.">
+  <meta name="twitter:title" content="Testes">
 
 
-  <meta itemprop="name" content="Testes com Pytest - Fundamentos, Boas Práticas e Estratégia">
-  <meta itemprop="description" content="Guia teórico completo sobre testes automatizados com Pytest, cobrindo desde conceitos fundamentais até estratégias avançadas. Aprenda sobre pirâmide de testes, padrão AAA, fixtures, mocks, markers e plugins essenciais para construir uma base sólida.">
-  <meta itemprop="datePublished" content="2026-01-30T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-01-30T00:00:00+00:00">
-  <meta itemprop="wordCount" content="777">
-  <meta itemprop="keywords" content="Python,Tests,Pytest">
+  <meta itemprop="name" content="Testes">
+  <meta itemprop="datePublished" content="2026-02-12T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-02-12T00:00:00+00:00">
 
 
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Alra"
+    href="http://localhost:1313/pt/tags/testes/index.xml" />
 
 
 
@@ -138,14 +133,9 @@
 
 
 
-    <script src="/js/gumshoe.polyfills.min.js"></script>
 
 
 
-          <script src="/js/navigation.js" defer></script>
-
-    
-          <script src="/js/sidebar-position.js" defer></script>
 
 
 
@@ -164,8 +154,6 @@
 
 
 
-
-  
 
 
 
@@ -768,34 +756,21 @@
 
         
           
-          <div class="flex items-center gap-1 md:gap-2 min-w-0">
+          
+            
             
               
-              <a
-                href="/pt/posts"
-                class="text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-0.5 md:gap-1 rounded-lg px-1 md:px-3 py-0.5 md:py-1.5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] flex-shrink-0">
-                
-                  <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+              <span class="text-foreground flex items-center gap-0.5 md:gap-1 font-medium flex-shrink-0">
+                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+		<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+		<circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+	</g>
 </svg>
-
-                  <span class="max-w-[3rem] md:max-w-none truncate">Artigos</span>
-                
-              </a>
-              <span class="text-muted-foreground/50 flex-shrink-0"
-                ><svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-</svg></span
-              >
+                <span class="max-w-[3rem] md:max-w-none truncate">Tags</span>
+              </span>
             
-            
-            <span class="text-foreground flex items-center gap-0.5 md:gap-1 font-medium min-w-0">
-              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-</svg>
-              <span class="max-w-[8rem] md:max-w-[16rem] lg:max-w-none truncate">Testes com Pytest - Fundamentos, Boas Práticas e Estratégia</span>
-            </span>
-          </div>
+          
         
       </li>
     
@@ -805,446 +780,55 @@
 
 
 
-  <div class="mb-8 overflow-hidden rounded-2xl">
-        <img
-          src="/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/testing-with-pytest.png"
-          alt="Testes com Pytest - Fundamentos, Boas Práticas e Estratégia"
-          class="h-64 w-full object-cover md:h-80"
-          loading="eager"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-        
-        <div class="from-blue-500/20 to-purple-500/10 relative h-64 md:h-80 w-full bg-gradient-to-br" style="display: none;">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="flex h-24 w-24 items-center justify-center rounded-full border border-white/30 bg-white/20 backdrop-blur-sm">
-              <span class="text-3xl font-bold text-white">T</span>
-            </div>
-          </div>
-          
-          <div class="absolute top-8 right-8 h-20 w-20 rounded-full bg-white/15"></div>
-          <div class="absolute bottom-8 left-8 h-16 w-16 rounded-full bg-white/20"></div>
-        </div>
-      </div>
-
-
-  
-  
-
-
-
-
-
-
-
-
-
   
   <header class="mb-8">
-    
-
-
-<div class="post-meta">
-  
-  <h1 class="text-foreground mb-6 text-3xl leading-tight font-bold md:text-4xl">
-    Testes com Pytest - Fundamentos, Boas Práticas e Estratégia
-  </h1>
-
-  
-  
-
-
-  
-  <div class="bg-card border-border flex flex-col gap-4 rounded-xl border p-6">
-    
-    <div
-      class="text-muted-foreground flex flex-wrap items-center gap-4 text-sm">
+    <div class="mb-4 flex items-center gap-3">
       
-      <div class="flex items-center gap-2">
-        <svg class="h-4 w-4" aria-label="Publicado em" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-        <time datetime="2026-01-30">
-          30 de janeiro de 2026
-        </time>
-      </div>
-
-      
-      
-
-
-      
-      
-        <div class="flex items-center gap-2">
-          <svg class="h-4 w-4" aria-label="Tempo de leitura" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-          <span
-            >4 minuto</span
-          >
-        </div>
-      
-
-
-      
-      
-        <div class="flex items-center gap-2">
-          <svg class="h-4 w-4" aria-label="Contagem de palavras" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-</svg>
-
-          <span>777 palavras</span>
-        </div>
-      
-
-    </div>
-
-    
-    
-    
-      <div class="flex flex-wrap items-center gap-4">
-        
-        
-
-        
-        
-          <div class="flex items-center gap-2">
-            <svg class="h-4 w-4" aria-label="Categorias" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-</svg>
-            <span class="text-muted-foreground mr-2 text-sm"
-              >Categorias:</span
-            >
-            <div class="flex flex-wrap gap-2">
-              
-                <a
-                  href="/pt/categories/testing/"
-                  class="bg-primary/10 text-primary hover:bg-primary/20 focus:ring-primary/20 inline-flex items-center rounded-full px-3 py-1 text-sm font-medium transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 hover:shadow-md focus:ring-2 focus:outline-none">
-                  testing
-                </a>
-              
-            </div>
-          </div>
-        
-
-
-        
-        
-          <div class="flex items-center gap-2">
-            <svg class="h-4 w-4" aria-label="Tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
 		<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
 		<circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
 	</g>
 </svg>
-            <span class="text-muted-foreground mr-2 text-sm"
-              >Tags:</span
-            >
-            <div class="flex flex-wrap gap-2">
-              
-                <a
-                  href="/pt/tags/python/"
-                  class="bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary focus:ring-primary/20 inline-flex items-center rounded px-2 py-1 text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
-                  #python
-                </a>
-              
-                <a
-                  href="/pt/tags/tests/"
-                  class="bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary focus:ring-primary/20 inline-flex items-center rounded px-2 py-1 text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
-                  #tests
-                </a>
-              
-                <a
-                  href="/pt/tags/pytest/"
-                  class="bg-muted/50 text-muted-foreground hover:bg-primary/10 hover:text-primary focus:ring-primary/20 inline-flex items-center rounded px-2 py-1 text-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
-                  #pytest
-                </a>
-              
-            </div>
-          </div>
+      
+      <h1 class="text-foreground text-3xl font-bold">
+        Testes
+      </h1>
+    </div>
+
+    
+      <p class="text-muted-foreground mb-6">
         
+          Todos os artigos sob a tag &#34;Testes&#34;
+        
+      </p>
+    
 
+
+    
+    <div class="text-muted-foreground flex items-center gap-4 text-sm">
+      <div class="flex items-center gap-1">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+</svg>
+        <span
+          >1 artigos no total</span
+        >
       </div>
-    
+      <div class="flex items-center gap-1">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
 
-
-    
-    
-
-  </div>
-</div>
-
+        <span>Ordenado por data</span>
+      </div>
+    </div>
   </header>
 
   
-  <article class="prose prose-neutral dark:prose-invert mb-12 max-w-none">
-    <!-- ![](testing-with-pytest.png) -->
-<p>Testar software não é apenas uma etapa técnica do desenvolvimento é uma <strong>estratégia de qualidade, confiança e sustentabilidade</strong>. Sistemas sem testes tendem a quebrar com frequência, gerar medo de mudanças e aumentar drasticamente o custo de manutenção.</p>
-<p>Neste post, vamos focar <strong>100% na teoria</strong>, explicando conceitos fundamentais de testes automatizados usando <strong>Pytest</strong>, o framework de testes mais popular do ecossistema Python.</p>
-
-  <blockquote
-    class="border-primary bg-muted/30 hover:bg-muted/40 my-6 rounded-r-lg border-l-4 py-4 pr-4 pl-6 italic transition-all duration-200 ease-out hover:translate-x-1">
-    <div class="prose prose-sm max-w-none">
-      <p>👉 No próximo post da série, aplicaremos tudo isso em um <strong>projeto Flask real consumindo a API pública do GitHub</strong>.</p>
-
-    </div>
-  </blockquote><script>
-function toggleAlert(alertId) {
-  const content = document.getElementById(alertId + '-content');
-  const chevron = document.getElementById(alertId + '-chevron');
-  const header = content.previousElementSibling;
-  
-  if (content.classList.contains('hidden')) {
-    content.classList.remove('hidden');
-    chevron.style.transform = 'rotate(0deg)';
-    header.setAttribute('aria-expanded', 'true');
-  } else {
-    content.classList.add('hidden');
-    chevron.style.transform = 'rotate(-90deg)';
-    header.setAttribute('aria-expanded', 'false');
-  }
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const collapsedAlerts = document.querySelectorAll('.alert-content.hidden');
-  collapsedAlerts.forEach(function(content) {
-    const alertId = content.id.replace('-content', '');
-    const chevron = document.getElementById(alertId + '-chevron');
-    if (chevron) {
-      chevron.style.transform = 'rotate(-90deg)';
-    }
-  });
-});
-</script>
-
-<hr>
-<h2 id="o-que-é-pytest">O que é Pytest?</h2>
-<p>Pytest é um framework de testes para Python que facilita a criação de testes simples, legíveis e escaláveis. Ele permite testar desde funções isoladas até sistemas completos.</p>
-<h3 id="por-que-pytest-é-tão-usado">Por que Pytest é tão usado?</h3>
-<ul>
-<li>Sintaxe simples (baseada em <code>assert</code>)</li>
-<li>Descoberta automática de testes</li>
-<li>Sistema poderoso de <strong>fixtures</strong></li>
-<li>Excelente suporte a <strong>plugins</strong></li>
-<li>Escala bem para projetos grandes</li>
-</ul>
-<p>Comparado ao <code>unittest</code>, o Pytest é mais expressivo, menos verboso e mais produtivo.</p>
-<hr>
-<h2 id="qual-é-o-objetivo-dos-testes">Qual é o objetivo dos testes?</h2>
-<p>Testes existem para <strong>reduzir incerteza</strong>.</p>
-<p>Eles ajudam a:</p>
-<ul>
-<li>Garantir que o código funciona como esperado</li>
-<li>Detectar erros rapidamente</li>
-<li>Evitar regressões</li>
-<li>Permitir refatorações seguras</li>
-<li>Servir como documentação viva do sistema</li>
-</ul>
-<p>Um código sem testes pode até funcionar hoje, mas é frágil amanhã.</p>
-<hr>
-<h2 id="quando-escrever-testes">Quando escrever testes?</h2>
-<ul>
-<li>Ao criar novas funcionalidades</li>
-<li>Ao corrigir bugs (especialmente regressões)</li>
-<li>Antes de refatorar código existente</li>
-<li>Em código crítico para o negócio</li>
-</ul>
-<h3 id="e-quando-não-escrever-testes">E quando NÃO escrever testes?</h3>
-<ul>
-<li>Provas de conceito muito rápidas (POCs)</li>
-<li>Scripts totalmente descartáveis</li>
-</ul>
-<p>Mesmo nesses casos, testes ainda podem trazer benefícios.</p>
-<hr>
-<h2 id="tipos-de-testes">Tipos de Testes</h2>
-<p>Entender os tipos de testes é essencial para criar uma <strong>estratégia equilibrada</strong>.</p>
-<h3 id="testes-unitários">Testes Unitários</h3>
-<ul>
-<li>Testam funções ou métodos isolados</li>
-<li>Não acessam banco, rede ou sistema de arquivos</li>
-<li>São rápidos e baratos</li>
-</ul>
-<p>✔️ Base da pirâmide de testes</p>
-<hr>
-<h3 id="testes-de-integração">Testes de Integração</h3>
-<ul>
-<li>Testam a comunicação entre componentes</li>
-<li>Exemplo: aplicação + banco, aplicação + API externa</li>
-</ul>
-<p>✔️ Detectam falhas reais de integração
-❌ Mais lentos</p>
-<hr>
-<h3 id="testes-funcionais">Testes Funcionais</h3>
-<ul>
-<li>Testam fluxos completos da aplicação</li>
-<li>Simulam o comportamento do usuário</li>
-</ul>
-<p>✔️ Alta confiança
-❌ Mais complexos</p>
-<hr>
-<h3 id="testes-de-sistema--end-to-end-e2e">Testes de Sistema / End-to-End (E2E)</h3>
-<ul>
-<li>Testam o sistema como um todo</li>
-<li>Incluem múltiplas camadas</li>
-</ul>
-<p>✔️ Simulam uso real
-❌ Lentos e frágeis</p>
-<hr>
-<h3 id="testes-de-regressão">Testes de Regressão</h3>
-<ul>
-<li>Garantem que bugs corrigidos não voltem</li>
-<li>Normalmente surgem após incidentes reais</li>
-</ul>
-<p>✔️ Protegem contra erros reincidentes</p>
-<hr>
-<h3 id="testes-de-performance">Testes de Performance</h3>
-<ul>
-<li>Avaliam tempo de resposta e consumo de recursos</li>
-<li>Identificam gargalos</li>
-</ul>
-<p>✔️ Importantes em sistemas críticos
-❌ Devem ser usados com critério</p>
-<hr>
-<h2 id="a-pirâmide-de-testes">A Pirâmide de Testes</h2>
-<p>Uma boa estratégia de testes segue a pirâmide:</p>
-<ul>
-<li>Muitos testes unitários</li>
-<li>Alguns testes de integração</li>
-<li>Poucos testes E2E</li>
-</ul>
-<p>Isso garante velocidade, confiança e custo controlado.</p>
-<hr>
-<h2 id="o-padrão-aaa-arrange-act-assert">O padrão AAA (Arrange, Act, Assert)</h2>
-<p>AAA é um padrão de organização de testes que melhora drasticamente a legibilidade.</p>
-<h3 id="arrange">Arrange</h3>
-<p>Preparar dados, mocks e contexto.</p>
-<h3 id="act">Act</h3>
-<p>Executar a ação que está sendo testada.</p>
-<h3 id="assert">Assert</h3>
-<p>Validar o resultado.</p>
-<h3 id="benefícios">Benefícios</h3>
-<ul>
-<li>Testes mais claros</li>
-<li>Menos ambiguidade</li>
-<li>Manutenção mais fácil</li>
-</ul>
-<hr>
-<h2 id="fixtures-no-pytest">Fixtures no Pytest</h2>
-<p>Fixtures são funções reutilizáveis responsáveis por <strong>preparar e limpar o ambiente de testes</strong>.</p>
-<h3 id="por-que-usar-fixtures">Por que usar fixtures?</h3>
-<ul>
-<li>Evitam duplicação de código</li>
-<li>Centralizam setup/teardown</li>
-<li>Tornam os testes mais legíveis</li>
-</ul>
-<h3 id="escopos-de-fixtures">Escopos de fixtures</h3>
-<ul>
-<li><code>function</code>: padrão (executa a cada teste)</li>
-<li><code>module</code>: uma vez por arquivo</li>
-<li><code>session</code>: uma vez por execução</li>
-</ul>
-<hr>
-<h2 id="pytest-marks">Pytest Marks</h2>
-<p>Marks permitem <strong>classificar e controlar</strong> testes.</p>
-<h3 id="parametrize">parametrize</h3>
-<p>Permite rodar o mesmo teste com vários dados.</p>
-<p><strong>Benefícios:</strong></p>
-<ul>
-<li>Menos código</li>
-<li>Mais cobertura</li>
-<li>Testes mais expressivos</li>
-</ul>
-<hr>
-<h3 id="skip">skip</h3>
-<p>Ignora testes conscientemente.</p>
-<p><strong>Quando usar:</strong></p>
-<ul>
-<li>Dependência externa indisponível</li>
-<li>Funcionalidade desativada</li>
-</ul>
-<hr>
-<h3 id="xfail">xfail</h3>
-<p>Marca testes que <strong>devem falhar</strong>.</p>
-<p><strong>Benefícios:</strong></p>
-<ul>
-<li>Documenta bugs conhecidos</li>
-<li>Não quebra o pipeline</li>
-</ul>
-<hr>
-<h3 id="slow">slow</h3>
-<p>Marca testes lentos.</p>
-<p><strong>Benefícios:</strong></p>
-<ul>
-<li>Execução seletiva</li>
-<li>Feedback rápido no dia a dia</li>
-</ul>
-<hr>
-<h2 id="o-que-é-mock">O que é Mock?</h2>
-<p>Mock é uma técnica usada para <strong>simular dependências externas</strong>.</p>
-<h3 id="quando-usar-mock">Quando usar mock?</h3>
-<ul>
-<li>APIs externas</li>
-<li>Banco de dados</li>
-<li>Serviços de terceiros</li>
-</ul>
-<h3 id="quando-não-usar">Quando NÃO usar?</h3>
-<ul>
-<li>Para testar lógica interna</li>
-<li>Em excesso (overmocking)</li>
-</ul>
-<hr>
-<h2 id="unittestmock-vs-pytest-mock">unittest.mock vs pytest-mock</h2>
-<h3 id="unittestmock">unittest.mock</h3>
-<ul>
-<li>Biblioteca padrão do Python</li>
-<li>Mais verbosa</li>
-<li>Usa context managers</li>
-</ul>
-<p>✔️ Não depende de plugins
-❌ Código mais difícil de ler</p>
-<hr>
-<h3 id="pytest-mock">pytest-mock</h3>
-<ul>
-<li>Plugin do Pytest</li>
-<li>Integração com fixtures</li>
-<li>Sintaxe mais limpa</li>
-</ul>
-<p>✔️ Mais produtivo
-✔️ Mais legível</p>
-<hr>
-<h2 id="plugins-essenciais-do-pytest">Plugins Essenciais do Pytest</h2>
-<h3 id="pytest-cov">pytest-cov</h3>
-<ul>
-<li>Mede cobertura de código</li>
-<li>Ajuda a identificar áreas não testadas</li>
-</ul>
-<p>⚠️ Cobertura alta ≠ código de qualidade</p>
-<hr>
-<h3 id="pytest-mock-1">pytest-mock</h3>
-<ul>
-<li>Facilita criação de mocks</li>
-<li>Reduz boilerplate</li>
-</ul>
-<hr>
-<h2 id="boas-práticas-gerais">Boas Práticas Gerais</h2>
-<ul>
-<li>Testes devem ser simples</li>
-<li>Um comportamento por teste</li>
-<li>Nomes claros e descritivos</li>
-<li>Evite lógica complexa nos testes</li>
-<li>Testes devem ser determinísticos</li>
-</ul>
-<hr>
-<h2 id="conclusão">Conclusão</h2>
-<p>Testes automatizados não são um luxo, são uma <strong>necessidade profissional</strong>. Pytest fornece as ferramentas certas para escrever testes claros, escaláveis e confiáveis.</p>
-<p>No próximo post da série, vamos <strong>aplicar todos esses conceitos em um projeto Flask real</strong>, consumindo a API pública do GitHub, com testes unitários, de integração, funcionais e de performance.</p>
-<p>👉 Continue para o <strong>Post 2: Pytest na Prática com Flask e API do GitHub</strong></p>
-
-  </article>
-
   
   
+    
 
 
 
@@ -1253,310 +837,193 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+  <section class="post-list">
+    
+    
 
 
-
-
-
-
-  <div class="post-license bg-muted/30 border-border mb-8 rounded-xl border p-6">
-    <div class="flex items-start gap-4">
+    
+    <div class="space-y-4">
       
-      <div
-        class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
-        <svg class="h-6 w-6" aria-label="许可证" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-</svg>
+        
+
+
+
+
+<article class="group">
+  <a href="/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      
+      <div class="block md:hidden">
+        <div class="aspect-[2/1] overflow-hidden">
+    <img
+      src="testing-with-pytest-practice.png"
+      alt="Testando APIs do GitHub com Pytest — Prática"
+      class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      loading="lazy"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+    
+    <div class="from-indigo-500/20 to-purple-500/10 relative aspect-[2/1] overflow-hidden bg-gradient-to-br" style="display: none; background-blend-mode: overlay; background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);">
+      
+      <div class="absolute inset-0">
+        
+          
+          
+          <div class="absolute left-[20%] top-[20%] h-5 w-5 rotate-45 border-2 border-white/80 bg-white/15"></div>
+          
+          <div class="absolute right-[25%] top-[25%] h-4 w-4 rotate-12 border border-white/70 bg-white/12"></div>
+          
+          <div class="absolute left-[30%] bottom-[30%] h-3 w-3 rotate-60 border border-white/60 bg-white/10"></div>
+          
+          <div class="absolute right-[20%] bottom-[20%] h-4 w-4 rotate-30 border border-white/65 bg-white/13"></div>
+          
+          <div class="absolute left-[45%] top-[45%] h-2 w-2 rotate-45 border border-white/50 bg-white/8"></div>
+          
+          <div class="absolute left-[15%] top-[40%] h-0.5 w-8 rotate-45 bg-white/40"></div>
+          <div class="absolute right-[15%] top-[35%] h-0.5 w-6 rotate-12 bg-white/35"></div>
+          <div class="absolute left-[40%] bottom-[15%] h-0.5 w-5 -rotate-30 bg-white/30"></div>
+          
+          <div class="absolute top-[35%] right-[40%] h-2 w-2 rounded-full bg-white/35"></div>
+          <div class="absolute bottom-[40%] left-[35%] h-1.5 w-1.5 rounded-full bg-white/30"></div>
+          <div class="absolute top-[50%] left-[50%] h-1 w-1 rounded-full bg-white/25"></div>
+        
+      </div>
+    </div>
+  
+</div>
       </div>
 
       
-      <div class="flex-1 min-w-0">
-        <h3 class="text-foreground mb-2 text-lg font-semibold">
-          Copyright Notice
+      <div class="absolute top-0 right-0 hidden h-full w-80 transition-opacity duration-300 group-hover:opacity-90 md:block">
+        <div class="h-full w-full">
+    <img
+      src="testing-with-pytest-practice.png"
+      alt="Testando APIs do GitHub com Pytest — Prática"
+      class="h-full w-full object-cover"
+      loading="lazy"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+    
+    <div class="from-indigo-500/20 to-purple-500/10 relative h-full w-full overflow-hidden bg-gradient-to-br" style="display: none; background-blend-mode: overlay; background-color: color-mix(in srgb, var(--color-primary) 15%, transparent);">
+      
+      <div class="absolute inset-0">
+        
+          
+          
+          <div class="absolute left-[20%] top-[20%] h-5 w-5 rotate-45 border-2 border-white/80 bg-white/15"></div>
+          
+          <div class="absolute right-[25%] top-[25%] h-4 w-4 rotate-12 border border-white/70 bg-white/12"></div>
+          
+          <div class="absolute left-[30%] bottom-[30%] h-3 w-3 rotate-60 border border-white/60 bg-white/10"></div>
+          
+          <div class="absolute right-[20%] bottom-[20%] h-4 w-4 rotate-30 border border-white/65 bg-white/13"></div>
+          
+          <div class="absolute left-[45%] top-[45%] h-2 w-2 rotate-45 border border-white/50 bg-white/8"></div>
+          
+          <div class="absolute left-[15%] top-[40%] h-0.5 w-8 rotate-45 bg-white/40"></div>
+          <div class="absolute right-[15%] top-[35%] h-0.5 w-6 rotate-12 bg-white/35"></div>
+          <div class="absolute left-[40%] bottom-[15%] h-0.5 w-5 -rotate-30 bg-white/30"></div>
+          
+          <div class="absolute top-[35%] right-[40%] h-2 w-2 rounded-full bg-white/35"></div>
+          <div class="absolute bottom-[40%] left-[35%] h-1.5 w-1.5 rounded-full bg-white/30"></div>
+          <div class="absolute top-[50%] left-[50%] h-1 w-1 rounded-full bg-white/25"></div>
+        
+      </div>
+    </div>
+  
+</div>
+      </div>
+
+      
+      <div class="absolute top-0 right-0 hidden h-full w-80 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block bg-linear-to-l from-primary/5"></div>
+
+      
+      <div class="relative z-10 flex flex-1 flex-col p-6 md:pr-84">
+        
+        <h3 class="text-foreground group-hover:text-primary mb-4 text-lg font-semibold leading-tight transition-colors duration-200">
+          Testando APIs do GitHub com Pytest — Prática
         </h3>
 
-        <div class="text-muted-foreground space-y-2 text-sm">
-          
-          
-
-          
-          <p>
-            <strong>Link:</strong>
-            <a
-              href="http://localhost:1313/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/"
-              class="text-primary hover:text-primary/80 transition-colors break-all hyphens-auto duration-200">
-              http://localhost:1313/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/
-            </a>
+        
+        
+          <p class="text-muted-foreground mb-4 text-sm leading-relaxed">
+            Guia completo e prático para testar APIs do GitHub com Pytest. Domine testes unitários, de integração, mocking, fixtures e testes de performance com exemplos do mundo real. Aprenda padrões profissionais de teste e construa suítes robustas para suas aplicações.
           </p>
+        
 
+        
+        <div class="mt-auto text-sm text-muted-foreground">
           
-          <p>
-            <strong>Licença:</strong>
+          <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1.5">
+              <svg class="h-4 w-4" aria-label="Publicado em" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+              <time datetime="2026-02-12" class="font-medium">
+                12 de janeiro de 2026
+              </time>
+            </div>
             
-              <a
-                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-primary hover:text-primary/80 transition-colors duration-200">
-                知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议
-              </a>
+              <div class="flex items-center gap-1.5">
+                <svg class="h-4 w-4" aria-label="Tempo de leitura" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+                <span class="font-medium">18 minuto</span>
+              </div>
             
-          </p>
+          </div>
 
           
           
-          <p class="text-xs">
-            本作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可。
-          </p>
+            <div class="flex flex-wrap items-center gap-1.5 mt-2">
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">python</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">testes</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">pytest</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">github</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">mock</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-1">
+                  <span class="font-medium">flask</span>
+                </span>
+              
+            </div>
           
         </div>
       </div>
     </div>
-  </div>
-
-
-
-  
-  
-
-
-
-
-
-  <nav
-    class="post-navigation mb-12"
-    aria-label="Navegação de Artigos">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+  </a>
+</article>
       
-      <div class="nav-item">
-        
-          <a
-            href="/pt/posts/entendendo-mock-e-magicmock-em-python/"
-            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-            <div>
-              <div class="mb-3 flex items-center gap-3">
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-</svg>
-                <span class="text-muted-foreground text-sm font-medium">
-                  Anterior
-                </span>
-              </div>
-
-              <h3
-                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-lg leading-tight font-semibold transition-colors duration-200">
-                Entendendo Mock e MagicMock em Python
-              </h3>
-            </div>
-
-            <div
-              class="text-muted-foreground mt-auto flex items-center gap-2 text-xs">
-              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-              <time datetime="2026-01-13">
-                13 jan
-              </time>
-            </div>
-          </a>
-        
-      </div>
-
-      
-      <div class="nav-item">
-        
-          <a
-            href="/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/"
-            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-            <div>
-              <div class="mb-3 flex items-center justify-end gap-3">
-                <span class="text-muted-foreground text-sm font-medium">
-                  Próximo
-                </span>
-                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-</svg>
-              </div>
-
-              <h3
-                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-right text-lg leading-tight font-semibold transition-colors duration-200">
-                Testando APIs do GitHub com Pytest — Prática
-              </h3>
-            </div>
-
-            <div
-              class="text-muted-foreground mt-auto flex items-center justify-end gap-2 text-xs">
-              <time datetime="2026-02-12">
-                12 jan
-              </time>
-              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            </div>
-          </a>
-        
-      </div>
-    </div>
-  </nav>
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-  <section class="related-posts mb-12">
-    
-    <div class="mb-6 flex items-center gap-3">
-      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-</svg>
-      <h2 class="text-foreground text-2xl font-bold">
-        Artigos Relacionados
-      </h2>
     </div>
 
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-      
-        <article class="group">
-          <a href="/pt/posts/entendendo-mock-e-magicmock-em-python/" class="block">
-            <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex items-center rounded-xl border p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none min-h-[120px]">
-              <h3 class="text-foreground group-hover:text-primary text-lg font-semibold leading-snug line-clamp-3 w-full">
-                Entendendo Mock e MagicMock em Python
-              </h3>
-            </div>
-          </a>
-        </article>
-      
-    </div>
+    
+
   </section>
 
 
-
-
-  
   
 
 
     </main>
 
     
-        
-
-
-  
-
-  
-
-  
-  <aside
-    id="toc-sidebar"
-    class="toc-sidebar hidden xl:block fixed toc-sidebar-left"
-    style="max-width: 280px; max-height: 80vh;"
-    aria-label="Navegação no índice">
-
-    
-    <div class="mb-4 flex items-center gap-2">
-      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <line x1="8" x2="21" y1="6" y2="6"/>
-  <line x1="8" x2="21" y1="12" y2="12"/>
-  <line x1="8" x2="21" y1="18" y2="18"/>
-  <line x1="3" x2="3.01" y1="6" y2="6"/>
-  <line x1="3" x2="3.01" y1="12" y2="12"/>
-  <line x1="3" x2="3.01" y1="18" y2="18"/>
-</svg>
-
-      <h2 class="text-foreground text-sm font-semibold">
-        Índice
-      </h2>
-    </div>
-
-    
-    <nav
-      id="toc-sidebar-content"
-      class="toc-sidebar-scroll overflow-y-auto pr-2"
-      style="max-height: calc(80vh - 3rem);">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#o-que-é-pytest">O que é Pytest?</a>
-      <ul>
-        <li><a href="#por-que-pytest-é-tão-usado">Por que Pytest é tão usado?</a></li>
-      </ul>
-    </li>
-    <li><a href="#qual-é-o-objetivo-dos-testes">Qual é o objetivo dos testes?</a></li>
-    <li><a href="#quando-escrever-testes">Quando escrever testes?</a>
-      <ul>
-        <li><a href="#e-quando-não-escrever-testes">E quando NÃO escrever testes?</a></li>
-      </ul>
-    </li>
-    <li><a href="#tipos-de-testes">Tipos de Testes</a>
-      <ul>
-        <li><a href="#testes-unitários">Testes Unitários</a></li>
-        <li><a href="#testes-de-integração">Testes de Integração</a></li>
-        <li><a href="#testes-funcionais">Testes Funcionais</a></li>
-        <li><a href="#testes-de-sistema--end-to-end-e2e">Testes de Sistema / End-to-End (E2E)</a></li>
-        <li><a href="#testes-de-regressão">Testes de Regressão</a></li>
-        <li><a href="#testes-de-performance">Testes de Performance</a></li>
-      </ul>
-    </li>
-    <li><a href="#a-pirâmide-de-testes">A Pirâmide de Testes</a></li>
-    <li><a href="#o-padrão-aaa-arrange-act-assert">O padrão AAA (Arrange, Act, Assert)</a>
-      <ul>
-        <li><a href="#arrange">Arrange</a></li>
-        <li><a href="#act">Act</a></li>
-        <li><a href="#assert">Assert</a></li>
-        <li><a href="#benefícios">Benefícios</a></li>
-      </ul>
-    </li>
-    <li><a href="#fixtures-no-pytest">Fixtures no Pytest</a>
-      <ul>
-        <li><a href="#por-que-usar-fixtures">Por que usar fixtures?</a></li>
-        <li><a href="#escopos-de-fixtures">Escopos de fixtures</a></li>
-      </ul>
-    </li>
-    <li><a href="#pytest-marks">Pytest Marks</a>
-      <ul>
-        <li><a href="#parametrize">parametrize</a></li>
-        <li><a href="#skip">skip</a></li>
-        <li><a href="#xfail">xfail</a></li>
-        <li><a href="#slow">slow</a></li>
-      </ul>
-    </li>
-    <li><a href="#o-que-é-mock">O que é Mock?</a>
-      <ul>
-        <li><a href="#quando-usar-mock">Quando usar mock?</a></li>
-        <li><a href="#quando-não-usar">Quando NÃO usar?</a></li>
-      </ul>
-    </li>
-    <li><a href="#unittestmock-vs-pytest-mock">unittest.mock vs pytest-mock</a>
-      <ul>
-        <li><a href="#unittestmock">unittest.mock</a></li>
-        <li><a href="#pytest-mock">pytest-mock</a></li>
-      </ul>
-    </li>
-    <li><a href="#plugins-essenciais-do-pytest">Plugins Essenciais do Pytest</a>
-      <ul>
-        <li><a href="#pytest-cov">pytest-cov</a></li>
-        <li><a href="#pytest-mock-1">pytest-mock</a></li>
-      </ul>
-    </li>
-    <li><a href="#boas-práticas-gerais">Boas Práticas Gerais</a></li>
-    <li><a href="#conclusão">Conclusão</a></li>
-  </ul>
-</nav>
-    </nav>
-  </aside>
-
-
 
     <footer class="mx-auto max-w-4xl px-4 py-8">
   <div class="px-6 py-6">
@@ -1688,31 +1155,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
 
-        
-
-        
-
-        <button
-          id="dock-navigation"
-          class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 xs:px-2 xs:py-1.5 flex flex-shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none sm:px-3 sm:py-2 "
-          title="Índice"
-          aria-label="Índice">
-          <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <line x1="8" x2="21" y1="6" y2="6"/>
-  <line x1="8" x2="21" y1="12" y2="12"/>
-  <line x1="8" x2="21" y1="18" y2="18"/>
-  <line x1="3" x2="3.01" y1="6" y2="6"/>
-  <line x1="3" x2="3.01" y1="12" y2="12"/>
-  <line x1="3" x2="3.01" y1="18" y2="18"/>
-</svg>
-
-          <span class="hidden sm:inline">Índice</span>
-        </button>
-
-        
-        <div class="bg-border xs:mx-1 mx-2 h-6 w-px sm:mx-2 "></div>
-    
-
 
     
     <button
@@ -1759,161 +1201,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     
-      
-
-
-
-
-
-
-
-
-
-
-  
-  <div
-    id="navigation-overlay"
-    class="pointer-events-none fixed inset-0 z-40 bg-black/50 opacity-0 backdrop-blur-sm transition-all duration-300 "
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="navigation-title"></div>
-
-  
-  <div
-    id="navigation-card"
-    class="pointer-events-none fixed inset-4 z-50 flex w-auto scale-95 items-center justify-center opacity-0 transition-all duration-300 sm:inset-auto sm:top-1/2 sm:left-1/2 sm:block sm:w-full sm:max-w-md sm:-translate-x-1/2 sm:-translate-y-1/2 "
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="navigation-title">
-    <div
-      class="bg-card border-border w-full max-w-sm overflow-hidden rounded-xl border shadow-xl sm:max-w-md">
-      
-      <div
-        class="border-border bg-muted/30 flex items-center justify-between border-b p-4">
-        <div class="flex items-center gap-3">
-          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <line x1="8" x2="21" y1="6" y2="6"/>
-  <line x1="8" x2="21" y1="12" y2="12"/>
-  <line x1="8" x2="21" y1="18" y2="18"/>
-  <line x1="3" x2="3.01" y1="6" y2="6"/>
-  <line x1="3" x2="3.01" y1="12" y2="12"/>
-  <line x1="3" x2="3.01" y1="18" y2="18"/>
-</svg>
-
-          <h2 id="navigation-title" class="text-foreground text-lg font-semibold">
-            
-              Índice
-            
-          </h2>
-        </div>
-
-        
-        <button
-          id="navigation-close"
-          class="text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 rounded-lg p-2 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          title="Close"
-          aria-label="Close">
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-</svg>
-
-        </button>
-      </div>
-
-      
-
-      
-      <div class="max-h-96 overflow-y-auto p-4">
-        
-        <nav
-          id="nav-content-toc"
-          class="nav-content block"
-          aria-label="Navegação no índice">
-            <div id="toc-content">
-              <nav id="TableOfContents">
-  <ul>
-    <li><a href="#o-que-é-pytest">O que é Pytest?</a>
-      <ul>
-        <li><a href="#por-que-pytest-é-tão-usado">Por que Pytest é tão usado?</a></li>
-      </ul>
-    </li>
-    <li><a href="#qual-é-o-objetivo-dos-testes">Qual é o objetivo dos testes?</a></li>
-    <li><a href="#quando-escrever-testes">Quando escrever testes?</a>
-      <ul>
-        <li><a href="#e-quando-não-escrever-testes">E quando NÃO escrever testes?</a></li>
-      </ul>
-    </li>
-    <li><a href="#tipos-de-testes">Tipos de Testes</a>
-      <ul>
-        <li><a href="#testes-unitários">Testes Unitários</a></li>
-        <li><a href="#testes-de-integração">Testes de Integração</a></li>
-        <li><a href="#testes-funcionais">Testes Funcionais</a></li>
-        <li><a href="#testes-de-sistema--end-to-end-e2e">Testes de Sistema / End-to-End (E2E)</a></li>
-        <li><a href="#testes-de-regressão">Testes de Regressão</a></li>
-        <li><a href="#testes-de-performance">Testes de Performance</a></li>
-      </ul>
-    </li>
-    <li><a href="#a-pirâmide-de-testes">A Pirâmide de Testes</a></li>
-    <li><a href="#o-padrão-aaa-arrange-act-assert">O padrão AAA (Arrange, Act, Assert)</a>
-      <ul>
-        <li><a href="#arrange">Arrange</a></li>
-        <li><a href="#act">Act</a></li>
-        <li><a href="#assert">Assert</a></li>
-        <li><a href="#benefícios">Benefícios</a></li>
-      </ul>
-    </li>
-    <li><a href="#fixtures-no-pytest">Fixtures no Pytest</a>
-      <ul>
-        <li><a href="#por-que-usar-fixtures">Por que usar fixtures?</a></li>
-        <li><a href="#escopos-de-fixtures">Escopos de fixtures</a></li>
-      </ul>
-    </li>
-    <li><a href="#pytest-marks">Pytest Marks</a>
-      <ul>
-        <li><a href="#parametrize">parametrize</a></li>
-        <li><a href="#skip">skip</a></li>
-        <li><a href="#xfail">xfail</a></li>
-        <li><a href="#slow">slow</a></li>
-      </ul>
-    </li>
-    <li><a href="#o-que-é-mock">O que é Mock?</a>
-      <ul>
-        <li><a href="#quando-usar-mock">Quando usar mock?</a></li>
-        <li><a href="#quando-não-usar">Quando NÃO usar?</a></li>
-      </ul>
-    </li>
-    <li><a href="#unittestmock-vs-pytest-mock">unittest.mock vs pytest-mock</a>
-      <ul>
-        <li><a href="#unittestmock">unittest.mock</a></li>
-        <li><a href="#pytest-mock">pytest-mock</a></li>
-      </ul>
-    </li>
-    <li><a href="#plugins-essenciais-do-pytest">Plugins Essenciais do Pytest</a>
-      <ul>
-        <li><a href="#pytest-cov">pytest-cov</a></li>
-        <li><a href="#pytest-mock-1">pytest-mock</a></li>
-      </ul>
-    </li>
-    <li><a href="#boas-práticas-gerais">Boas Práticas Gerais</a></li>
-    <li><a href="#conclusão">Conclusão</a></li>
-  </ul>
-</nav>
-            </div>
-        </nav>
-
-        
-      </div>
-
-      
-      <div class="border-border bg-muted/20 border-t px-4 py-3">
-        <div class="text-muted-foreground text-center text-xs">
-          <span>点击标题快速跳转</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
     
 
 
