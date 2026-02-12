@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mock on Alra</title>
-    <link>http://localhost:32867/tags/mock/</link>
+    <link>http://localhost:1313/tags/mock/</link>
     <description>Recent content in Mock on Alra</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:32867/tags/mock/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mock/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing GitHub APIs with Pytest - Practice</title>
-      <link>http://localhost:32867/posts/testing-github-apis-with-pytest-practice/</link>
+      <link>http://localhost:1313/posts/testing-github-apis-with-pytest-practice/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/posts/testing-github-apis-with-pytest-practice/</guid>
-      <description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;http://localhost:32867/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/&#34;&gt;previous post&lt;/a&gt;, we covered the theoretical foundations of Pytest.&lt;/p&gt;&#xA;&lt;p&gt;Now we will apply everything in practice using a real example that&#xA;consumes the GitHub public API:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build a small real-world project&lt;/li&gt;&#xA;&lt;li&gt;Consume the public GitHub API&lt;/li&gt;&#xA;&lt;li&gt;Apply unit tests&lt;/li&gt;&#xA;&lt;li&gt;Apply integration tests&lt;/li&gt;&#xA;&lt;li&gt;Use fixtures&lt;/li&gt;&#xA;&lt;li&gt;Use mocks&lt;/li&gt;&#xA;&lt;li&gt;Use markers&lt;/li&gt;&#xA;&lt;li&gt;Apply the AAA pattern&lt;/li&gt;&#xA;&lt;li&gt;Use pytest plugins&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide is intentionally very detailed. Every important line will be&#xA;explained so that even beginners can follow.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/testing-github-apis-with-pytest-practice/</guid>
+      <description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;http://localhost:1313/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/&#34;&gt;previous post&lt;/a&gt;, we covered the theoretical foundations of Pytest.&lt;/p&gt;&#xA;&lt;p&gt;Now we will apply everything in practice using a real example that&#xA;consumes the GitHub public API:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build a small real-world project&lt;/li&gt;&#xA;&lt;li&gt;Consume the public GitHub API&lt;/li&gt;&#xA;&lt;li&gt;Apply unit tests&lt;/li&gt;&#xA;&lt;li&gt;Apply integration tests&lt;/li&gt;&#xA;&lt;li&gt;Use fixtures&lt;/li&gt;&#xA;&lt;li&gt;Use mocks&lt;/li&gt;&#xA;&lt;li&gt;Use markers&lt;/li&gt;&#xA;&lt;li&gt;Apply the AAA pattern&lt;/li&gt;&#xA;&lt;li&gt;Use pytest plugins&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide is intentionally very detailed. Every important line will be&#xA;explained so that even beginners can follow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Mock and MagicMock in Python</title>
-      <link>http://localhost:32867/posts/understanding-mock-and-magicmock-in-python/</link>
+      <link>http://localhost:1313/posts/understanding-mock-and-magicmock-in-python/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/posts/understanding-mock-and-magicmock-in-python/</guid>
+      <guid>http://localhost:1313/posts/understanding-mock-and-magicmock-in-python/</guid>
       <description>&lt;!-- ![](mock-magicmock.png) --&gt;&#xA;&lt;p&gt;This article was written so &lt;strong&gt;anyone can understand it&lt;/strong&gt; (if there is anything unclear, let me know so it can be improved), even if you are just getting started with testing in Python.&lt;/p&gt;&#xA;&lt;p&gt;We will explain &lt;strong&gt;what each concept is, why it exists, and when to use it&lt;/strong&gt;, always with practical examples and clear explanations.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-what-is-a-mock-simple-explanation&#34;&gt;1. What is a Mock? (simple explanation)&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Mock&lt;/strong&gt; is a &lt;strong&gt;fake object&lt;/strong&gt;, created only for tests, that &lt;strong&gt;pretends to be a real object&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

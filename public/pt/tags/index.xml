@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Alra</title>
-    <link>http://localhost:32867/pt/tags/</link>
+    <link>http://localhost:1313/pt/tags/</link>
     <description>Recent content in Tags on Alra</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:32867/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pt/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Flask</title>
-      <link>http://localhost:32867/pt/tags/flask/</link>
+      <link>http://localhost:1313/pt/tags/flask/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/flask/</guid>
+      <guid>http://localhost:1313/pt/tags/flask/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>http://localhost:32867/pt/tags/github/</link>
+      <link>http://localhost:1313/pt/tags/github/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/github/</guid>
+      <guid>http://localhost:1313/pt/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Mock</title>
-      <link>http://localhost:32867/pt/tags/mock/</link>
+      <link>http://localhost:1313/pt/tags/mock/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/mock/</guid>
+      <guid>http://localhost:1313/pt/tags/mock/</guid>
       <description></description>
     </item>
     <item>
       <title>Pytest</title>
-      <link>http://localhost:32867/pt/tags/pytest/</link>
+      <link>http://localhost:1313/pt/tags/pytest/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/pytest/</guid>
+      <guid>http://localhost:1313/pt/tags/pytest/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:32867/pt/tags/python/</link>
+      <link>http://localhost:1313/pt/tags/python/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/python/</guid>
+      <guid>http://localhost:1313/pt/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Testes</title>
-      <link>http://localhost:32867/pt/tags/testes/</link>
+      <link>http://localhost:1313/pt/tags/testes/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/testes/</guid>
+      <guid>http://localhost:1313/pt/tags/testes/</guid>
       <description></description>
     </item>
     <item>
       <title>Tests</title>
-      <link>http://localhost:32867/pt/tags/tests/</link>
+      <link>http://localhost:1313/pt/tags/tests/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/tests/</guid>
+      <guid>http://localhost:1313/pt/tags/tests/</guid>
       <description></description>
     </item>
     <item>
       <title>Unittest</title>
-      <link>http://localhost:32867/pt/tags/unittest/</link>
+      <link>http://localhost:1313/pt/tags/unittest/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/tags/unittest/</guid>
+      <guid>http://localhost:1313/pt/tags/unittest/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flask on Alra</title>
-    <link>http://localhost:32867/pt/tags/flask/</link>
+    <link>http://localhost:1313/pt/tags/flask/</link>
     <description>Recent content in Flask on Alra</description>
     <generator>Hugo</generator>
     <language>pt</language>
     <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:32867/pt/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pt/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testando APIs do GitHub com Pytest - Prática</title>
-      <link>http://localhost:32867/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</link>
+      <link>http://localhost:1313/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:32867/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</guid>
-      <description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;No &lt;a href=&#34;http://localhost:32867/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/&#34;&gt;post anterior&lt;/a&gt;, cobrimos os fundamentos teóricos do Pytest.&lt;/p&gt;&#xA;&lt;p&gt;Agora vamos aplicar tudo na prática usando um exemplo real que consome a API pública do GitHub:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Construir um pequeno projeto do mundo real&lt;/li&gt;&#xA;&lt;li&gt;Consumir a API pública do GitHub&lt;/li&gt;&#xA;&lt;li&gt;Aplicar testes unitários&lt;/li&gt;&#xA;&lt;li&gt;Aplicar testes de integração&lt;/li&gt;&#xA;&lt;li&gt;Usar fixtures&lt;/li&gt;&#xA;&lt;li&gt;Usar mocks&lt;/li&gt;&#xA;&lt;li&gt;Usar marcadores&lt;/li&gt;&#xA;&lt;li&gt;Aplicar o padrão AAA&lt;/li&gt;&#xA;&lt;li&gt;Usar plugins pytest&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Este guia é intencionalmente muito detalhado. Cada linha importante será explicada para que até iniciantes possam seguir.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</guid>
+      <description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;No &lt;a href=&#34;http://localhost:1313/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/&#34;&gt;post anterior&lt;/a&gt;, cobrimos os fundamentos teóricos do Pytest.&lt;/p&gt;&#xA;&lt;p&gt;Agora vamos aplicar tudo na prática usando um exemplo real que consome a API pública do GitHub:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Construir um pequeno projeto do mundo real&lt;/li&gt;&#xA;&lt;li&gt;Consumir a API pública do GitHub&lt;/li&gt;&#xA;&lt;li&gt;Aplicar testes unitários&lt;/li&gt;&#xA;&lt;li&gt;Aplicar testes de integração&lt;/li&gt;&#xA;&lt;li&gt;Usar fixtures&lt;/li&gt;&#xA;&lt;li&gt;Usar mocks&lt;/li&gt;&#xA;&lt;li&gt;Usar marcadores&lt;/li&gt;&#xA;&lt;li&gt;Aplicar o padrão AAA&lt;/li&gt;&#xA;&lt;li&gt;Usar plugins pytest&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Este guia é intencionalmente muito detalhado. Cada linha importante será explicada para que até iniciantes possam seguir.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
