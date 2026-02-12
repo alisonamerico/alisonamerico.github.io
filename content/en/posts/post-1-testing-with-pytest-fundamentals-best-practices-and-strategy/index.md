@@ -293,4 +293,4 @@ Automated tests are not a luxury, they are a **professional necessity**. Pytest 
 
 In the next post of the series, we'll **apply all these concepts in a real Flask project**, consuming the GitHub public API, with unit, integration, functional, and performance tests.
 
-👉 Continue to **Post 2: Pytest in Practice with Flask and GitHub API**
+👉 Continue to **[Testing GitHub APIs with Pytest - Practice]({{< relref "posts/post-2-testing-github-apis-with-pytest-practice/index.md" >}})**
