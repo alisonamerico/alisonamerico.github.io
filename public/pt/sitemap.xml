@@ -2,164 +2,196 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/categories/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/"
+                href="http://localhost:32867/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/categories/"
+                href="http://localhost:32867/pt/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/tags/flask/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="http://localhost:32867/tags/flask/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/posts/"
+                href="http://localhost:32867/pt/tags/flask/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/tags/pytest/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/tags/github/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/pytest/"
+                href="http://localhost:32867/tags/github/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/pytest/"
+                href="http://localhost:32867/pt/tags/github/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/tags/python/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/tags/mock/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/python/"
+                href="http://localhost:32867/tags/mock/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/python/"
+                href="http://localhost:32867/pt/tags/mock/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/posts/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:32867/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
+                href="http://localhost:32867/pt/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pt/categories/testing/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/tags/pytest/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/categories/testing/"
+                href="http://localhost:32867/tags/pytest/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/categories/testing/"
+                href="http://localhost:32867/pt/tags/pytest/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/tags/tests/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <loc>http://localhost:32867/pt/tags/python/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/tests/"
+                href="http://localhost:32867/tags/python/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/tests/"
+                href="http://localhost:32867/pt/tags/python/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/entendendo-mock-e-magicmock-em-python/</loc>
+    <loc>http://localhost:32867/pt/tags/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:32867/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:32867/pt/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:32867/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:32867/pt/tags/testes/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:32867/pt/categories/testing/</loc>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:32867/categories/testing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:32867/pt/categories/testing/"
+                />
+  </url><url>
+    <loc>http://localhost:32867/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/</loc>
+    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:32867/pt/tags/tests/</loc>
+    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:32867/tags/tests/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:32867/pt/tags/tests/"
+                />
+  </url><url>
+    <loc>http://localhost:32867/pt/posts/entendendo-mock-e-magicmock-em-python/</loc>
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pt/tags/mock/</loc>
+    <loc>http://localhost:32867/pt/tags/unittest/</loc>
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/tags/mock/"
+                href="http://localhost:32867/tags/unittest/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/mock/"
+                href="http://localhost:32867/pt/tags/unittest/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/tags/unittest/</loc>
-    <lastmod>2026-01-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/unittest/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/unittest/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/</loc>
+    <loc>http://localhost:32867/pt/</loc>
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="http://localhost:32867/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/"
+                href="http://localhost:32867/pt/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/archives/</loc>
+    <loc>http://localhost:32867/pt/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/archives/"
+                href="http://localhost:32867/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/archives/"
+                href="http://localhost:32867/pt/archives/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/series/</loc>
+    <loc>http://localhost:32867/pt/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/series/"
+                href="http://localhost:32867/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/series/"
+                href="http://localhost:32867/pt/series/"
                 />
   </url>
 </urlset>

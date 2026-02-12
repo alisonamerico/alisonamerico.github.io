@@ -1,5 +1,5 @@
 ---
-title: Testando APIs do GitHub com Pytest — Prática
+title: Testando APIs do GitHub com Pytest - Prática
 date: 2026-02-12
 draft: false
 tags: ["python", "testes", "pytest", "github", "mock", "flask"]
@@ -12,7 +12,7 @@ cover: testing-with-pytest-practice.png
 
 ## Introdução
 
-No [post anterior]({{< relref "posts/post-1-testing-with-pytest-fundamentals-best-practices-and-strategy/index.md" >}}), cobrimos os fundamentos teóricos do Pytest.
+No [post anterior]({{< relref "posts/post-1-testes-com-pytest-fundamentos-boas-praticas-e-estrategia/index.md" >}}), cobrimos os fundamentos teóricos do Pytest.
 
 Agora vamos aplicar tudo na prática usando um exemplo real que consome a API pública do GitHub:
 

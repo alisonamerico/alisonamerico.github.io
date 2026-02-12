@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mock on Alra</title>
-    <link>http://localhost:1313/pt/tags/mock/</link>
+    <link>http://localhost:32867/pt/tags/mock/</link>
     <description>Recent content in Mock on Alra</description>
     <generator>Hugo</generator>
     <language>pt</language>
-    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/pt/tags/mock/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:32867/pt/tags/mock/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testando APIs do GitHub com Pytest - Prática</title>
+      <link>http://localhost:32867/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:32867/pt/posts/testando-apis-do-github-com-pytest-pr%C3%A1tica/</guid>
+      <description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;&#xA;&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;No &lt;a href=&#34;http://localhost:32867/pt/posts/testes-com-pytest-fundamentos-boas-pr%C3%A1ticas-e-estrat%C3%A9gia/&#34;&gt;post anterior&lt;/a&gt;, cobrimos os fundamentos teóricos do Pytest.&lt;/p&gt;&#xA;&lt;p&gt;Agora vamos aplicar tudo na prática usando um exemplo real que consome a API pública do GitHub:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Construir um pequeno projeto do mundo real&lt;/li&gt;&#xA;&lt;li&gt;Consumir a API pública do GitHub&lt;/li&gt;&#xA;&lt;li&gt;Aplicar testes unitários&lt;/li&gt;&#xA;&lt;li&gt;Aplicar testes de integração&lt;/li&gt;&#xA;&lt;li&gt;Usar fixtures&lt;/li&gt;&#xA;&lt;li&gt;Usar mocks&lt;/li&gt;&#xA;&lt;li&gt;Usar marcadores&lt;/li&gt;&#xA;&lt;li&gt;Aplicar o padrão AAA&lt;/li&gt;&#xA;&lt;li&gt;Usar plugins pytest&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Este guia é intencionalmente muito detalhado. Cada linha importante será explicada para que até iniciantes possam seguir.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Entendendo Mock e MagicMock em Python</title>
-      <link>http://localhost:1313/pt/posts/entendendo-mock-e-magicmock-em-python/</link>
+      <link>http://localhost:32867/pt/posts/entendendo-mock-e-magicmock-em-python/</link>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pt/posts/entendendo-mock-e-magicmock-em-python/</guid>
+      <guid>http://localhost:32867/pt/posts/entendendo-mock-e-magicmock-em-python/</guid>
       <description>&lt;!-- ![](mock-magicmock.png) --&gt;&#xA;&lt;p&gt;Este artigo foi escrito para &lt;strong&gt;qualquer pessoa entender&lt;/strong&gt; (se teve algo que não entendeu me fale, para que possa melhorar), mesmo quem ainda está começando com testes em Python.&#xA;Vamos explicar &lt;strong&gt;o que é cada conceito, por que ele existe e quando usar&lt;/strong&gt;, sempre com exemplos práticos e explicações claras.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-o-que-é-mock-explicação-simples&#34;&gt;1. O que é Mock? (explicação simples)&lt;/h2&gt;&#xA;&lt;p&gt;Um &lt;strong&gt;Mock&lt;/strong&gt; é um objeto &lt;strong&gt;falso&lt;/strong&gt;, criado apenas para testes, que &lt;strong&gt;finge ser outro objeto real&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
