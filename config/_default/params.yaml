@@ -13,5 +13,8 @@ toc:
   enabled: true
   position: "left"
   maxWidth: "280px"
-  maxHeight: "80vh"
+  maxHeight: "80vh" 
 
+post:
+  license:
+    show: false
