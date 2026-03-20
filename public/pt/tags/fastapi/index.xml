@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fastapi on Alra</title>
+    <link>http://localhost:1313/pt/tags/fastapi/</link>
+    <description>Recent content in Fastapi on Alra</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/tags/fastapi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uv - O Gerenciador de Pacotes Python que Você Precisava</title>
+      <link>http://localhost:1313/pt/posts/uv-o-gerenciador-de-pacotes-python-que-voc%C3%AA-precisava/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/posts/uv-o-gerenciador-de-pacotes-python-que-voc%C3%AA-precisava/</guid>
+      <description>&lt;h1 id=&#34;uv-o-gerenciador-de-pacotes-python-que-você-precisava&#34;&gt;uv: O Gerenciador de Pacotes Python que Você Precisava&lt;/h1&gt;&#xA;&#xA;  &lt;blockquote&#xA;    class=&#34;border-primary bg-muted/30 hover:bg-muted/40 my-6 rounded-r-lg border-l-4 py-4 pr-4 pl-6 italic transition-all duration-200 ease-out hover:translate-x-1&#34;&gt;&#xA;    &lt;div class=&#34;prose prose-sm max-w-none&#34;&gt;&#xA;      &lt;p&gt;&lt;strong&gt;Nível:&lt;/strong&gt; iniciante a intermediário&lt;br&gt;&#xA;&lt;strong&gt;Tempo de leitura:&lt;/strong&gt; ~15 min&lt;br&gt;&#xA;&lt;strong&gt;Pré-requisito:&lt;/strong&gt; conhecimento básico de Python e linha de comando&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/blockquote&gt;&lt;script&gt;&#xA;function toggleAlert(alertId) {&#xA;  const content = document.getElementById(alertId + &#39;-content&#39;);&#xA;  const chevron = document.getElementById(alertId + &#39;-chevron&#39;);&#xA;  const header = content.previousElementSibling;&#xA;  &#xA;  if (content.classList.contains(&#39;hidden&#39;)) {&#xA;    content.classList.remove(&#39;hidden&#39;);&#xA;    chevron.style.transform = &#39;rotate(0deg)&#39;;&#xA;    header.setAttribute(&#39;aria-expanded&#39;, &#39;true&#39;);&#xA;  } else {&#xA;    content.classList.add(&#39;hidden&#39;);&#xA;    chevron.style.transform = &#39;rotate(-90deg)&#39;;&#xA;    header.setAttribute(&#39;aria-expanded&#39;, &#39;false&#39;);&#xA;  }&#xA;}&#xA;&#xA;&#xA;document.addEventListener(&#39;DOMContentLoaded&#39;, function() {&#xA;  const collapsedAlerts = document.querySelectorAll(&#39;.alert-content.hidden&#39;);&#xA;  collapsedAlerts.forEach(function(content) {&#xA;    const alertId = content.id.replace(&#39;-content&#39;, &#39;&#39;);&#xA;    const chevron = document.getElementById(alertId + &#39;-chevron&#39;);&#xA;    if (chevron) {&#xA;      chevron.style.transform = &#39;rotate(-90deg)&#39;;&#xA;    }&#xA;  });&#xA;});&#xA;&lt;/script&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;o-problema-que-o-uv-resolve&#34;&gt;O Problema que o uv Resolve&lt;/h2&gt;&#xA;&lt;p&gt;Se você já trabalhou com Python por algum tempo, provavelmente se deparou com um cenário parecido com este:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
