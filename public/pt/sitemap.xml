@@ -2,14 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pt/tags/boas-praticas/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/categories/"
                 />
     <xhtml:link
@@ -17,6 +14,213 @@
                 hreflang="pt"
                 href="http://localhost:1313/pt/categories/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/cli/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/cli/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/cli/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/fzf/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/fzf/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/fzf/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/produtividade/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/shell/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/shell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/shell/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/terminal/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/terminal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/terminal/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/terminal/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/terminal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/terminal/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/zoxide/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/zoxide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/zoxide/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/zoxide-o-comando-cd-inteligente-que-seu-terminal-merece/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/fastapi/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/fastapi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/fastapi/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/packaging/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/packaging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/packaging/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/pip/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/pip/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/pip/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/poetry/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/poetry/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/poetry/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/python/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/python/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/uv/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/uv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/uv/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/uv-o-gerenciador-de-pacotes-python-que-voc%C3%AA-precisava/</loc>
+    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/boas-praticas/</loc>
+    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pt/tags/codigo-limpo/</loc>
     <lastmod>2026-02-17T00:00:00+00:00</lastmod>
@@ -34,7 +238,7 @@
     <lastmod>2026-02-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/pep8/"
                 />
     <xhtml:link
@@ -43,63 +247,11 @@
                 href="http://localhost:1313/pt/tags/pep8/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/posts/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/categories/python/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/categories/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/categories/python/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/python/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/python/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-02-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
-                />
-  </url><url>
     <loc>http://localhost:1313/pt/tags/flask/</loc>
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/flask/"
                 />
     <xhtml:link
@@ -112,7 +264,7 @@
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/github/"
                 />
     <xhtml:link
@@ -125,7 +277,7 @@
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/mock/"
                 />
     <xhtml:link
@@ -138,7 +290,7 @@
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/pytest/"
                 />
     <xhtml:link
@@ -157,7 +309,7 @@
     <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/categories/testing/"
                 />
     <xhtml:link
@@ -173,7 +325,7 @@
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/tests/"
                 />
     <xhtml:link
@@ -189,7 +341,7 @@
     <lastmod>2026-01-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/tags/unittest/"
                 />
     <xhtml:link
@@ -202,7 +354,7 @@
     <lastmod>2025-12-31T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/"
                 />
     <xhtml:link
@@ -214,7 +366,7 @@
     <loc>http://localhost:1313/pt/archives/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/archives/"
                 />
     <xhtml:link
@@ -226,7 +378,7 @@
     <loc>http://localhost:1313/pt/series/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-US"
                 href="http://localhost:1313/series/"
                 />
     <xhtml:link

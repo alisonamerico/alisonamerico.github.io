@@ -6,8 +6,92 @@
     <description>Recent content in Tags on Alra</description>
     <generator>Hugo</generator>
     <language>pt</language>
-    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cli</title>
+      <link>http://localhost:1313/pt/tags/cli/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fzf</title>
+      <link>http://localhost:1313/pt/tags/fzf/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/fzf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Produtividade</title>
+      <link>http://localhost:1313/pt/tags/produtividade/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/produtividade/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shell</title>
+      <link>http://localhost:1313/pt/tags/shell/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>http://localhost:1313/pt/tags/terminal/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zoxide</title>
+      <link>http://localhost:1313/pt/tags/zoxide/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/zoxide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fastapi</title>
+      <link>http://localhost:1313/pt/tags/fastapi/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Packaging</title>
+      <link>http://localhost:1313/pt/tags/packaging/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/packaging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pip</title>
+      <link>http://localhost:1313/pt/tags/pip/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/pip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>http://localhost:1313/pt/tags/poetry/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/pt/tags/python/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uv</title>
+      <link>http://localhost:1313/pt/tags/uv/</link>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/tags/uv/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Boas-Praticas</title>
       <link>http://localhost:1313/pt/tags/boas-praticas/</link>
@@ -34,13 +118,6 @@
       <link>http://localhost:1313/pt/tags/pep8/</link>
       <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pt/tags/pep8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/pt/tags/python/</link>
-      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pt/tags/python/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on Alra</title>
+    <link>http://localhost:1313/pt/tags/terminal/</link>
+    <description>Recent content in Terminal on Alra</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zoxide - O Comando cd Inteligente que Seu Terminal Merece</title>
+      <link>http://localhost:1313/pt/posts/zoxide-o-comando-cd-inteligente-que-seu-terminal-merece/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/posts/zoxide-o-comando-cd-inteligente-que-seu-terminal-merece/</guid>
+      <description>&lt;blockquote&#xA;    class=&#34;border-primary bg-muted/30 hover:bg-muted/40 my-6 rounded-r-lg border-l-4 py-4 pr-4 pl-6 italic transition-all duration-200 ease-out hover:translate-x-1&#34;&gt;&#xA;    &lt;div class=&#34;prose prose-sm max-w-none&#34;&gt;&#xA;      &lt;p&gt;&lt;strong&gt;Nível:&lt;/strong&gt; iniciante&lt;br&gt;&#xA;&lt;strong&gt;Pré-requisitos:&lt;/strong&gt; conhecimento básico de linha de comando e terminal&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/blockquote&gt;&lt;script&gt;&#xA;function toggleAlert(alertId) {&#xA;  const content = document.getElementById(alertId + &#39;-content&#39;);&#xA;  const chevron = document.getElementById(alertId + &#39;-chevron&#39;);&#xA;  const header = content.previousElementSibling;&#xA;  &#xA;  if (content.classList.contains(&#39;hidden&#39;)) {&#xA;    content.classList.remove(&#39;hidden&#39;);&#xA;    chevron.style.transform = &#39;rotate(0deg)&#39;;&#xA;    header.setAttribute(&#39;aria-expanded&#39;, &#39;true&#39;);&#xA;  } else {&#xA;    content.classList.add(&#39;hidden&#39;);&#xA;    chevron.style.transform = &#39;rotate(-90deg)&#39;;&#xA;    header.setAttribute(&#39;aria-expanded&#39;, &#39;false&#39;);&#xA;  }&#xA;}&#xA;&#xA;&#xA;document.addEventListener(&#39;DOMContentLoaded&#39;, function() {&#xA;  const collapsedAlerts = document.querySelectorAll(&#39;.alert-content.hidden&#39;);&#xA;  collapsedAlerts.forEach(function(content) {&#xA;    const alertId = content.id.replace(&#39;-content&#39;, &#39;&#39;);&#xA;    const chevron = document.getElementById(alertId + &#39;-chevron&#39;);&#xA;    if (chevron) {&#xA;      chevron.style.transform = &#39;rotate(-90deg)&#39;;&#xA;    }&#xA;  });&#xA;});&#xA;&lt;/script&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;o-problema-com-o-cd-tradicional&#34;&gt;O Problema com o cd Tradicional&lt;/h2&gt;&#xA;&lt;p&gt;Se você passa um tempo significativo no terminal, conhece a dor de navegar por estruturas de diretórios profundas:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
