@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Alra</title>
+    <link>http://localhost:1313/pt/categories/django/</link>
+    <description>Recent content in Django on Alra</description>
+    <generator>Hugo</generator>
+    <language>pt</language>
+    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt/categories/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>5 Problemas de Performance no Django ORM e Como Resolver</title>
+      <link>http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/</link>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/</guid>
+      <description>&lt;p&gt;Como desenvolvedores Django, frequentemente focamos em fazer nossas aplicações funcionarem corretamente. Escrevemos código limpo, seguimos boas práticas e testamos cuidadosamente. Mas há um &lt;strong&gt;assassino silencioso&lt;/strong&gt; que pode derrubar até o código mais elegante: &lt;strong&gt;a performance do banco de dados&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Neste guia completo, vou guiar você pelos &lt;strong&gt;5 problemas mais comuns de performance&lt;/strong&gt; no Django ORM. Para cada problema, explicarei:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Por que&lt;/strong&gt; acontece (a causa raiz)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Como&lt;/strong&gt; identificar no seu código&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;O que&lt;/strong&gt; acontece no banco de dados&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;A solução exata&lt;/strong&gt; com exemplos de código&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Vamos lá!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

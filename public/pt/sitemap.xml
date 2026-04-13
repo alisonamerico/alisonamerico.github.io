@@ -2,8 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/5-django-orm-performance-problems-and-how-to-solve-them/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/best-practices/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/best-practices/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/best-practices/"
+                />
+  </url><url>
     <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -13,6 +39,136 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/coding-tips/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/coding-tips/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/coding-tips/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/database/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/database/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/database/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/django/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/django/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/django/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/django/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/django/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/django/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/orm/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/orm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/orm/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/performance/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/performance/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/performance/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/performance/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/performance/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/performance/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/python/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/</loc>
+    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/cli/</loc>
@@ -41,19 +197,6 @@
                 href="http://localhost:1313/pt/tags/fzf/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/posts/"
-                />
-  </url><url>
     <loc>http://localhost:1313/pt/tags/produtividade/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -68,19 +211,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/tags/shell/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/terminal/</loc>
@@ -188,19 +318,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/categories/python/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/python/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/python/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/uv/</loc>
