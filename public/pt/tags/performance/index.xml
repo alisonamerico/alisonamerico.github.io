@@ -6,8 +6,15 @@
     <description>Recent content in Performance on Alra</description>
     <generator>Hugo</generator>
     <language>pt</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/pt/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sync vs Async no Python - Entendendo o que está acontecendo</title>
+      <link>http://localhost:1313/pt/posts/sync-vs-async-no-python-entendendo-o-que-est%C3%A1-acontecendo/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt/posts/sync-vs-async-no-python-entendendo-o-que-est%C3%A1-acontecendo/</guid>
+      <description>&lt;h1 id=&#34;sync-vs-async-no-python---entendendo-o-que-está-acontecendo&#34;&gt;Sync vs Async no Python - Entendendo o que está acontecendo&lt;/h1&gt;&#xA;&lt;p&gt;Quando começamos a programar em Python, quase tudo que escrevemos é &lt;code&gt;síncrono&lt;/code&gt;&#xA;(modelo de execução onde as operações são realizadas sequencialmente, bloqueando&#xA;a thread principal até que cada tarefa seja concluída antes que a próxima seja iniciada).&lt;/p&gt;&#xA;&lt;p&gt;E isso normalmente funciona muito bem.&lt;/p&gt;&#xA;&lt;p&gt;Você chama uma função. Ela executa. Depois a próxima executa. E assim por diante.&lt;/p&gt;&#xA;&lt;p&gt;O problema começa quando a aplicação precisa conversar com o &amp;ldquo;mundo externo&amp;rdquo;:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>5 Problemas de Performance no Django ORM e Como Resolver</title>
       <link>http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/</link>

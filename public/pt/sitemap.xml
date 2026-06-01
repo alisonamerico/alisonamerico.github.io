@@ -2,6 +2,139 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/pt/tags/async/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/async/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/async/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/asyncio/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/asyncio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/asyncio/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/concorr%C3%AAncia/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/i/o/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/i/o/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/i/o/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/performance/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/performance/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/performance/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/python/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/python/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/sync-vs-async-no-python-entendendo-o-que-est%C3%A1-acontecendo/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/sync-vs-async-no-python-entendendo-o-que-est%C3%A1-acontecendo/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/</loc>
+    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/"
+                />
+  </url><url>
     <loc>http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/</loc>
     <lastmod>2026-04-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -26,19 +159,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/tags/best-practices/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/categories/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/coding-tips/</loc>
@@ -117,58 +237,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/categories/performance/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/performance/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/performance/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/performance/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/posts/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/python/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/python/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-04-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/cli/</loc>
@@ -305,19 +373,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/tags/poetry/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/categories/python/</loc>
-    <lastmod>2026-03-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/categories/python/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/uv/</loc>

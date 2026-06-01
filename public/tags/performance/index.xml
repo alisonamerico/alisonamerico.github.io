@@ -6,8 +6,15 @@
     <description>Recent content in Performance on Alra</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 10 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sync vs Async in Python - Understanding what&#39;s happening</title>
+      <link>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</guid>
+      <description>&lt;h1 id=&#34;sync-vs-async-in-python---understanding-whats-happening&#34;&gt;Sync vs Async in Python - Understanding What&amp;rsquo;s Happening&lt;/h1&gt;&#xA;&lt;p&gt;When we start programming in Python, almost everything we write is &lt;code&gt;synchronous&lt;/code&gt;&#xA;(an execution model where operations are performed sequentially, blocking the&#xA;main thread until each task is completed before the next one starts).&lt;/p&gt;&#xA;&lt;p&gt;And this usually works very well.&lt;/p&gt;&#xA;&lt;p&gt;You call a function. It executes. Then the next one executes. And so on.&lt;/p&gt;&#xA;&lt;p&gt;The problem starts when the application needs to talk to the &amp;ldquo;outside world&amp;rdquo;:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>5 Django ORM Performance Problems and How to Solve Them</title>
       <link>http://localhost:1313/posts/5-django-orm-performance-problems-and-how-to-solve-them/</link>
