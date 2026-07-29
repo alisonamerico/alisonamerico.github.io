@@ -28,33 +28,33 @@
 
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:url" content="http://localhost:1313/pt/posts/zoxide-o-comando-cd-inteligente-que-seu-terminal-merece/">
-  <meta property="og:site_name" content="Alra">
-  <meta property="og:title" content="Zoxide - O Comando cd Inteligente que Seu Terminal Merece">
-  <meta property="og:description" content="Descubra o zoxide, um jump de diretório extremamente rápido escrito em Rust que aprende seus diretórios mais visitados e permite navegar com apenas alguns toques.">
-  <meta property="og:locale" content="pt">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-03-26T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-03-26T00:00:00+00:00">
-    <meta property="article:tag" content="Zoxide">
-    <meta property="article:tag" content="Terminal">
-    <meta property="article:tag" content="Cli">
-    <meta property="article:tag" content="Produtividade">
-    <meta property="article:tag" content="Shell">
-    <meta property="article:tag" content="Fzf">
+	<meta property="og:site_name" content="Alra">
+	<meta property="og:title" content="Zoxide - O Comando cd Inteligente que Seu Terminal Merece">
+	<meta property="og:description" content="Descubra o zoxide, um jump de diretório extremamente rápido escrito em Rust que aprende seus diretórios mais visitados e permite navegar com apenas alguns toques.">
+	<meta property="og:locale" content="pt">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-03-26T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-03-26T00:00:00+00:00">
+		<meta property="article:tag" content="Zoxide">
+		<meta property="article:tag" content="Terminal">
+		<meta property="article:tag" content="Cli">
+		<meta property="article:tag" content="Produtividade">
+		<meta property="article:tag" content="Shell">
+		<meta property="article:tag" content="Fzf">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Zoxide - O Comando cd Inteligente que Seu Terminal Merece">
-  <meta name="twitter:description" content="Descubra o zoxide, um jump de diretório extremamente rápido escrito em Rust que aprende seus diretórios mais visitados e permite navegar com apenas alguns toques.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Zoxide - O Comando cd Inteligente que Seu Terminal Merece">
+	<meta name="twitter:description" content="Descubra o zoxide, um jump de diretório extremamente rápido escrito em Rust que aprende seus diretórios mais visitados e permite navegar com apenas alguns toques.">
 
 
-  <meta itemprop="name" content="Zoxide - O Comando cd Inteligente que Seu Terminal Merece">
-  <meta itemprop="description" content="Descubra o zoxide, um jump de diretório extremamente rápido escrito em Rust que aprende seus diretórios mais visitados e permite navegar com apenas alguns toques.">
-  <meta itemprop="datePublished" content="2026-03-26T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-03-26T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1354">
-  <meta itemprop="keywords" content="Zoxide,Terminal,Cli,Produtividade,Shell,Fzf">
+	<meta itemprop="name" content="Zoxide - O Comando cd Inteligente que Seu Terminal Merece">
+	<meta itemprop="description" content="Descubra o zoxide, um jump de diretório extremamente rápido escrito em Rust que aprende seus diretórios mais visitados e permite navegar com apenas alguns toques.">
+	<meta itemprop="datePublished" content="2026-03-26T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-03-26T00:00:00+00:00">
+	<meta itemprop="wordCount" content="1354">
+	<meta itemprop="keywords" content="Zoxide,Terminal,Cli,Produtividade,Shell,Fzf">
 
 
 
@@ -7835,49 +7835,49 @@ document.addEventListener('DOMContentLoaded', function() {
 <hr>
 <h2 id="por-que-zoxide-ao-invés-de-alternativas">Por que Zoxide ao invés de Alternativas?</h2>
 <table>
-  <thead>
-      <tr>
-          <th>Ferramenta</th>
-          <th>Tipo</th>
-          <th>Prós</th>
-          <th>Contras</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Zoxide</strong></td>
-          <td>Binário Rust</td>
-          <td>Rápido, moderno, bem mantido</td>
-          <td>Requer instalação</td>
-      </tr>
-      <tr>
-          <td><strong><a href="https://github.com/rupa/z"target="_blank"
+	<thead>
+			<tr>
+					<th>Ferramenta</th>
+					<th>Tipo</th>
+					<th>Prós</th>
+					<th>Contras</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Zoxide</strong></td>
+					<td>Binário Rust</td>
+					<td>Rápido, moderno, bem mantido</td>
+					<td>Requer instalação</td>
+			</tr>
+			<tr>
+					<td><strong><a href="https://github.com/rupa/z"target="_blank"
   class="inline-flex items-center gap-1"
 >z<svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
 </a></strong> (original)</td>
-          <td>Script shell</td>
-          <td>Simples, sem dependências</td>
-          <td>Mais lento, menos funcionalidades</td>
-      </tr>
-      <tr>
-          <td><strong><a href="https://github.com/joelmc/autojump"target="_blank"
+					<td>Script shell</td>
+					<td>Simples, sem dependências</td>
+					<td>Mais lento, menos funcionalidades</td>
+			</tr>
+			<tr>
+					<td><strong><a href="https://github.com/joelmc/autojump"target="_blank"
   class="inline-flex items-center gap-1"
 >autojump<svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
 </a></strong></td>
-          <td>Python</td>
-          <td>Multiplataforma</td>
-          <td>Mais lento, menos intuitivo</td>
-      </tr>
-      <tr>
-          <td><strong><a href="https://github.com/clvv/fasd"target="_blank"
+					<td>Python</td>
+					<td>Multiplataforma</td>
+					<td>Mais lento, menos intuitivo</td>
+			</tr>
+			<tr>
+					<td><strong><a href="https://github.com/clvv/fasd"target="_blank"
   class="inline-flex items-center gap-1"
 >fasd<svg class="h-3 w-3 flex-shrink-0" id="external-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
 </a></strong></td>
-          <td>Script shell</td>
-          <td>Acesso rápido a arquivos também</td>
-          <td>Complexo, curva de aprendizado maior</td>
-      </tr>
-  </tbody>
+					<td>Script shell</td>
+					<td>Acesso rápido a arquivos também</td>
+					<td>Complexo, curva de aprendizado maior</td>
+			</tr>
+	</tbody>
 </table>
 <p>O zoxide é geralmente considerado o padrão moderno para salto de diretórios devido à sua base em Rust, velocidade e desenvolvimento ativo.</p>
 <hr>

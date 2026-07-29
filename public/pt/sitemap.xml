@@ -2,6 +2,129 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/pt/categories/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/feature-branch/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/feature-branch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/feature-branch/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/ferramentas/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/git-workflow-from-commit-to-rebase-without-the-headaches/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/git/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/git/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/git/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/github/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/github/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/rebase/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/rebase/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/rebase/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/versionamento/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/workflow/</loc>
+    <lastmod>2026-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/workflow/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="http://localhost:1313/pt/tags/workflow/"
+                />
+  </url><url>
     <loc>http://localhost:1313/pt/tags/async/</loc>
     <lastmod>2026-06-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -26,19 +149,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/tags/asyncio/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/categories/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/concorr%C3%AAncia/</loc>
@@ -68,19 +178,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/tags/performance/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/python/</loc>
@@ -120,19 +217,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/posts/sync-vs-async-no-python-entendendo-o-que-est%C3%A1-acontecendo/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/</loc>
@@ -430,19 +514,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="http://localhost:1313/pt/tags/flask/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/github/</loc>
-    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/github/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="http://localhost:1313/pt/tags/github/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/mock/</loc>

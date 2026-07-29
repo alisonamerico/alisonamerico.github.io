@@ -28,33 +28,33 @@
 
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:url" content="http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/">
-  <meta property="og:site_name" content="Alra">
-  <meta property="og:title" content="Sync vs Async in Python - Understanding what&#39;s happening">
-  <meta property="og:description" content="Understand how async/await works in Python: I/O-bound vs CPU-bound, Event Loop, coroutines, Tasks, concurrency vs parallelism, Semaphore, aiometer, and practical sync vs async examples.">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-06-01T00:00:00+00:00">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="Async">
-    <meta property="article:tag" content="Asyncio">
-    <meta property="article:tag" content="Concurrency">
-    <meta property="article:tag" content="Performance">
-    <meta property="article:tag" content="I/O">
+	<meta property="og:site_name" content="Alra">
+	<meta property="og:title" content="Sync vs Async in Python - Understanding what&#39;s happening">
+	<meta property="og:description" content="Understand how async/await works in Python: I/O-bound vs CPU-bound, Event Loop, coroutines, Tasks, concurrency vs parallelism, Semaphore, aiometer, and practical sync vs async examples.">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-06-01T00:00:00+00:00">
+		<meta property="article:tag" content="Python">
+		<meta property="article:tag" content="Async">
+		<meta property="article:tag" content="Asyncio">
+		<meta property="article:tag" content="Concurrency">
+		<meta property="article:tag" content="Performance">
+		<meta property="article:tag" content="I/O">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sync vs Async in Python - Understanding what&#39;s happening">
-  <meta name="twitter:description" content="Understand how async/await works in Python: I/O-bound vs CPU-bound, Event Loop, coroutines, Tasks, concurrency vs parallelism, Semaphore, aiometer, and practical sync vs async examples.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Sync vs Async in Python - Understanding what&#39;s happening">
+	<meta name="twitter:description" content="Understand how async/await works in Python: I/O-bound vs CPU-bound, Event Loop, coroutines, Tasks, concurrency vs parallelism, Semaphore, aiometer, and practical sync vs async examples.">
 
 
-  <meta itemprop="name" content="Sync vs Async in Python - Understanding what&#39;s happening">
-  <meta itemprop="description" content="Understand how async/await works in Python: I/O-bound vs CPU-bound, Event Loop, coroutines, Tasks, concurrency vs parallelism, Semaphore, aiometer, and practical sync vs async examples.">
-  <meta itemprop="datePublished" content="2026-06-01T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-06-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="6166">
-  <meta itemprop="keywords" content="Python,Async,Asyncio,Concurrency,Performance,I/O">
+	<meta itemprop="name" content="Sync vs Async in Python - Understanding what&#39;s happening">
+	<meta itemprop="description" content="Understand how async/await works in Python: I/O-bound vs CPU-bound, Event Loop, coroutines, Tasks, concurrency vs parallelism, Semaphore, aiometer, and practical sync vs async examples.">
+	<meta itemprop="datePublished" content="2026-06-01T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-06-01T00:00:00+00:00">
+	<meta itemprop="wordCount" content="6166">
+	<meta itemprop="keywords" content="Python,Async,Asyncio,Concurrency,Performance,I/O">
 
 
 
@@ -1651,46 +1651,46 @@ main thread until each task is completed before the next one starts).</p>
 <p><strong>I/O = Input / Output</strong>, that is: data entry and exit.</p>
 <p>Whenever the program needs to talk to something external to the process, we have I/O.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Operation</th>
-          <th>I/O Type</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Call API</td>
-          <td>Network</td>
-      </tr>
-      <tr>
-          <td>Read file</td>
-          <td>Disk</td>
-      </tr>
-      <tr>
-          <td>Save to DB</td>
-          <td>Network/Disk</td>
-      </tr>
-      <tr>
-          <td>Upload</td>
-          <td>Network</td>
-      </tr>
-      <tr>
-          <td>Download</td>
-          <td>Network</td>
-      </tr>
-      <tr>
-          <td>Kafka</td>
-          <td>Network</td>
-      </tr>
-      <tr>
-          <td>RabbitMQ</td>
-          <td>Network</td>
-      </tr>
-      <tr>
-          <td>Redis</td>
-          <td>Network</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Operation</th>
+					<th>I/O Type</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Call API</td>
+					<td>Network</td>
+			</tr>
+			<tr>
+					<td>Read file</td>
+					<td>Disk</td>
+			</tr>
+			<tr>
+					<td>Save to DB</td>
+					<td>Network/Disk</td>
+			</tr>
+			<tr>
+					<td>Upload</td>
+					<td>Network</td>
+			</tr>
+			<tr>
+					<td>Download</td>
+					<td>Network</td>
+			</tr>
+			<tr>
+					<td>Kafka</td>
+					<td>Network</td>
+			</tr>
+			<tr>
+					<td>RabbitMQ</td>
+					<td>Network</td>
+			</tr>
+			<tr>
+					<td>Redis</td>
+					<td>Network</td>
+			</tr>
+	</tbody>
 </table>
 <p>The most important characteristic: <strong>I/O is usually slow</strong>. Much slower than the CPU.</p>
 <hr>
@@ -5569,50 +5569,50 @@ Process 3: [C executes===================]
 <p>It solves a specific problem: <strong>how to write code that can wait for I/O operations without freezing the program</strong>?</p>
 <p>For that, <code>asyncio</code> provides all the necessary infrastructure:</p>
 <table>
-  <thead>
-      <tr>
-          <th>What it provides</th>
-          <th>What it&rsquo;s for</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>asyncio.run()</code></td>
-          <td>Starts the Event Loop and runs a main coroutine</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.sleep()</code></td>
-          <td>Waits without blocking (unlike <code>time.sleep</code>)</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.create_task()</code></td>
-          <td>Schedules a coroutine on the Event Loop as a Task</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.gather()</code></td>
-          <td>Runs multiple coroutines concurrently</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.all_tasks()</code></td>
-          <td>Returns all active Tasks in the Event Loop</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Queue</code></td>
-          <td>Async queue for communication between coroutines</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Lock</code></td>
-          <td>Ensures exclusive access to shared resources</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Semaphore</code></td>
-          <td>Limits how many coroutines access something simultaneously</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Event</code></td>
-          <td>Signals that something happened to other coroutines</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>What it provides</th>
+					<th>What it&rsquo;s for</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>asyncio.run()</code></td>
+					<td>Starts the Event Loop and runs a main coroutine</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.sleep()</code></td>
+					<td>Waits without blocking (unlike <code>time.sleep</code>)</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.create_task()</code></td>
+					<td>Schedules a coroutine on the Event Loop as a Task</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.gather()</code></td>
+					<td>Runs multiple coroutines concurrently</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.all_tasks()</code></td>
+					<td>Returns all active Tasks in the Event Loop</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Queue</code></td>
+					<td>Async queue for communication between coroutines</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Lock</code></td>
+					<td>Ensures exclusive access to shared resources</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Semaphore</code></td>
+					<td>Limits how many coroutines access something simultaneously</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Event</code></td>
+					<td>Signals that something happened to other coroutines</td>
+			</tr>
+	</tbody>
 </table>
 <p>When you import <code>asyncio</code>:</p>
 <div
@@ -11201,30 +11201,30 @@ You can continue doing other things and await the Task later</code></pre>
 <p>Both take ~2s (limited by the slowest task). The difference is in control.</p>
 <h3 id="when-to-use-each">When to use each?</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Situation</th>
-          <th>Use</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Want results from N coroutines at once</td>
-          <td><code>gather</code></td>
-      </tr>
-      <tr>
-          <td>Want to start a task in the background and continue</td>
-          <td><code>create_task</code></td>
-      </tr>
-      <tr>
-          <td>Need to cancel tasks individually</td>
-          <td><code>create_task</code> (has <code>.cancel()</code>)</td>
-      </tr>
-      <tr>
-          <td>Want a failure not to cancel the others</td>
-          <td><code>gather(return_exceptions=True)</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Situation</th>
+					<th>Use</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Want results from N coroutines at once</td>
+					<td><code>gather</code></td>
+			</tr>
+			<tr>
+					<td>Want to start a task in the background and continue</td>
+					<td><code>create_task</code></td>
+			</tr>
+			<tr>
+					<td>Need to cancel tasks individually</td>
+					<td><code>create_task</code> (has <code>.cancel()</code>)</td>
+			</tr>
+			<tr>
+					<td>Want a failure not to cancel the others</td>
+					<td><code>gather(return_exceptions=True)</code></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="how-are-tasks-scheduled">How are tasks scheduled?</h2>
@@ -12482,40 +12482,40 @@ Task 5: .........(waits for slot)→→ enters [======] exits →
 </ul>
 <h3 id="semaphore-vs-aiometer---whats-the-real-difference">Semaphore vs aiometer - what&rsquo;s the real difference?</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Aspect</th>
-          <th><code>asyncio.Semaphore</code></th>
-          <th><code>aiometer</code></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Limits simultaneous</td>
-          <td>✅ yes</td>
-          <td>✅ yes (<code>max_at_once</code>)</td>
-      </tr>
-      <tr>
-          <td>Limits per second (rate)</td>
-          <td>❌ no</td>
-          <td>✅ yes (<code>max_per_second</code>)</td>
-      </tr>
-      <tr>
-          <td>Native to Python</td>
-          <td>✅ yes</td>
-          <td>❌ install with pip</td>
-      </tr>
-      <tr>
-          <td>Verbosity</td>
-          <td>more manual code</td>
-          <td>more concise</td>
-      </tr>
-      <tr>
-          <td>Use case</td>
-          <td>simple control</td>
-          <td>production with external APIs</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Aspect</th>
+					<th><code>asyncio.Semaphore</code></th>
+					<th><code>aiometer</code></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Limits simultaneous</td>
+					<td>✅ yes</td>
+					<td>✅ yes (<code>max_at_once</code>)</td>
+			</tr>
+			<tr>
+					<td>Limits per second (rate)</td>
+					<td>❌ no</td>
+					<td>✅ yes (<code>max_per_second</code>)</td>
+			</tr>
+			<tr>
+					<td>Native to Python</td>
+					<td>✅ yes</td>
+					<td>❌ install with pip</td>
+			</tr>
+			<tr>
+					<td>Verbosity</td>
+					<td>more manual code</td>
+					<td>more concise</td>
+			</tr>
+			<tr>
+					<td>Use case</td>
+					<td>simple control</td>
+					<td>production with external APIs</td>
+			</tr>
+	</tbody>
 </table>
 <p><strong>When to use each:</strong></p>
 <p>Use <strong>Semaphore</strong> when you only need to limit concurrency and don&rsquo;t care about the rate per second - for example, queries to your own database.</p>
@@ -14142,30 +14142,30 @@ Consumer: takes items from the queue and processes them</code></pre>
 </ul>
 <h3 id="asyncio-synchronization-tools">asyncio synchronization tools</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Tool</th>
-          <th>What it&rsquo;s for</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>asyncio.Lock</code></td>
-          <td>Exclusive access: only one coroutine at a time</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Semaphore</code></td>
-          <td>Limited access: N coroutines at a time</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Event</code></td>
-          <td>Signals that something happened</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Queue</code></td>
-          <td>Ordered communication between coroutines</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Tool</th>
+					<th>What it&rsquo;s for</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>asyncio.Lock</code></td>
+					<td>Exclusive access: only one coroutine at a time</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Semaphore</code></td>
+					<td>Limited access: N coroutines at a time</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Event</code></td>
+					<td>Signals that something happened</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Queue</code></td>
+					<td>Ordered communication between coroutines</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="complete-example-race-condition-and-how-to-fix-it-with-lock">Complete example: race condition and how to fix it with Lock</h3>
 <div
@@ -17568,38 +17568,38 @@ document.addEventListener('DOMContentLoaded', function() {
 <hr>
 <h2 id="decision-table">Decision table</h2>
 <table>
-  <thead>
-      <tr>
-          <th>Situation</th>
-          <th>Recommended Approach</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Many simultaneous network requests</td>
-          <td><strong>async / await</strong></td>
-      </tr>
-      <tr>
-          <td>WebSockets, realtime, streams</td>
-          <td><strong>async / await</strong></td>
-      </tr>
-      <tr>
-          <td>Few I/O operations</td>
-          <td><strong>simple synchronous</strong></td>
-      </tr>
-      <tr>
-          <td>Heavy CPU calculations</td>
-          <td><strong>multiprocessing</strong></td>
-      </tr>
-      <tr>
-          <td>Libraries that don&rsquo;t support async</td>
-          <td><strong>threads</strong> (carefully)</td>
-      </tr>
-      <tr>
-          <td>Distributed processing at scale</td>
-          <td><strong>workers + queues (Celery, etc.)</strong></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Situation</th>
+					<th>Recommended Approach</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Many simultaneous network requests</td>
+					<td><strong>async / await</strong></td>
+			</tr>
+			<tr>
+					<td>WebSockets, realtime, streams</td>
+					<td><strong>async / await</strong></td>
+			</tr>
+			<tr>
+					<td>Few I/O operations</td>
+					<td><strong>simple synchronous</strong></td>
+			</tr>
+			<tr>
+					<td>Heavy CPU calculations</td>
+					<td><strong>multiprocessing</strong></td>
+			</tr>
+			<tr>
+					<td>Libraries that don&rsquo;t support async</td>
+					<td><strong>threads</strong> (carefully)</td>
+			</tr>
+			<tr>
+					<td>Distributed processing at scale</td>
+					<td><strong>workers + queues (Celery, etc.)</strong></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="conclusion">Conclusion</h2>
@@ -17729,20 +17729,36 @@ document.addEventListener('DOMContentLoaded', function() {
       
       <div class="nav-item">
         
-          <div
-            class="bg-muted/30 border-border/50 flex min-h-[140px] flex-col justify-center rounded-xl border p-6">
-            <div class="mb-3 flex items-center justify-end gap-3">
-              <span class="text-muted-foreground/50 text-sm font-medium">
-                No next post
-              </span>
-              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <a
+            href="/posts/git-workflow-from-commit-to-rebase-without-the-headaches/"
+            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+            <div>
+              <div class="mb-3 flex items-center justify-end gap-3">
+                <span class="text-muted-foreground text-sm font-medium">
+                  Next
+                </span>
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 </svg>
+              </div>
+
+              <h3
+                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-right text-lg leading-tight font-semibold transition-colors duration-200">
+                Git Workflow: from commit to rebase, without the headaches
+              </h3>
             </div>
-            <p class="text-muted-foreground/50 text-right text-sm">
-              This is the latest post
-            </p>
-          </div>
+
+            <div
+              class="text-muted-foreground mt-auto flex items-center justify-end gap-2 text-xs">
+              <time datetime="2026-07-29">
+                Jul 29
+              </time>
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            </div>
+          </a>
         
       </div>
     </div>

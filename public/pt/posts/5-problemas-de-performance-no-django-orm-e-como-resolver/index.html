@@ -28,33 +28,33 @@
 
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:url" content="http://localhost:1313/pt/posts/5-problemas-de-performance-no-django-orm-e-como-resolver/">
-  <meta property="og:site_name" content="Alra">
-  <meta property="og:title" content="5 Problemas de Performance no Django ORM e Como Resolver">
-  <meta property="og:description" content="Aprenda os 5 problemas mais comuns de performance em aplicações Django ORM e suas soluções comprovadas com exemplos práticos e explicações detalhadas.">
-  <meta property="og:locale" content="pt">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-04-10T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-04-10T00:00:00+00:00">
-    <meta property="article:tag" content="Django">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="Performance">
-    <meta property="article:tag" content="Orm">
-    <meta property="article:tag" content="Database">
-    <meta property="article:tag" content="Best-Practices">
+	<meta property="og:site_name" content="Alra">
+	<meta property="og:title" content="5 Problemas de Performance no Django ORM e Como Resolver">
+	<meta property="og:description" content="Aprenda os 5 problemas mais comuns de performance em aplicações Django ORM e suas soluções comprovadas com exemplos práticos e explicações detalhadas.">
+	<meta property="og:locale" content="pt">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-04-10T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-04-10T00:00:00+00:00">
+		<meta property="article:tag" content="Django">
+		<meta property="article:tag" content="Python">
+		<meta property="article:tag" content="Performance">
+		<meta property="article:tag" content="Orm">
+		<meta property="article:tag" content="Database">
+		<meta property="article:tag" content="Best-Practices">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="5 Problemas de Performance no Django ORM e Como Resolver">
-  <meta name="twitter:description" content="Aprenda os 5 problemas mais comuns de performance em aplicações Django ORM e suas soluções comprovadas com exemplos práticos e explicações detalhadas.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="5 Problemas de Performance no Django ORM e Como Resolver">
+	<meta name="twitter:description" content="Aprenda os 5 problemas mais comuns de performance em aplicações Django ORM e suas soluções comprovadas com exemplos práticos e explicações detalhadas.">
 
 
-  <meta itemprop="name" content="5 Problemas de Performance no Django ORM e Como Resolver">
-  <meta itemprop="description" content="Aprenda os 5 problemas mais comuns de performance em aplicações Django ORM e suas soluções comprovadas com exemplos práticos e explicações detalhadas.">
-  <meta itemprop="datePublished" content="2026-04-10T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-04-10T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2614">
-  <meta itemprop="keywords" content="Django,Python,Performance,Orm,Database,Best-Practices">
+	<meta itemprop="name" content="5 Problemas de Performance no Django ORM e Como Resolver">
+	<meta itemprop="description" content="Aprenda os 5 problemas mais comuns de performance em aplicações Django ORM e suas soluções comprovadas com exemplos práticos e explicações detalhadas.">
+	<meta itemprop="datePublished" content="2026-04-10T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-04-10T00:00:00+00:00">
+	<meta itemprop="wordCount" content="2614">
+	<meta itemprop="keywords" content="Django,Python,Performance,Orm,Database,Best-Practices">
 
 
 
@@ -1023,58 +1023,58 @@
 <hr>
 <h2 id="os-5-problemas-de-performance-de-um-olhar">Os 5 Problemas de Performance de Um Olhar</h2>
 <table>
-  <thead>
-      <tr>
-          <th>#</th>
-          <th>Problema</th>
-          <th>Solução</th>
-          <th>Queries (Lento)</th>
-          <th>Queries (Rápido)</th>
-          <th>Impacto</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>N+1 Query (ForeignKey)</td>
-          <td><code>select_related()</code></td>
-          <td>N+1</td>
-          <td>1</td>
-          <td>🔴 Crítico</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>N+1 Query (ManyToMany)</td>
-          <td><code>prefetch_related()</code></td>
-          <td>N+1</td>
-          <td>2</td>
-          <td>🔴 Crítico</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>SELECT * desnecessário</td>
-          <td><code>only()</code> / <code>defer()</code></td>
-          <td>1</td>
-          <td>1</td>
-          <td>🟡 Médio</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>len() vs count()</td>
-          <td><code>.count()</code></td>
-          <td>1</td>
-          <td>2</td>
-          <td>🟡 Médio</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td>Paginação ausente</td>
-          <td><code>Paginator</code></td>
-          <td>Todos</td>
-          <td>Tamanho da página</td>
-          <td>🔴 Crítico</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>#</th>
+					<th>Problema</th>
+					<th>Solução</th>
+					<th>Queries (Lento)</th>
+					<th>Queries (Rápido)</th>
+					<th>Impacto</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>N+1 Query (ForeignKey)</td>
+					<td><code>select_related()</code></td>
+					<td>N+1</td>
+					<td>1</td>
+					<td>🔴 Crítico</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>N+1 Query (ManyToMany)</td>
+					<td><code>prefetch_related()</code></td>
+					<td>N+1</td>
+					<td>2</td>
+					<td>🔴 Crítico</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>SELECT * desnecessário</td>
+					<td><code>only()</code> / <code>defer()</code></td>
+					<td>1</td>
+					<td>1</td>
+					<td>🟡 Médio</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>len() vs count()</td>
+					<td><code>.count()</code></td>
+					<td>1</td>
+					<td>2</td>
+					<td>🟡 Médio</td>
+			</tr>
+			<tr>
+					<td>5</td>
+					<td>Paginação ausente</td>
+					<td><code>Paginator</code></td>
+					<td>Todos</td>
+					<td>Tamanho da página</td>
+					<td>🔴 Crítico</td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="problema-1-n1-query-com-foreignkey">Problema 1: N+1 Query com ForeignKey</h2>
@@ -1956,40 +1956,40 @@
 </script>
 <h3 id="-a-matemática">📊 A Matemática</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Livros</th>
-          <th>Queries SQL (Lento)</th>
-          <th>Queries SQL (Rápido)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>10</td>
-          <td>11</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>50</td>
-          <td>51</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>100</td>
-          <td>101</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>1.000</td>
-          <td>1.001</td>
-          <td>1</td>
-      </tr>
-      <tr>
-          <td>10.000</td>
-          <td>10.001</td>
-          <td>1</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Livros</th>
+					<th>Queries SQL (Lento)</th>
+					<th>Queries SQL (Rápido)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>10</td>
+					<td>11</td>
+					<td>1</td>
+			</tr>
+			<tr>
+					<td>50</td>
+					<td>51</td>
+					<td>1</td>
+			</tr>
+			<tr>
+					<td>100</td>
+					<td>101</td>
+					<td>1</td>
+			</tr>
+			<tr>
+					<td>1.000</td>
+					<td>1.001</td>
+					<td>1</td>
+			</tr>
+			<tr>
+					<td>10.000</td>
+					<td>10.001</td>
+					<td>1</td>
+			</tr>
+	</tbody>
 </table>
 <p>Com apenas 1.000 livros, você está fazendo <strong>1.001 viagens ao banco de dados</strong>! Cada viagem tem latência (tipicamente 1-10ms), então você está desperdiçando 1-10 segundos só em comunicação com o banco de dados.</p>
 <h3 id="-o-código">💻 O Código</h3>
@@ -5844,40 +5844,40 @@
 </script>
 <h3 id="-select_related-vs-prefetch_related">⚖️ select_related vs prefetch_related</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Recurso</th>
-          <th><code>select_related()</code></th>
-          <th><code>prefetch_related()</code></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Operação SQL</td>
-          <td>JOIN</td>
-          <td>Duas queries + junção Python</td>
-      </tr>
-      <tr>
-          <td>Queries</td>
-          <td><strong>1</strong></td>
-          <td><strong>2</strong></td>
-      </tr>
-      <tr>
-          <td>Uso para</td>
-          <td>ForeignKey, OneToOne</td>
-          <td>ManyToMany, FK Reverso</td>
-      </tr>
-      <tr>
-          <td>Pode filtrar relacionado</td>
-          <td>❌ Limitado</td>
-          <td>✅ Sim (com <code>Prefetch</code>)</td>
-      </tr>
-      <tr>
-          <td>Suporte aninhado</td>
-          <td>✅ Sim</td>
-          <td>✅ Sim</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Recurso</th>
+					<th><code>select_related()</code></th>
+					<th><code>prefetch_related()</code></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Operação SQL</td>
+					<td>JOIN</td>
+					<td>Duas queries + junção Python</td>
+			</tr>
+			<tr>
+					<td>Queries</td>
+					<td><strong>1</strong></td>
+					<td><strong>2</strong></td>
+			</tr>
+			<tr>
+					<td>Uso para</td>
+					<td>ForeignKey, OneToOne</td>
+					<td>ManyToMany, FK Reverso</td>
+			</tr>
+			<tr>
+					<td>Pode filtrar relacionado</td>
+					<td>❌ Limitado</td>
+					<td>✅ Sim (com <code>Prefetch</code>)</td>
+			</tr>
+			<tr>
+					<td>Suporte aninhado</td>
+					<td>✅ Sim</td>
+					<td>✅ Sim</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="-quando-usar-cada-um">📝 Quando Usar Cada Um</h3>
 <div
@@ -8242,26 +8242,26 @@
 </script>
 <h3 id="-quando-usar-1">📊 Quando Usar</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Situação</th>
-          <th>Método</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Sabe exatamente quais campos precisa</td>
-          <td><code>only('campo1', 'campo2')</code></td>
-      </tr>
-      <tr>
-          <td>Sabe quais campos NÃO precisa</td>
-          <td><code>defer('campo_grande', 'campo_arquivo')</code></td>
-      </tr>
-      <tr>
-          <td>Use com <code>select_related()</code></td>
-          <td><code>only('titulo', 'autor__nome')</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Situação</th>
+					<th>Método</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Sabe exatamente quais campos precisa</td>
+					<td><code>only('campo1', 'campo2')</code></td>
+			</tr>
+			<tr>
+					<td>Sabe quais campos NÃO precisa</td>
+					<td><code>defer('campo_grande', 'campo_arquivo')</code></td>
+			</tr>
+			<tr>
+					<td>Use com <code>select_related()</code></td>
+					<td><code>only('titulo', 'autor__nome')</code></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="problema-4-len-vs-count">Problema 4: len() vs count()</h2>
@@ -9725,66 +9725,66 @@
 </script>
 <h3 id="-comparação-de-performance">📊 Comparação de Performance</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Registros</th>
-          <th><code>len()</code></th>
-          <th><code>.count()</code></th>
-          <th>Aceleração</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>100</td>
-          <td>5ms</td>
-          <td>1ms</td>
-          <td>5x</td>
-      </tr>
-      <tr>
-          <td>10.000</td>
-          <td>500ms</td>
-          <td>1ms</td>
-          <td>500x</td>
-      </tr>
-      <tr>
-          <td>1.000.000</td>
-          <td>50s</td>
-          <td>2ms</td>
-          <td>25.000x</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Registros</th>
+					<th><code>len()</code></th>
+					<th><code>.count()</code></th>
+					<th>Aceleração</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>100</td>
+					<td>5ms</td>
+					<td>1ms</td>
+					<td>5x</td>
+			</tr>
+			<tr>
+					<td>10.000</td>
+					<td>500ms</td>
+					<td>1ms</td>
+					<td>500x</td>
+			</tr>
+			<tr>
+					<td>1.000.000</td>
+					<td>50s</td>
+					<td>2ms</td>
+					<td>25.000x</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="-quando-usar-cada-um-1">📝 Quando Usar Cada Um</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Situação</th>
-          <th>Método</th>
-          <th>Por quê</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Precisa SOMENTE da contagem</td>
-          <td><code>.count()</code></td>
-          <td>✅ Eficiente</td>
-      </tr>
-      <tr>
-          <td>Precisa da contagem E da lista</td>
-          <td><code>len(queryset)</code> ou <code>.count()</code></td>
-          <td>Qualquer um funciona</td>
-      </tr>
-      <tr>
-          <td>Já tem dados em cache</td>
-          <td><code>len(lista_de_objetos)</code></td>
-          <td>✅ Fine</td>
-      </tr>
-      <tr>
-          <td>Verificando se queryset está vazio</td>
-          <td><code>.exists()</code></td>
-          <td>✅ Mais eficiente</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Situação</th>
+					<th>Método</th>
+					<th>Por quê</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Precisa SOMENTE da contagem</td>
+					<td><code>.count()</code></td>
+					<td>✅ Eficiente</td>
+			</tr>
+			<tr>
+					<td>Precisa da contagem E da lista</td>
+					<td><code>len(queryset)</code> ou <code>.count()</code></td>
+					<td>Qualquer um funciona</td>
+			</tr>
+			<tr>
+					<td>Já tem dados em cache</td>
+					<td><code>len(lista_de_objetos)</code></td>
+					<td>✅ Fine</td>
+			</tr>
+			<tr>
+					<td>Verificando se queryset está vazio</td>
+					<td><code>.exists()</code></td>
+					<td>✅ Mais eficiente</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="-dica-pro-o-método-exists">💡 Dica Pro: O Método <code>.exists()</code></h3>
 <div
@@ -11577,30 +11577,30 @@
 </script>
 <h3 id="-impacto-na-performance">📊 Impacto na Performance</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Livros</th>
-          <th>Sem Paginação</th>
-          <th>Com Paginação (20/página)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>100</td>
-          <td>100 carregados</td>
-          <td>20 carregados</td>
-      </tr>
-      <tr>
-          <td>1.000</td>
-          <td>1.000 carregados</td>
-          <td>20 carregados</td>
-      </tr>
-      <tr>
-          <td>100.000</td>
-          <td>💥 Crash</td>
-          <td>20 carregados</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Livros</th>
+					<th>Sem Paginação</th>
+					<th>Com Paginação (20/página)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>100</td>
+					<td>100 carregados</td>
+					<td>20 carregados</td>
+			</tr>
+			<tr>
+					<td>1.000</td>
+					<td>1.000 carregados</td>
+					<td>20 carregados</td>
+			</tr>
+			<tr>
+					<td>100.000</td>
+					<td>💥 Crash</td>
+					<td>20 carregados</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="-boas-práticas-de-paginação">🎯 Boas Práticas de Paginação</h3>
 <div
@@ -13412,40 +13412,40 @@
 </ul>
 <h3 id="links-da-demo-ao-vivo">Links da Demo ao Vivo</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Problema</th>
-          <th>Versão Lenta</th>
-          <th>Versão Rápida</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>N+1 ForeignKey</td>
-          <td><a href="/books/slow/"><code>/books/slow/</code></a></td>
-          <td><a href="/books/fast/"><code>/books/fast/</code></a></td>
-      </tr>
-      <tr>
-          <td>N+1 ManyToMany</td>
-          <td><a href="/tags/slow/"><code>/tags/slow/</code></a></td>
-          <td><a href="/tags/fast/"><code>/tags/fast/</code></a></td>
-      </tr>
-      <tr>
-          <td>SELECT *</td>
-          <td><a href="/fields/slow/"><code>/fields/slow/</code></a></td>
-          <td><a href="/fields/fast/"><code>/fields/fast/</code></a></td>
-      </tr>
-      <tr>
-          <td>len() vs count()</td>
-          <td><a href="/count/slow/"><code>/count/slow/</code></a></td>
-          <td><a href="/count/fast/"><code>/count/fast/</code></a></td>
-      </tr>
-      <tr>
-          <td>Paginação</td>
-          <td><a href="/paginate/slow/"><code>/paginate/slow/</code></a></td>
-          <td><a href="/paginate/fast/"><code>/paginate/fast/</code></a></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Problema</th>
+					<th>Versão Lenta</th>
+					<th>Versão Rápida</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>N+1 ForeignKey</td>
+					<td><a href="/books/slow/"><code>/books/slow/</code></a></td>
+					<td><a href="/books/fast/"><code>/books/fast/</code></a></td>
+			</tr>
+			<tr>
+					<td>N+1 ManyToMany</td>
+					<td><a href="/tags/slow/"><code>/tags/slow/</code></a></td>
+					<td><a href="/tags/fast/"><code>/tags/fast/</code></a></td>
+			</tr>
+			<tr>
+					<td>SELECT *</td>
+					<td><a href="/fields/slow/"><code>/fields/slow/</code></a></td>
+					<td><a href="/fields/fast/"><code>/fields/fast/</code></a></td>
+			</tr>
+			<tr>
+					<td>len() vs count()</td>
+					<td><a href="/count/slow/"><code>/count/slow/</code></a></td>
+					<td><a href="/count/fast/"><code>/count/fast/</code></a></td>
+			</tr>
+			<tr>
+					<td>Paginação</td>
+					<td><a href="/paginate/slow/"><code>/paginate/slow/</code></a></td>
+					<td><a href="/paginate/fast/"><code>/paginate/fast/</code></a></td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="playground-interativo">Playground Interativo</h3>
 <p>Teste todos os problemas interativamente em: <a href="/playground/"><strong><code>/playground/</code></strong></a></p>

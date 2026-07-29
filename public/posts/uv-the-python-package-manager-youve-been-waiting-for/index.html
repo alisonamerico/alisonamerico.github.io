@@ -28,33 +28,33 @@
 
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:url" content="http://localhost:1313/posts/uv-the-python-package-manager-youve-been-waiting-for/">
-  <meta property="og:site_name" content="Alra">
-  <meta property="og:title" content="uv - The Python Package Manager You&#39;ve Been Waiting For">
-  <meta property="og:description" content="A complete guide to uv, the tool that replaces pip, poetry, pyenv, and pipx in a single command. Learn in practice how to create projects, manage dependencies, Python versions, and global tools — dramatically faster.">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-03-20T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-03-20T00:00:00+00:00">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="Uv">
-    <meta property="article:tag" content="Packaging">
-    <meta property="article:tag" content="Poetry">
-    <meta property="article:tag" content="Pip">
-    <meta property="article:tag" content="Fastapi">
+	<meta property="og:site_name" content="Alra">
+	<meta property="og:title" content="uv - The Python Package Manager You&#39;ve Been Waiting For">
+	<meta property="og:description" content="A complete guide to uv, the tool that replaces pip, poetry, pyenv, and pipx in a single command. Learn in practice how to create projects, manage dependencies, Python versions, and global tools — dramatically faster.">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-03-20T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-03-20T00:00:00+00:00">
+		<meta property="article:tag" content="Python">
+		<meta property="article:tag" content="Uv">
+		<meta property="article:tag" content="Packaging">
+		<meta property="article:tag" content="Poetry">
+		<meta property="article:tag" content="Pip">
+		<meta property="article:tag" content="Fastapi">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="uv - The Python Package Manager You&#39;ve Been Waiting For">
-  <meta name="twitter:description" content="A complete guide to uv, the tool that replaces pip, poetry, pyenv, and pipx in a single command. Learn in practice how to create projects, manage dependencies, Python versions, and global tools — dramatically faster.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="uv - The Python Package Manager You&#39;ve Been Waiting For">
+	<meta name="twitter:description" content="A complete guide to uv, the tool that replaces pip, poetry, pyenv, and pipx in a single command. Learn in practice how to create projects, manage dependencies, Python versions, and global tools — dramatically faster.">
 
 
-  <meta itemprop="name" content="uv - The Python Package Manager You&#39;ve Been Waiting For">
-  <meta itemprop="description" content="A complete guide to uv, the tool that replaces pip, poetry, pyenv, and pipx in a single command. Learn in practice how to create projects, manage dependencies, Python versions, and global tools — dramatically faster.">
-  <meta itemprop="datePublished" content="2026-03-20T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-03-20T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2676">
-  <meta itemprop="keywords" content="Python,Uv,Packaging,Poetry,Pip,Fastapi">
+	<meta itemprop="name" content="uv - The Python Package Manager You&#39;ve Been Waiting For">
+	<meta itemprop="description" content="A complete guide to uv, the tool that replaces pip, poetry, pyenv, and pipx in a single command. Learn in practice how to create projects, manage dependencies, Python versions, and global tools — dramatically faster.">
+	<meta itemprop="datePublished" content="2026-03-20T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-03-20T00:00:00+00:00">
+	<meta itemprop="wordCount" content="2676">
+	<meta itemprop="keywords" content="Python,Uv,Packaging,Poetry,Pip,Fastapi">
 
 
 
@@ -1349,50 +1349,50 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>In one sentence: <strong>uv is to Python what Cargo is to Rust</strong> — a unified tool that handles everything in the project lifecycle.</p>
 <h3 id="what-it-replaces">What it replaces</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Old tool</th>
-          <th>Purpose</th>
-          <th>uv equivalent</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>pip</code></td>
-          <td>Install packages</td>
-          <td><code>uv pip install</code></td>
-      </tr>
-      <tr>
-          <td><code>pip-tools</code></td>
-          <td>Lock dependencies</td>
-          <td><code>uv pip compile</code></td>
-      </tr>
-      <tr>
-          <td><code>virtualenv</code> / <code>venv</code></td>
-          <td>Create virtual environments</td>
-          <td><code>uv venv</code></td>
-      </tr>
-      <tr>
-          <td><code>pyenv</code></td>
-          <td>Manage Python versions</td>
-          <td><code>uv python install</code></td>
-      </tr>
-      <tr>
-          <td><code>poetry</code></td>
-          <td>Manage projects and deps</td>
-          <td><code>uv init</code> + <code>uv add</code></td>
-      </tr>
-      <tr>
-          <td><code>pipx</code></td>
-          <td>Isolated global tools</td>
-          <td><code>uv tool install</code> / <code>uvx</code></td>
-      </tr>
-      <tr>
-          <td><code>twine</code></td>
-          <td>Publish packages to PyPI</td>
-          <td><code>uv publish</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Old tool</th>
+					<th>Purpose</th>
+					<th>uv equivalent</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>pip</code></td>
+					<td>Install packages</td>
+					<td><code>uv pip install</code></td>
+			</tr>
+			<tr>
+					<td><code>pip-tools</code></td>
+					<td>Lock dependencies</td>
+					<td><code>uv pip compile</code></td>
+			</tr>
+			<tr>
+					<td><code>virtualenv</code> / <code>venv</code></td>
+					<td>Create virtual environments</td>
+					<td><code>uv venv</code></td>
+			</tr>
+			<tr>
+					<td><code>pyenv</code></td>
+					<td>Manage Python versions</td>
+					<td><code>uv python install</code></td>
+			</tr>
+			<tr>
+					<td><code>poetry</code></td>
+					<td>Manage projects and deps</td>
+					<td><code>uv init</code> + <code>uv add</code></td>
+			</tr>
+			<tr>
+					<td><code>pipx</code></td>
+					<td>Isolated global tools</td>
+					<td><code>uv tool install</code> / <code>uvx</code></td>
+			</tr>
+			<tr>
+					<td><code>twine</code></td>
+					<td>Publish packages to PyPI</td>
+					<td><code>uv publish</code></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="why-is-it-so-fast">Why Is It So Fast?</h2>
@@ -7192,269 +7192,269 @@ document.addEventListener('DOMContentLoaded', function() {
 <hr>
 <h2 id="command-reference-table">Command Reference Table</h2>
 <table>
-  <thead>
-      <tr>
-          <th>Command</th>
-          <th>What it does</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Project</strong></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><code>uv init my-project</code></td>
-          <td>Creates folder and initializes project</td>
-      </tr>
-      <tr>
-          <td><code>uv init</code></td>
-          <td>Initializes project in current folder</td>
-      </tr>
-      <tr>
-          <td><code>uv init --lib</code></td>
-          <td>Creates a library layout (with <code>src/</code>)</td>
-      </tr>
-      <tr>
-          <td><strong>Dependencies</strong></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><code>uv add fastapi</code></td>
-          <td>Adds a main dependency</td>
-      </tr>
-      <tr>
-          <td><code>uv add &quot;fastapi[standard]&quot;</code></td>
-          <td>Adds with extras</td>
-      </tr>
-      <tr>
-          <td><code>uv add --dev pytest</code></td>
-          <td>Adds as a dev dependency</td>
-      </tr>
-      <tr>
-          <td><code>uv remove fastapi</code></td>
-          <td>Removes a dependency</td>
-      </tr>
-      <tr>
-          <td><code>uv sync</code></td>
-          <td>Installs everything from <code>pyproject.toml</code> (= <code>poetry install</code>)</td>
-      </tr>
-      <tr>
-          <td><code>uv sync --no-dev</code></td>
-          <td>Installs production dependencies only</td>
-      </tr>
-      <tr>
-          <td><code>uv lock</code></td>
-          <td>Generates/updates <code>uv.lock</code> without installing</td>
-      </tr>
-      <tr>
-          <td><strong>Running</strong></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><code>uv run &lt;command&gt;</code></td>
-          <td>Runs in the project&rsquo;s virtual environment</td>
-      </tr>
-      <tr>
-          <td><code>uv run --with httpx script.py</code></td>
-          <td>Runs with a temporary extra package</td>
-      </tr>
-      <tr>
-          <td><strong>Global tools</strong></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><code>uvx ruff check .</code></td>
-          <td>Runs a tool without installing (= <code>pipx run</code>)</td>
-      </tr>
-      <tr>
-          <td><code>uv tool install ruff</code></td>
-          <td>Installs a tool globally (= <code>pipx install</code>)</td>
-      </tr>
-      <tr>
-          <td><code>uv tool uninstall ruff</code></td>
-          <td>Removes a global tool</td>
-      </tr>
-      <tr>
-          <td><code>uv tool list</code></td>
-          <td>Lists installed global tools</td>
-      </tr>
-      <tr>
-          <td><code>uv tool upgrade ruff</code></td>
-          <td>Upgrades a global tool</td>
-      </tr>
-      <tr>
-          <td><strong>Python versions</strong></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><code>uv python install 3.13</code></td>
-          <td>Downloads and installs Python 3.13</td>
-      </tr>
-      <tr>
-          <td><code>uv python list</code></td>
-          <td>Lists available/installed versions</td>
-      </tr>
-      <tr>
-          <td><code>uv python pin 3.12</code></td>
-          <td>Pins version in <code>.python-version</code></td>
-      </tr>
-      <tr>
-          <td><code>uv python uninstall 3.11</code></td>
-          <td>Removes an installed version</td>
-      </tr>
-      <tr>
-          <td><strong>Virtual env and pip</strong></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td><code>uv venv</code></td>
-          <td>Creates <code>.venv/</code> in current folder</td>
-      </tr>
-      <tr>
-          <td><code>uv venv --python 3.12</code></td>
-          <td>Creates venv with specific version</td>
-      </tr>
-      <tr>
-          <td><code>uv pip install fastapi</code></td>
-          <td>Installs a package (pip-compatible interface)</td>
-      </tr>
-      <tr>
-          <td><code>uv pip freeze</code></td>
-          <td>Lists installed packages</td>
-      </tr>
-      <tr>
-          <td><code>uv pip compile pyproject.toml -o requirements.txt</code></td>
-          <td>Generates a locked <code>requirements.txt</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Command</th>
+					<th>What it does</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>Project</strong></td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>uv init my-project</code></td>
+					<td>Creates folder and initializes project</td>
+			</tr>
+			<tr>
+					<td><code>uv init</code></td>
+					<td>Initializes project in current folder</td>
+			</tr>
+			<tr>
+					<td><code>uv init --lib</code></td>
+					<td>Creates a library layout (with <code>src/</code>)</td>
+			</tr>
+			<tr>
+					<td><strong>Dependencies</strong></td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>uv add fastapi</code></td>
+					<td>Adds a main dependency</td>
+			</tr>
+			<tr>
+					<td><code>uv add &quot;fastapi[standard]&quot;</code></td>
+					<td>Adds with extras</td>
+			</tr>
+			<tr>
+					<td><code>uv add --dev pytest</code></td>
+					<td>Adds as a dev dependency</td>
+			</tr>
+			<tr>
+					<td><code>uv remove fastapi</code></td>
+					<td>Removes a dependency</td>
+			</tr>
+			<tr>
+					<td><code>uv sync</code></td>
+					<td>Installs everything from <code>pyproject.toml</code> (= <code>poetry install</code>)</td>
+			</tr>
+			<tr>
+					<td><code>uv sync --no-dev</code></td>
+					<td>Installs production dependencies only</td>
+			</tr>
+			<tr>
+					<td><code>uv lock</code></td>
+					<td>Generates/updates <code>uv.lock</code> without installing</td>
+			</tr>
+			<tr>
+					<td><strong>Running</strong></td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>uv run &lt;command&gt;</code></td>
+					<td>Runs in the project&rsquo;s virtual environment</td>
+			</tr>
+			<tr>
+					<td><code>uv run --with httpx script.py</code></td>
+					<td>Runs with a temporary extra package</td>
+			</tr>
+			<tr>
+					<td><strong>Global tools</strong></td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>uvx ruff check .</code></td>
+					<td>Runs a tool without installing (= <code>pipx run</code>)</td>
+			</tr>
+			<tr>
+					<td><code>uv tool install ruff</code></td>
+					<td>Installs a tool globally (= <code>pipx install</code>)</td>
+			</tr>
+			<tr>
+					<td><code>uv tool uninstall ruff</code></td>
+					<td>Removes a global tool</td>
+			</tr>
+			<tr>
+					<td><code>uv tool list</code></td>
+					<td>Lists installed global tools</td>
+			</tr>
+			<tr>
+					<td><code>uv tool upgrade ruff</code></td>
+					<td>Upgrades a global tool</td>
+			</tr>
+			<tr>
+					<td><strong>Python versions</strong></td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>uv python install 3.13</code></td>
+					<td>Downloads and installs Python 3.13</td>
+			</tr>
+			<tr>
+					<td><code>uv python list</code></td>
+					<td>Lists available/installed versions</td>
+			</tr>
+			<tr>
+					<td><code>uv python pin 3.12</code></td>
+					<td>Pins version in <code>.python-version</code></td>
+			</tr>
+			<tr>
+					<td><code>uv python uninstall 3.11</code></td>
+					<td>Removes an installed version</td>
+			</tr>
+			<tr>
+					<td><strong>Virtual env and pip</strong></td>
+					<td></td>
+			</tr>
+			<tr>
+					<td><code>uv venv</code></td>
+					<td>Creates <code>.venv/</code> in current folder</td>
+			</tr>
+			<tr>
+					<td><code>uv venv --python 3.12</code></td>
+					<td>Creates venv with specific version</td>
+			</tr>
+			<tr>
+					<td><code>uv pip install fastapi</code></td>
+					<td>Installs a package (pip-compatible interface)</td>
+			</tr>
+			<tr>
+					<td><code>uv pip freeze</code></td>
+					<td>Lists installed packages</td>
+			</tr>
+			<tr>
+					<td><code>uv pip compile pyproject.toml -o requirements.txt</code></td>
+					<td>Generates a locked <code>requirements.txt</code></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="uv-vs-alternatives">uv vs. Alternatives</h2>
 <h3 id="uv-vs-pip--venv">uv vs. pip + venv</h3>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>pip + venv</th>
-          <th>uv</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Speed</td>
-          <td>Slow</td>
-          <td>10–100x faster</td>
-      </tr>
-      <tr>
-          <td>Lockfile</td>
-          <td>None (needs pip-tools)</td>
-          <td>Native <code>uv.lock</code></td>
-      </tr>
-      <tr>
-          <td>Manages Python</td>
-          <td>No</td>
-          <td>Yes</td>
-      </tr>
-      <tr>
-          <td>Single tool</td>
-          <td>No (multiple tools)</td>
-          <td>Yes</td>
-      </tr>
-      <tr>
-          <td>Learning curve</td>
-          <td>Low</td>
-          <td>Low</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>pip + venv</th>
+					<th>uv</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Speed</td>
+					<td>Slow</td>
+					<td>10–100x faster</td>
+			</tr>
+			<tr>
+					<td>Lockfile</td>
+					<td>None (needs pip-tools)</td>
+					<td>Native <code>uv.lock</code></td>
+			</tr>
+			<tr>
+					<td>Manages Python</td>
+					<td>No</td>
+					<td>Yes</td>
+			</tr>
+			<tr>
+					<td>Single tool</td>
+					<td>No (multiple tools)</td>
+					<td>Yes</td>
+			</tr>
+			<tr>
+					<td>Learning curve</td>
+					<td>Low</td>
+					<td>Low</td>
+			</tr>
+	</tbody>
 </table>
 <p><strong>When to use pip + venv:</strong> legacy projects, environments where uv can&rsquo;t be installed.</p>
 <hr>
 <h3 id="uv-vs-poetry">uv vs. Poetry</h3>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>Poetry</th>
-          <th>uv</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Speed</td>
-          <td>Moderate</td>
-          <td>Much faster</td>
-      </tr>
-      <tr>
-          <td>Manages Python</td>
-          <td>Yes (via plugin)</td>
-          <td>Yes (native)</td>
-      </tr>
-      <tr>
-          <td>Lockfile format</td>
-          <td><code>poetry.lock</code> (proprietary)</td>
-          <td><code>uv.lock</code> (PEP standard)</td>
-      </tr>
-      <tr>
-          <td>Publish to PyPI</td>
-          <td>Yes</td>
-          <td>Yes (<code>uv publish</code>)</td>
-      </tr>
-      <tr>
-          <td>Shell plugin</td>
-          <td>Needs installation</td>
-          <td><code>uv run</code> makes it unnecessary</td>
-      </tr>
-      <tr>
-          <td>Maturity</td>
-          <td>High (since 2018)</td>
-          <td>Growing fast (2024+)</td>
-      </tr>
-      <tr>
-          <td>pip compatibility</td>
-          <td>Partial</td>
-          <td>Full (pip interface)</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>Poetry</th>
+					<th>uv</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Speed</td>
+					<td>Moderate</td>
+					<td>Much faster</td>
+			</tr>
+			<tr>
+					<td>Manages Python</td>
+					<td>Yes (via plugin)</td>
+					<td>Yes (native)</td>
+			</tr>
+			<tr>
+					<td>Lockfile format</td>
+					<td><code>poetry.lock</code> (proprietary)</td>
+					<td><code>uv.lock</code> (PEP standard)</td>
+			</tr>
+			<tr>
+					<td>Publish to PyPI</td>
+					<td>Yes</td>
+					<td>Yes (<code>uv publish</code>)</td>
+			</tr>
+			<tr>
+					<td>Shell plugin</td>
+					<td>Needs installation</td>
+					<td><code>uv run</code> makes it unnecessary</td>
+			</tr>
+			<tr>
+					<td>Maturity</td>
+					<td>High (since 2018)</td>
+					<td>Growing fast (2024+)</td>
+			</tr>
+			<tr>
+					<td>pip compatibility</td>
+					<td>Partial</td>
+					<td>Full (pip interface)</td>
+			</tr>
+	</tbody>
 </table>
 <p><strong>When to use Poetry:</strong> teams with heavy Poetry history, projects that depend on specific Poetry plugins.</p>
 <hr>
 <h3 id="uv-vs-conda">uv vs. Conda</h3>
 <table>
-  <thead>
-      <tr>
-          <th></th>
-          <th>Conda</th>
-          <th>uv</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Non-Python packages</td>
-          <td>Yes (C, Fortran, CUDA)</td>
-          <td>No</td>
-      </tr>
-      <tr>
-          <td>Speed</td>
-          <td>Slow</td>
-          <td>Much faster</td>
-      </tr>
-      <tr>
-          <td>Data science use</td>
-          <td>Excellent</td>
-          <td>Adequate</td>
-      </tr>
-      <tr>
-          <td>Installation size</td>
-          <td>Large</td>
-          <td>Small</td>
-      </tr>
-      <tr>
-          <td>Focus</td>
-          <td>Data science / ML</td>
-          <td>General Python development</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th></th>
+					<th>Conda</th>
+					<th>uv</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Non-Python packages</td>
+					<td>Yes (C, Fortran, CUDA)</td>
+					<td>No</td>
+			</tr>
+			<tr>
+					<td>Speed</td>
+					<td>Slow</td>
+					<td>Much faster</td>
+			</tr>
+			<tr>
+					<td>Data science use</td>
+					<td>Excellent</td>
+					<td>Adequate</td>
+			</tr>
+			<tr>
+					<td>Installation size</td>
+					<td>Large</td>
+					<td>Small</td>
+			</tr>
+			<tr>
+					<td>Focus</td>
+					<td>Data science / ML</td>
+					<td>General Python development</td>
+			</tr>
+	</tbody>
 </table>
 <p><strong>When to use Conda:</strong> data science with heavy native dependencies (GPU TensorFlow, CUDA, geospatial packages).</p>
 <hr>

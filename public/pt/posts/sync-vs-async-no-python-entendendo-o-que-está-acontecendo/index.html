@@ -28,33 +28,33 @@
 
 <link rel="manifest" href="/site.webmanifest" />
 <meta property="og:url" content="http://localhost:1313/pt/posts/sync-vs-async-no-python-entendendo-o-que-est%C3%A1-acontecendo/">
-  <meta property="og:site_name" content="Alra">
-  <meta property="og:title" content="Sync vs Async no Python - Entendendo o que está acontecendo">
-  <meta property="og:description" content="Entenda como funciona async/await no Python: I/O-bound vs CPU-bound, Event Loop, corrotinas, Tasks, concorrência vs paralelismo, Semaphore, aiometer e exemplos práticos de sync vs async.">
-  <meta property="og:locale" content="pt">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-06-01T00:00:00+00:00">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="Async">
-    <meta property="article:tag" content="Asyncio">
-    <meta property="article:tag" content="Concorrência">
-    <meta property="article:tag" content="Performance">
-    <meta property="article:tag" content="I/O">
+	<meta property="og:site_name" content="Alra">
+	<meta property="og:title" content="Sync vs Async no Python - Entendendo o que está acontecendo">
+	<meta property="og:description" content="Entenda como funciona async/await no Python: I/O-bound vs CPU-bound, Event Loop, corrotinas, Tasks, concorrência vs paralelismo, Semaphore, aiometer e exemplos práticos de sync vs async.">
+	<meta property="og:locale" content="pt">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="posts">
+		<meta property="article:published_time" content="2026-06-01T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-06-01T00:00:00+00:00">
+		<meta property="article:tag" content="Python">
+		<meta property="article:tag" content="Async">
+		<meta property="article:tag" content="Asyncio">
+		<meta property="article:tag" content="Concorrência">
+		<meta property="article:tag" content="Performance">
+		<meta property="article:tag" content="I/O">
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sync vs Async no Python - Entendendo o que está acontecendo">
-  <meta name="twitter:description" content="Entenda como funciona async/await no Python: I/O-bound vs CPU-bound, Event Loop, corrotinas, Tasks, concorrência vs paralelismo, Semaphore, aiometer e exemplos práticos de sync vs async.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Sync vs Async no Python - Entendendo o que está acontecendo">
+	<meta name="twitter:description" content="Entenda como funciona async/await no Python: I/O-bound vs CPU-bound, Event Loop, corrotinas, Tasks, concorrência vs paralelismo, Semaphore, aiometer e exemplos práticos de sync vs async.">
 
 
-  <meta itemprop="name" content="Sync vs Async no Python - Entendendo o que está acontecendo">
-  <meta itemprop="description" content="Entenda como funciona async/await no Python: I/O-bound vs CPU-bound, Event Loop, corrotinas, Tasks, concorrência vs paralelismo, Semaphore, aiometer e exemplos práticos de sync vs async.">
-  <meta itemprop="datePublished" content="2026-06-01T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-06-01T00:00:00+00:00">
-  <meta itemprop="wordCount" content="6226">
-  <meta itemprop="keywords" content="Python,Async,Asyncio,Concorrência,Performance,I/O">
+	<meta itemprop="name" content="Sync vs Async no Python - Entendendo o que está acontecendo">
+	<meta itemprop="description" content="Entenda como funciona async/await no Python: I/O-bound vs CPU-bound, Event Loop, corrotinas, Tasks, concorrência vs paralelismo, Semaphore, aiometer e exemplos práticos de sync vs async.">
+	<meta itemprop="datePublished" content="2026-06-01T00:00:00+00:00">
+	<meta itemprop="dateModified" content="2026-06-01T00:00:00+00:00">
+	<meta itemprop="wordCount" content="6226">
+	<meta itemprop="keywords" content="Python,Async,Asyncio,Concorrência,Performance,I/O">
 
 
 
@@ -1651,46 +1651,46 @@ a thread principal até que cada tarefa seja concluída antes que a próxima sej
 <p><strong>I/O = Input / Output</strong>, ou seja: entrada e saída de dados.</p>
 <p>Sempre que o programa precisa conversar com algo externo ao processo, temos I/O.</p>
 <table>
-  <thead>
-      <tr>
-          <th>Operação</th>
-          <th>Tipo de I/O</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Chamar API</td>
-          <td>Rede</td>
-      </tr>
-      <tr>
-          <td>Ler arquivo</td>
-          <td>Disco</td>
-      </tr>
-      <tr>
-          <td>Salvar no banco</td>
-          <td>Rede/Disco</td>
-      </tr>
-      <tr>
-          <td>Upload</td>
-          <td>Rede</td>
-      </tr>
-      <tr>
-          <td>Download</td>
-          <td>Rede</td>
-      </tr>
-      <tr>
-          <td>Kafka</td>
-          <td>Rede</td>
-      </tr>
-      <tr>
-          <td>RabbitMQ</td>
-          <td>Rede</td>
-      </tr>
-      <tr>
-          <td>Redis</td>
-          <td>Rede</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Operação</th>
+					<th>Tipo de I/O</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Chamar API</td>
+					<td>Rede</td>
+			</tr>
+			<tr>
+					<td>Ler arquivo</td>
+					<td>Disco</td>
+			</tr>
+			<tr>
+					<td>Salvar no banco</td>
+					<td>Rede/Disco</td>
+			</tr>
+			<tr>
+					<td>Upload</td>
+					<td>Rede</td>
+			</tr>
+			<tr>
+					<td>Download</td>
+					<td>Rede</td>
+			</tr>
+			<tr>
+					<td>Kafka</td>
+					<td>Rede</td>
+			</tr>
+			<tr>
+					<td>RabbitMQ</td>
+					<td>Rede</td>
+			</tr>
+			<tr>
+					<td>Redis</td>
+					<td>Rede</td>
+			</tr>
+	</tbody>
 </table>
 <p>A característica mais importante: <strong>I/O costuma ser lento</strong>. Muito mais lento que a CPU.</p>
 <hr>
@@ -5569,50 +5569,50 @@ Processo 3: [C executa===================]
 <p>Ela resolve um problema específico: <strong>como escrever código que pode esperar operações de I/O sem travar o programa</strong>?</p>
 <p>Para isso, o <code>asyncio</code> fornece toda a infraestrutura necessária:</p>
 <table>
-  <thead>
-      <tr>
-          <th>O que fornece</th>
-          <th>Para que serve</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>asyncio.run()</code></td>
-          <td>Inicia o Event Loop e executa uma corrotina principal</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.sleep()</code></td>
-          <td>Espera sem bloquear (diferente de <code>time.sleep</code>)</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.create_task()</code></td>
-          <td>Agenda uma corrotina no Event Loop como Task</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.gather()</code></td>
-          <td>Executa várias corrotinas concorrentemente</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.all_tasks()</code></td>
-          <td>Retorna todas as Tasks ativas no Event Loop</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Queue</code></td>
-          <td>Fila assíncrona para comunicação entre corrotinas</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Lock</code></td>
-          <td>Garante acesso exclusivo a recursos compartilhados</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Semaphore</code></td>
-          <td>Limita quantas corrotinas acessam algo simultaneamente</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Event</code></td>
-          <td>Sinaliza que algo aconteceu para outras corrotinas</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>O que fornece</th>
+					<th>Para que serve</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>asyncio.run()</code></td>
+					<td>Inicia o Event Loop e executa uma corrotina principal</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.sleep()</code></td>
+					<td>Espera sem bloquear (diferente de <code>time.sleep</code>)</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.create_task()</code></td>
+					<td>Agenda uma corrotina no Event Loop como Task</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.gather()</code></td>
+					<td>Executa várias corrotinas concorrentemente</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.all_tasks()</code></td>
+					<td>Retorna todas as Tasks ativas no Event Loop</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Queue</code></td>
+					<td>Fila assíncrona para comunicação entre corrotinas</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Lock</code></td>
+					<td>Garante acesso exclusivo a recursos compartilhados</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Semaphore</code></td>
+					<td>Limita quantas corrotinas acessam algo simultaneamente</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Event</code></td>
+					<td>Sinaliza que algo aconteceu para outras corrotinas</td>
+			</tr>
+	</tbody>
 </table>
 <p>Quando você importa <code>asyncio</code>:</p>
 <div
@@ -11201,30 +11201,30 @@ Você pode continuar fazendo outras coisas e fazer await na Task depois</code></
 <p>Ambos levam ~2s (limitados pela task mais lenta). A diferença é no controle.</p>
 <h3 id="quando-usar-cada-um">Quando usar cada um?</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Situação</th>
-          <th>Use</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Quer os resultados de N corrotinas de uma vez</td>
-          <td><code>gather</code></td>
-      </tr>
-      <tr>
-          <td>Quer iniciar uma task em background e continuar</td>
-          <td><code>create_task</code></td>
-      </tr>
-      <tr>
-          <td>Precisa cancelar tasks individualmente</td>
-          <td><code>create_task</code> (tem <code>.cancel()</code>)</td>
-      </tr>
-      <tr>
-          <td>Quer que uma falha não cancele as outras</td>
-          <td><code>gather(return_exceptions=True)</code></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Situação</th>
+					<th>Use</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Quer os resultados de N corrotinas de uma vez</td>
+					<td><code>gather</code></td>
+			</tr>
+			<tr>
+					<td>Quer iniciar uma task em background e continuar</td>
+					<td><code>create_task</code></td>
+			</tr>
+			<tr>
+					<td>Precisa cancelar tasks individualmente</td>
+					<td><code>create_task</code> (tem <code>.cancel()</code>)</td>
+			</tr>
+			<tr>
+					<td>Quer que uma falha não cancele as outras</td>
+					<td><code>gather(return_exceptions=True)</code></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="como-tarefas-são-escalonadas">Como tarefas são escalonadas?</h2>
@@ -12482,40 +12482,40 @@ Task 5: .........(espera vaga)→→ entra [======] sai →
 </ul>
 <h3 id="semaphore-vs-aiometer---qual-a-diferença-real">Semaphore vs aiometer - qual a diferença real?</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Aspecto</th>
-          <th><code>asyncio.Semaphore</code></th>
-          <th><code>aiometer</code></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Limita simultâneas</td>
-          <td>✅ sim</td>
-          <td>✅ sim (<code>max_at_once</code>)</td>
-      </tr>
-      <tr>
-          <td>Limita por segundo (rate)</td>
-          <td>❌ não</td>
-          <td>✅ sim (<code>max_per_second</code>)</td>
-      </tr>
-      <tr>
-          <td>Nativo do Python</td>
-          <td>✅ sim</td>
-          <td>❌ instalar com pip</td>
-      </tr>
-      <tr>
-          <td>Verbosidade</td>
-          <td>mais código manual</td>
-          <td>mais conciso</td>
-      </tr>
-      <tr>
-          <td>Caso de uso</td>
-          <td>controle simples</td>
-          <td>produção com APIs externas</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Aspecto</th>
+					<th><code>asyncio.Semaphore</code></th>
+					<th><code>aiometer</code></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Limita simultâneas</td>
+					<td>✅ sim</td>
+					<td>✅ sim (<code>max_at_once</code>)</td>
+			</tr>
+			<tr>
+					<td>Limita por segundo (rate)</td>
+					<td>❌ não</td>
+					<td>✅ sim (<code>max_per_second</code>)</td>
+			</tr>
+			<tr>
+					<td>Nativo do Python</td>
+					<td>✅ sim</td>
+					<td>❌ instalar com pip</td>
+			</tr>
+			<tr>
+					<td>Verbosidade</td>
+					<td>mais código manual</td>
+					<td>mais conciso</td>
+			</tr>
+			<tr>
+					<td>Caso de uso</td>
+					<td>controle simples</td>
+					<td>produção com APIs externas</td>
+			</tr>
+	</tbody>
 </table>
 <p><strong>Quando usar cada um:</strong></p>
 <p>Use <strong>Semaphore</strong> quando você só precisa limitar concorrência e não se importa com a taxa por segundo - por exemplo, consultas ao seu próprio banco de dados.</p>
@@ -14142,30 +14142,30 @@ Consumidor: pega itens da fila e processa</code></pre>
 </ul>
 <h3 id="ferramentas-de-sincronização-do-asyncio">Ferramentas de sincronização do asyncio</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Ferramenta</th>
-          <th>Para que serve</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>asyncio.Lock</code></td>
-          <td>Acesso exclusivo: só uma corrotina por vez</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Semaphore</code></td>
-          <td>Acesso limitado: N corrotinas por vez</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Event</code></td>
-          <td>Sinaliza que algo aconteceu</td>
-      </tr>
-      <tr>
-          <td><code>asyncio.Queue</code></td>
-          <td>Comunicação ordenada entre corrotinas</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Ferramenta</th>
+					<th>Para que serve</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><code>asyncio.Lock</code></td>
+					<td>Acesso exclusivo: só uma corrotina por vez</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Semaphore</code></td>
+					<td>Acesso limitado: N corrotinas por vez</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Event</code></td>
+					<td>Sinaliza que algo aconteceu</td>
+			</tr>
+			<tr>
+					<td><code>asyncio.Queue</code></td>
+					<td>Comunicação ordenada entre corrotinas</td>
+			</tr>
+	</tbody>
 </table>
 <h3 id="exemplo-completo-race-condition-e-como-corrigir-com-lock">Exemplo completo: race condition e como corrigir com Lock</h3>
 <div
@@ -17568,38 +17568,38 @@ document.addEventListener('DOMContentLoaded', function() {
 <hr>
 <h2 id="quadro-de-decisão">Quadro de decisão</h2>
 <table>
-  <thead>
-      <tr>
-          <th>Situação</th>
-          <th>Abordagem recomendada</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Muitas requisições de rede simultâneas</td>
-          <td><strong>async / await</strong></td>
-      </tr>
-      <tr>
-          <td>WebSockets, realtime, streams</td>
-          <td><strong>async / await</strong></td>
-      </tr>
-      <tr>
-          <td>Poucas operações de I/O</td>
-          <td><strong>síncrono simples</strong></td>
-      </tr>
-      <tr>
-          <td>Cálculos pesados de CPU</td>
-          <td><strong>multiprocessing</strong></td>
-      </tr>
-      <tr>
-          <td>Bibliotecas que não suportam async</td>
-          <td><strong>threads</strong> (com cuidado)</td>
-      </tr>
-      <tr>
-          <td>Processamento distribuído em escala</td>
-          <td><strong>workers + filas (Celery, etc.)</strong></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>Situação</th>
+					<th>Abordagem recomendada</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Muitas requisições de rede simultâneas</td>
+					<td><strong>async / await</strong></td>
+			</tr>
+			<tr>
+					<td>WebSockets, realtime, streams</td>
+					<td><strong>async / await</strong></td>
+			</tr>
+			<tr>
+					<td>Poucas operações de I/O</td>
+					<td><strong>síncrono simples</strong></td>
+			</tr>
+			<tr>
+					<td>Cálculos pesados de CPU</td>
+					<td><strong>multiprocessing</strong></td>
+			</tr>
+			<tr>
+					<td>Bibliotecas que não suportam async</td>
+					<td><strong>threads</strong> (com cuidado)</td>
+			</tr>
+			<tr>
+					<td>Processamento distribuído em escala</td>
+					<td><strong>workers + filas (Celery, etc.)</strong></td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="conclusão">Conclusão</h2>
@@ -17729,20 +17729,36 @@ document.addEventListener('DOMContentLoaded', function() {
       
       <div class="nav-item">
         
-          <div
-            class="bg-muted/30 border-border/50 flex min-h-[140px] flex-col justify-center rounded-xl border p-6">
-            <div class="mb-3 flex items-center justify-end gap-3">
-              <span class="text-muted-foreground/50 text-sm font-medium">
-                Sem próximo artigo
-              </span>
-              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <a
+            href="/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/"
+            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+            <div>
+              <div class="mb-3 flex items-center justify-end gap-3">
+                <span class="text-muted-foreground text-sm font-medium">
+                  Próximo
+                </span>
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
 </svg>
+              </div>
+
+              <h3
+                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-right text-lg leading-tight font-semibold transition-colors duration-200">
+                Fluxo de Trabalho no Git: do commit ao rebase, sem trauma
+              </h3>
             </div>
-            <p class="text-muted-foreground/50 text-right text-sm">
-              Este é o artigo mais recente
-            </p>
-          </div>
+
+            <div
+              class="text-muted-foreground mt-auto flex items-center justify-end gap-2 text-xs">
+              <time datetime="2026-07-29">
+                29 jan
+              </time>
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            </div>
+          </a>
         
       </div>
     </div>

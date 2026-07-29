@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Async on Alra</title>
-    <link>http://localhost:1313/tags/async/</link>
-    <description>Recent content in Async on Alra</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/async/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Sync vs Async in Python - Understanding what&#39;s happening</title>
-      <link>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</link>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</guid>
-      <description>&lt;h1 id=&#34;sync-vs-async-in-python---understanding-whats-happening&#34;&gt;Sync vs Async in Python - Understanding What&amp;rsquo;s Happening&lt;/h1&gt;&#xA;&lt;p&gt;When we start programming in Python, almost everything we write is &lt;code&gt;synchronous&lt;/code&gt;&#xA;(an execution model where operations are performed sequentially, blocking the&#xA;main thread until each task is completed before the next one starts).&lt;/p&gt;&#xA;&lt;p&gt;And this usually works very well.&lt;/p&gt;&#xA;&lt;p&gt;You call a function. It executes. Then the next one executes. And so on.&lt;/p&gt;&#xA;&lt;p&gt;The problem starts when the application needs to talk to the &amp;ldquo;outside world&amp;rdquo;:&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Async on Alra</title>
+		<link>http://localhost:1313/tags/async/</link>
+		<description>Recent content in Async on Alra</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/async/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Sync vs Async in Python - Understanding what&#39;s happening</title>
+				<link>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</guid>
+				<description>&lt;h1 id=&#34;sync-vs-async-in-python---understanding-whats-happening&#34;&gt;Sync vs Async in Python - Understanding What&amp;rsquo;s Happening&lt;/h1&gt;&#xA;&lt;p&gt;When we start programming in Python, almost everything we write is &lt;code&gt;synchronous&lt;/code&gt;&#xA;(an execution model where operations are performed sequentially, blocking the&#xA;main thread until each task is completed before the next one starts).&lt;/p&gt;&#xA;&lt;p&gt;And this usually works very well.&lt;/p&gt;&#xA;&lt;p&gt;You call a function. It executes. Then the next one executes. And so on.&lt;/p&gt;&#xA;&lt;p&gt;The problem starts when the application needs to talk to the &amp;ldquo;outside world&amp;rdquo;:&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
