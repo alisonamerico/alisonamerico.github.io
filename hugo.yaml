@@ -81,7 +81,7 @@ outputFormats:
 module:
   hugoVersion:
     extended: true
-    min: 0.153.0
+    min: 0.158.0
 
 menu:
   main:
