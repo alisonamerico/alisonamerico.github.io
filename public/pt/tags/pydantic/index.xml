@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Pydantic on Alra</title>
+		<link>http://localhost:1313/pt/tags/pydantic/</link>
+		<description>Recent content in Pydantic on Alra</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/pt/tags/pydantic/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pydantic na Prática (Parte 1) - Fundamentos e Validação de Dados em Python</title>
+				<link>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/</guid>
+				<description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Se você desenvolve APIs, consome dados externos ou já perdeu tempo debugando um &lt;code&gt;TypeError&lt;/code&gt; que só apareceu em produção porque um campo chegou como string em vez de número, este post é para você. Vamos falar sobre &lt;strong&gt;Pydantic&lt;/strong&gt;, uma das bibliotecas mais usadas do ecossistema Python moderno - e que provavelmente já está rodando por baixo dos panos em algum projeto seu, mesmo que você nunca a tenha importado diretamente (o FastAPI, por exemplo, é construído em cima dela).&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

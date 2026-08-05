@@ -5,14 +5,49 @@
 		<link>http://localhost:1313/pt/tags/</link>
 		<description>Recent content in Tags on Alra</description>
 		<generator>Hugo</generator>
-		<language>pt</language>
+		<language>pt-BR</language>
 		
 		
 		
 		
-			<lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Backend</title>
+				<link>http://localhost:1313/pt/tags/backend/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/backend/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fastapi</title>
+				<link>http://localhost:1313/pt/tags/fastapi/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/fastapi/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pydantic</title>
+				<link>http://localhost:1313/pt/tags/pydantic/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/pydantic/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>http://localhost:1313/pt/tags/python/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/python/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Validação-De-Dados</title>
+				<link>http://localhost:1313/pt/tags/valida%C3%A7%C3%A3o-de-dados/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/valida%C3%A7%C3%A3o-de-dados/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Feature-Branch</title>
 				<link>http://localhost:1313/pt/tags/feature-branch/</link>
@@ -91,13 +126,6 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Python</title>
-				<link>http://localhost:1313/pt/tags/python/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/pt/tags/python/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Best-Practices</title>
 				<link>http://localhost:1313/pt/tags/best-practices/</link>
 				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
@@ -165,13 +193,6 @@
 				<link>http://localhost:1313/pt/tags/zoxide/</link>
 				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/pt/tags/zoxide/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Fastapi</title>
-				<link>http://localhost:1313/pt/tags/fastapi/</link>
-				<pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/pt/tags/fastapi/</guid>
 				<description></description>
 			</item>
 			<item>

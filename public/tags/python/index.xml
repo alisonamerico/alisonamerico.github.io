@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pydantic in Practice (Part 1) - Fundamentals and Data Validation in Python</title>
+				<link>http://localhost:1313/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;If you build APIs, consume external data, or have ever debugged a &lt;code&gt;TypeError&lt;/code&gt; that only showed up in production because a field arrived as a string instead of a number, this post is for you. Let&amp;rsquo;s talk about &lt;strong&gt;Pydantic&lt;/strong&gt;, one of the most widely used libraries in the modern Python ecosystem - one that&amp;rsquo;s probably already running under the hood of some project of yours, even if you never imported it directly (FastAPI, for instance, is built on top of it).&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Sync vs Async in Python - Understanding what&#39;s happening</title>
 				<link>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</link>
