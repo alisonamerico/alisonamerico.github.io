@@ -28,7 +28,7 @@
 {{- end -}}
 
 {{/* 读取占位图配置 */}}
-{{- $placeholderConfig := site.Data.placeholder_images | default dict -}}
+{{- $placeholderConfig := hugo.Data.placeholder_images | default dict -}}
 {{- $placeholderEnabled := $placeholderConfig.enabled | default false -}}
 {{- $placeholderImages := $placeholderConfig.images | default (slice) -}}
 {{- $randomPlaceholder := "" -}}

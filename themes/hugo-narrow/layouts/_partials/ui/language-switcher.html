@@ -1,18 +1,17 @@
 {{- if and hugo.IsMultilingual (site.Params.header.showLanguageSwitch | default true) -}}
-{{- $currentLang := .Language.Lang -}}
+{{- $currentLang := .Language.Name -}}
 {{- $currentPage := . -}}
 {{- $languageSwitchMode := site.Params.header.languageSwitchMode | default "dropdown" -}}
+{{- $languages := slice -}}
+{{- range hugo.Sites -}}
+  {{- $languages = $languages | append .Language -}}
+{{- end -}}
+{{- $languages = collections.Uniq $languages -}}
 {{/*  点击切换模式  */}}
 {{- if eq $languageSwitchMode "cycle" -}}
-  {{- $languages := slice -}}
-  {{- range site.Languages -}}
-    {{- $languages = $languages | append . -}}
-  {{- end -}}
-  
-
   {{- $currentIndex := 0 -}}
   {{- range $index, $lang := $languages -}}
-    {{- if eq $lang.Lang $currentLang -}}
+    {{- if eq $lang.Name $currentLang -}}
       {{- $currentIndex = $index -}}
     {{- end -}}
   {{- end -}}
@@ -24,15 +23,15 @@
   {{- $targetURL := "/" -}}
   {{- if $currentPage.IsTranslated -}}
     {{- range $currentPage.Translations -}}
-      {{- if eq .Language.Lang $nextLang.Lang -}}
+      {{- if eq .Language.Name $nextLang.Name -}}
         {{- $targetURL = .RelPermalink -}}
       {{- end -}}
     {{- end -}}
     {{- if eq $targetURL "/" -}}
-      {{- $targetURL = printf "/%s/" $nextLang.Lang -}}
+      {{- $targetURL = printf "/%s/" $nextLang.Name -}}
     {{- end -}}
   {{- else -}}
-    {{- $targetURL = printf "/%s/" $nextLang.Lang -}}
+    {{- $targetURL = printf "/%s/" $nextLang.Name -}}
   {{- end -}}
 
   <div class="relative">
@@ -47,9 +46,9 @@
 {{- else -}}
   {{- /* 下拉菜单模式 */ -}}
   {{- $languageMenuContent := "" -}}
-  {{- range site.Languages -}}
-    {{- $lang := .Lang -}}
-    {{- $langName := .LanguageName -}}
+  {{- range $languages -}}
+    {{- $lang := .Name -}}
+    {{- $langName := .Label -}}
     {{- $isCurrent := eq $lang $currentLang -}}
 
     {{- /* 获取当前页面在目标语言下的URL */ -}}

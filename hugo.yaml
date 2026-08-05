@@ -1,17 +1,18 @@
 baseURL: https://alra.dev/
 
-languageCode: en-US
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 
 languages:
   en:
-    languageName: English
+    label: English
+    locale: en-US
     weight: 1
     contentDir: content/en
 
   pt:
-    languageName: Português
+    label: Português
+    locale: pt-BR
     weight: 2
     contentDir: content/pt-br
 
@@ -80,7 +81,7 @@ outputFormats:
 module:
   hugoVersion:
     extended: true
-    min: 0.146.0
+    min: 0.153.0
 
 menu:
   main:
