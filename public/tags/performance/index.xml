@@ -1,31 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Performance on Alra</title>
-		<link>http://localhost:1313/tags/performance/</link>
-		<description>Recent content in Performance on Alra</description>
-		<generator>Hugo</generator>
-		<language>en-US</language>
-		
-		
-		
-		
-			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Sync vs Async in Python - Understanding what&#39;s happening</title>
-				<link>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/sync-vs-async-in-python-understanding-whats-happening/</guid>
-				<description>&lt;h1 id=&#34;sync-vs-async-in-python---understanding-whats-happening&#34;&gt;Sync vs Async in Python - Understanding What&amp;rsquo;s Happening&lt;/h1&gt;&#xA;&lt;p&gt;When we start programming in Python, almost everything we write is &lt;code&gt;synchronous&lt;/code&gt;&#xA;(an execution model where operations are performed sequentially, blocking the&#xA;main thread until each task is completed before the next one starts).&lt;/p&gt;&#xA;&lt;p&gt;And this usually works very well.&lt;/p&gt;&#xA;&lt;p&gt;You call a function. It executes. Then the next one executes. And so on.&lt;/p&gt;&#xA;&lt;p&gt;The problem starts when the application needs to talk to the &amp;ldquo;outside world&amp;rdquo;:&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>5 Django ORM Performance Problems and How to Solve Them</title>
-				<link>http://localhost:1313/posts/5-django-orm-performance-problems-and-how-to-solve-them/</link>
-				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/5-django-orm-performance-problems-and-how-to-solve-them/</guid>
-				<description>&lt;p&gt;As Django developers, we often focus on making our applications work correctly. We write clean code, follow best practices, and test thoroughly. But there&amp;rsquo;s a silent killer that can bring even the most elegant code to its knees: &lt;strong&gt;database performance&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;In this comprehensive guide, I&amp;rsquo;ll walk you through the &lt;strong&gt;5 most common performance problems&lt;/strong&gt; in Django ORM. For each problem, I&amp;rsquo;ll explain:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Why&lt;/strong&gt; it happens (the root cause)&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;How&lt;/strong&gt; to identify it in your code&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;What&lt;/strong&gt; happens in the database&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;The exact solution&lt;/strong&gt; with code examples&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Performance on Alra</title><link>https://alra.dev/tags/performance/</link><description>Recent content in Performance on Alra</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alra.dev/tags/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Sync vs Async in Python - Understanding what's happening</title><link>https://alra.dev/posts/sync-vs-async-in-python-understanding-whats-happening/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/posts/sync-vs-async-in-python-understanding-whats-happening/</guid><description>&lt;h1 id="sync-vs-async-in-python---understanding-whats-happening"&gt;Sync vs Async in Python - Understanding What&amp;rsquo;s Happening&lt;/h1&gt;
+&lt;p&gt;When we start programming in Python, almost everything we write is &lt;code&gt;synchronous&lt;/code&gt;
+(an execution model where operations are performed sequentially, blocking the
+main thread until each task is completed before the next one starts).&lt;/p&gt;
+&lt;p&gt;And this usually works very well.&lt;/p&gt;
+&lt;p&gt;You call a function. It executes. Then the next one executes. And so on.&lt;/p&gt;
+&lt;p&gt;The problem starts when the application needs to talk to the &amp;ldquo;outside world&amp;rdquo;:&lt;/p&gt;</description></item><item><title>5 Django ORM Performance Problems and How to Solve Them</title><link>https://alra.dev/posts/5-django-orm-performance-problems-and-how-to-solve-them/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/posts/5-django-orm-performance-problems-and-how-to-solve-them/</guid><description>&lt;p&gt;As Django developers, we often focus on making our applications work correctly. We write clean code, follow best practices, and test thoroughly. But there&amp;rsquo;s a silent killer that can bring even the most elegant code to its knees: &lt;strong&gt;database performance&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In this comprehensive guide, I&amp;rsquo;ll walk you through the &lt;strong&gt;5 most common performance problems&lt;/strong&gt; in Django ORM. For each problem, I&amp;rsquo;ll explain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Why&lt;/strong&gt; it happens (the root cause)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How&lt;/strong&gt; to identify it in your code&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What&lt;/strong&gt; happens in the database&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The exact solution&lt;/strong&gt; with code examples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s dive in!&lt;/p&gt;</description></item></channel></rss>

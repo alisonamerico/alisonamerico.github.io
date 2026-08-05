@@ -1,31 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Github on Alra</title>
-		<link>http://localhost:1313/tags/github/</link>
-		<description>Recent content in Github on Alra</description>
-		<generator>Hugo</generator>
-		<language>en-US</language>
-		
-		
-		
-		
-			<lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Git Workflow: from commit to rebase, without the headaches</title>
-				<link>http://localhost:1313/posts/git-workflow-from-commit-to-rebase-without-the-headaches/</link>
-				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/git-workflow-from-commit-to-rebase-without-the-headaches/</guid>
-				<description>&lt;p&gt;If you&amp;rsquo;ve ever worked on a software project with a team, you know Git stopped being &amp;ldquo;just a technical detail&amp;rdquo; a long time ago - it&amp;rsquo;s part of how you think through your day-to-day work. Understanding &lt;strong&gt;how&lt;/strong&gt; and &lt;strong&gt;when&lt;/strong&gt; to use each command is what separates people who just &amp;ldquo;survive&amp;rdquo; Git from people who actually flow with it.&lt;/p&gt;&#xA;&lt;p&gt;In this article I want to go beyond the basics (&lt;code&gt;init&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;commit&lt;/code&gt;, &lt;code&gt;push&lt;/code&gt;) and walk through the workflow I actually use day to day, including &lt;strong&gt;feature branches&lt;/strong&gt;, &lt;strong&gt;rebase&lt;/strong&gt;, and the most common error fixes that show up in real work.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Testing GitHub APIs with Pytest - Practice</title>
-				<link>http://localhost:1313/posts/testing-github-apis-with-pytest-practice/</link>
-				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/testing-github-apis-with-pytest-practice/</guid>
-				<description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;http://localhost:1313/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/&#34;&gt;previous post&lt;/a&gt;, we covered the theoretical foundations of Pytest.&lt;/p&gt;&#xA;&lt;p&gt;Now we will apply everything in practice using a real example that&#xA;consumes the GitHub public API:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Build a small real-world project&lt;/li&gt;&#xA;&lt;li&gt;Consume the public GitHub API&lt;/li&gt;&#xA;&lt;li&gt;Apply unit tests&lt;/li&gt;&#xA;&lt;li&gt;Apply integration tests&lt;/li&gt;&#xA;&lt;li&gt;Use fixtures&lt;/li&gt;&#xA;&lt;li&gt;Use mocks&lt;/li&gt;&#xA;&lt;li&gt;Use markers&lt;/li&gt;&#xA;&lt;li&gt;Apply the AAA pattern&lt;/li&gt;&#xA;&lt;li&gt;Use pytest plugins&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This guide is intentionally very detailed. Every important line will be&#xA;explained so that even beginners can follow.&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on Alra</title><link>https://alra.dev/tags/github/</link><description>Recent content in Github on Alra</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alra.dev/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Workflow: from commit to rebase, without the headaches</title><link>https://alra.dev/posts/git-workflow-from-commit-to-rebase-without-the-headaches/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/posts/git-workflow-from-commit-to-rebase-without-the-headaches/</guid><description>&lt;p&gt;If you&amp;rsquo;ve ever worked on a software project with a team, you know Git stopped being &amp;ldquo;just a technical detail&amp;rdquo; a long time ago - it&amp;rsquo;s part of how you think through your day-to-day work. Understanding &lt;strong&gt;how&lt;/strong&gt; and &lt;strong&gt;when&lt;/strong&gt; to use each command is what separates people who just &amp;ldquo;survive&amp;rdquo; Git from people who actually flow with it.&lt;/p&gt;
+&lt;p&gt;In this article I want to go beyond the basics (&lt;code&gt;init&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;commit&lt;/code&gt;, &lt;code&gt;push&lt;/code&gt;) and walk through the workflow I actually use day to day, including &lt;strong&gt;feature branches&lt;/strong&gt;, &lt;strong&gt;rebase&lt;/strong&gt;, and the most common error fixes that show up in real work.&lt;/p&gt;</description></item><item><title>Testing GitHub APIs with Pytest - Practice</title><link>https://alra.dev/posts/testing-github-apis-with-pytest-practice/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/posts/testing-github-apis-with-pytest-practice/</guid><description>&lt;!-- ![](testing-with-pytest-practice.png) --&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In the &lt;a href="https://alra.dev/posts/testing-with-pytest-fundamentals-best-practices-and-strategy/"&gt;previous post&lt;/a&gt;, we covered the theoretical foundations of Pytest.&lt;/p&gt;
+&lt;p&gt;Now we will apply everything in practice using a real example that
+consumes the GitHub public API:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Build a small real-world project&lt;/li&gt;
+&lt;li&gt;Consume the public GitHub API&lt;/li&gt;
+&lt;li&gt;Apply unit tests&lt;/li&gt;
+&lt;li&gt;Apply integration tests&lt;/li&gt;
+&lt;li&gt;Use fixtures&lt;/li&gt;
+&lt;li&gt;Use mocks&lt;/li&gt;
+&lt;li&gt;Use markers&lt;/li&gt;
+&lt;li&gt;Apply the AAA pattern&lt;/li&gt;
+&lt;li&gt;Use pytest plugins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This guide is intentionally very detailed. Every important line will be
+explained so that even beginners can follow.&lt;/p&gt;</description></item></channel></rss>

@@ -1,24 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Feature-Branch on Alra</title>
-		<link>http://localhost:1313/pt/tags/feature-branch/</link>
-		<description>Recent content in Feature-Branch on Alra</description>
-		<generator>Hugo</generator>
-		<language>pt-BR</language>
-		
-		
-		
-		
-			<lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
-		
-			<atom:link href="http://localhost:1313/pt/tags/feature-branch/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>Fluxo de Trabalho no Git: do commit ao rebase, sem trauma</title>
-				<link>http://localhost:1313/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/</link>
-				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/</guid>
-				<description>&lt;p&gt;Se você já trabalhou em qualquer projeto de software em equipe, sabe que o Git deixou de ser &amp;ldquo;só um detalhe técnico&amp;rdquo; para se tornar parte do seu raciocínio diário. Entender &lt;strong&gt;como&lt;/strong&gt; e &lt;strong&gt;quando&lt;/strong&gt; usar cada comando é o que separa quem só &amp;ldquo;sobrevive&amp;rdquo; ao Git de quem realmente flui com ele.&lt;/p&gt;&#xA;&lt;p&gt;Neste artigo eu quero ir além do básico (&lt;code&gt;init&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;commit&lt;/code&gt;, &lt;code&gt;push&lt;/code&gt;) e mostrar o fluxo de trabalho que uso no dia a dia, incluindo &lt;strong&gt;feature branches&lt;/strong&gt;, &lt;strong&gt;rebase&lt;/strong&gt; e as correções de erro mais comuns que aparecem no trabalho real.&lt;/p&gt;</description>
-			</item>
-	</channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Feature-Branch on Alra</title><link>https://alra.dev/pt/tags/feature-branch/</link><description>Recent content in Feature-Branch on Alra</description><generator>Hugo</generator><language>pt-BR</language><lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alra.dev/pt/tags/feature-branch/index.xml" rel="self" type="application/rss+xml"/><item><title>Fluxo de Trabalho no Git: do commit ao rebase, sem trauma</title><link>https://alra.dev/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/posts/fluxo-de-trabalho-no-git-do-commit-ao-rebase-sem-trauma/</guid><description>&lt;p&gt;Se você já trabalhou em qualquer projeto de software em equipe, sabe que o Git deixou de ser &amp;ldquo;só um detalhe técnico&amp;rdquo; para se tornar parte do seu raciocínio diário. Entender &lt;strong&gt;como&lt;/strong&gt; e &lt;strong&gt;quando&lt;/strong&gt; usar cada comando é o que separa quem só &amp;ldquo;sobrevive&amp;rdquo; ao Git de quem realmente flui com ele.&lt;/p&gt;
+&lt;p&gt;Neste artigo eu quero ir além do básico (&lt;code&gt;init&lt;/code&gt;, &lt;code&gt;add&lt;/code&gt;, &lt;code&gt;commit&lt;/code&gt;, &lt;code&gt;push&lt;/code&gt;) e mostrar o fluxo de trabalho que uso no dia a dia, incluindo &lt;strong&gt;feature branches&lt;/strong&gt;, &lt;strong&gt;rebase&lt;/strong&gt; e as correções de erro mais comuns que aparecem no trabalho real.&lt;/p&gt;</description></item></channel></rss>
