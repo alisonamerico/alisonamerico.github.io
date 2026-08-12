@@ -1,6 +1,6 @@
 ---
 title: "Pydantic na Prática (Parte 2) - Tópicos Intermediários, Avançados e um Projeto Real"
-date: 2026-08-11
+date: 2026-08-12
 draft: false
 tags: ["python", "pydantic", "validação-de-dados", "backend", "fastapi", "rabbitmq", "celery"]
 categories: ["Python"]
