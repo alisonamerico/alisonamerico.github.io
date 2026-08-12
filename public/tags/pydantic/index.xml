@@ -1,2 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pydantic on Alra</title><link>https://alra.dev/tags/pydantic/</link><description>Recent content in Pydantic on Alra</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alra.dev/tags/pydantic/index.xml" rel="self" type="application/rss+xml"/><item><title>Pydantic in Practice (Part 1) - Fundamentals and Data Validation in Python</title><link>https://alra.dev/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;If you build APIs, consume external data, or have ever debugged a &lt;code&gt;TypeError&lt;/code&gt; that only showed up in production because a field arrived as a string instead of a number, this post is for you. Let&amp;rsquo;s talk about &lt;strong&gt;Pydantic&lt;/strong&gt;, one of the most widely used libraries in the modern Python ecosystem - one that&amp;rsquo;s probably already running under the hood of some project of yours, even if you never imported it directly (FastAPI, for instance, is built on top of it).&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Pydantic on Alra</title>
+		<link>http://localhost:1313/tags/pydantic/</link>
+		<description>Recent content in Pydantic on Alra</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/pydantic/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pydantic in Practice (Part 2) - Intermediate &amp; Advanced Topics with a Real-World Project</title>
+				<link>http://localhost:1313/posts/pydantic-in-practice-part-2-intermediate-advanced-topics-with-a-real-world-project/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/pydantic-in-practice-part-2-intermediate-advanced-topics-with-a-real-world-project/</guid>
+				<description>&lt;h2 id=&#34;recap-of-part-1&#34;&gt;Recap of Part 1&lt;/h2&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;http://localhost:1313/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/&#34;&gt;Part 1&lt;/a&gt; of this series we covered the fundamentals: what Pydantic is, who created it, installation with &lt;code&gt;uv&lt;/code&gt;, building models with &lt;code&gt;BaseModel&lt;/code&gt;, automatic type validation, the difference between valid/invalid data, and JSON serialization/deserialization. If you haven&amp;rsquo;t read it yet, it&amp;rsquo;s worth starting there - this post assumes you already know how to build a simple model and understand what a &lt;code&gt;ValidationError&lt;/code&gt; is.&lt;/p&gt;&#xA;&lt;p&gt;Here we&amp;rsquo;ll move on to what actually separates &amp;ldquo;basic&amp;rdquo; Pydantic usage from &amp;ldquo;professional&amp;rdquo; production usage: custom validation rules, fine-tuning model behavior, composing complex models, reusable types, and application configuration management. We&amp;rsquo;ll close with a &lt;strong&gt;complete practical project&lt;/strong&gt;, simulating a real order-processing service consuming messages from a queue.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Pydantic in Practice (Part 1) - Fundamentals and Data Validation in Python</title>
+				<link>http://localhost:1313/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/pydantic-in-practice-part-1-fundamentals-and-data-validation-in-python/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;If you build APIs, consume external data, or have ever debugged a &lt;code&gt;TypeError&lt;/code&gt; that only showed up in production because a field arrived as a string instead of a number, this post is for you. Let&amp;rsquo;s talk about &lt;strong&gt;Pydantic&lt;/strong&gt;, one of the most widely used libraries in the modern Python ecosystem - one that&amp;rsquo;s probably already running under the hood of some project of yours, even if you never imported it directly (FastAPI, for instance, is built on top of it).&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

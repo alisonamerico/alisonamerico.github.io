@@ -1,2 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Backend on Alra</title><link>https://alra.dev/pt/tags/backend/</link><description>Recent content in Backend on Alra</description><generator>Hugo</generator><language>pt-BR</language><lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alra.dev/pt/tags/backend/index.xml" rel="self" type="application/rss+xml"/><item><title>Pydantic na Prática (Parte 1) - Fundamentos e Validação de Dados em Python</title><link>https://alra.dev/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/</guid><description>&lt;h2 id="introdução"&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Se você desenvolve APIs, consome dados externos ou já perdeu tempo debugando um &lt;code&gt;TypeError&lt;/code&gt; que só apareceu em produção porque um campo chegou como string em vez de número, este post é para você. Vamos falar sobre &lt;strong&gt;Pydantic&lt;/strong&gt;, uma das bibliotecas mais usadas do ecossistema Python moderno - e que provavelmente já está rodando por baixo dos panos em algum projeto seu, mesmo que você nunca a tenha importado diretamente (o FastAPI, por exemplo, é construído em cima dela).&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Backend on Alra</title>
+		<link>http://localhost:1313/pt/tags/backend/</link>
+		<description>Recent content in Backend on Alra</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/pt/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pydantic na Prática (Parte 2) - Tópicos Intermediários, Avançados e um Projeto Real</title>
+				<link>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-2-t%C3%B3picos-intermedi%C3%A1rios-avan%C3%A7ados-e-um-projeto-real/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-2-t%C3%B3picos-intermedi%C3%A1rios-avan%C3%A7ados-e-um-projeto-real/</guid>
+				<description>&lt;h2 id=&#34;recapitulando-a-parte-1&#34;&gt;Recapitulando a Parte 1&lt;/h2&gt;&#xA;&lt;p&gt;Na &lt;a href=&#34;http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/&#34;&gt;Parte 1&lt;/a&gt; desta série vimos os fundamentos: o que é o Pydantic, quem o criou, instalação com &lt;code&gt;uv&lt;/code&gt;, criação de modelos com &lt;code&gt;BaseModel&lt;/code&gt;, validação automática de tipos, a diferença entre dados válidos/inválidos e serialização/desserialização de JSON. Se você ainda não leu, vale a pena começar por lá - este post assume que você já sabe criar um modelo simples e entende o que é um &lt;code&gt;ValidationError&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Pydantic na Prática (Parte 1) - Fundamentos e Validação de Dados em Python</title>
+				<link>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-1-fundamentos-e-valida%C3%A7%C3%A3o-de-dados-em-python/</guid>
+				<description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Se você desenvolve APIs, consome dados externos ou já perdeu tempo debugando um &lt;code&gt;TypeError&lt;/code&gt; que só apareceu em produção porque um campo chegou como string em vez de número, este post é para você. Vamos falar sobre &lt;strong&gt;Pydantic&lt;/strong&gt;, uma das bibliotecas mais usadas do ecossistema Python moderno - e que provavelmente já está rodando por baixo dos panos em algum projeto seu, mesmo que você nunca a tenha importado diretamente (o FastAPI, por exemplo, é construído em cima dela).&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

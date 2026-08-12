@@ -1,1 +1,311 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Alra</title><link>https://alra.dev/pt/tags/</link><description>Recent content in Tags on Alra</description><generator>Hugo</generator><language>pt-BR</language><lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://alra.dev/pt/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>Backend</title><link>https://alra.dev/pt/tags/backend/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/backend/</guid><description/></item><item><title>Fastapi</title><link>https://alra.dev/pt/tags/fastapi/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/fastapi/</guid><description/></item><item><title>Pydantic</title><link>https://alra.dev/pt/tags/pydantic/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/pydantic/</guid><description/></item><item><title>Python</title><link>https://alra.dev/pt/tags/python/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/python/</guid><description/></item><item><title>Validação-De-Dados</title><link>https://alra.dev/pt/tags/valida%C3%A7%C3%A3o-de-dados/</link><pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/valida%C3%A7%C3%A3o-de-dados/</guid><description/></item><item><title>Feature-Branch</title><link>https://alra.dev/pt/tags/feature-branch/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/feature-branch/</guid><description/></item><item><title>Git</title><link>https://alra.dev/pt/tags/git/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/git/</guid><description/></item><item><title>Github</title><link>https://alra.dev/pt/tags/github/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/github/</guid><description/></item><item><title>Rebase</title><link>https://alra.dev/pt/tags/rebase/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/rebase/</guid><description/></item><item><title>Versionamento</title><link>https://alra.dev/pt/tags/versionamento/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/versionamento/</guid><description/></item><item><title>Workflow</title><link>https://alra.dev/pt/tags/workflow/</link><pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/workflow/</guid><description/></item><item><title>Async</title><link>https://alra.dev/pt/tags/async/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/async/</guid><description/></item><item><title>Asyncio</title><link>https://alra.dev/pt/tags/asyncio/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/asyncio/</guid><description/></item><item><title>Concorrência</title><link>https://alra.dev/pt/tags/concorr%C3%AAncia/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/concorr%C3%AAncia/</guid><description/></item><item><title>I/O</title><link>https://alra.dev/pt/tags/i/o/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/i/o/</guid><description/></item><item><title>Performance</title><link>https://alra.dev/pt/tags/performance/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/performance/</guid><description/></item><item><title>Best-Practices</title><link>https://alra.dev/pt/tags/best-practices/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/best-practices/</guid><description/></item><item><title>Database</title><link>https://alra.dev/pt/tags/database/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/database/</guid><description/></item><item><title>Django</title><link>https://alra.dev/pt/tags/django/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/django/</guid><description/></item><item><title>Orm</title><link>https://alra.dev/pt/tags/orm/</link><pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/orm/</guid><description/></item><item><title>Cli</title><link>https://alra.dev/pt/tags/cli/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/cli/</guid><description/></item><item><title>Fzf</title><link>https://alra.dev/pt/tags/fzf/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/fzf/</guid><description/></item><item><title>Produtividade</title><link>https://alra.dev/pt/tags/produtividade/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/produtividade/</guid><description/></item><item><title>Shell</title><link>https://alra.dev/pt/tags/shell/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/shell/</guid><description/></item><item><title>Terminal</title><link>https://alra.dev/pt/tags/terminal/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/terminal/</guid><description/></item><item><title>Zoxide</title><link>https://alra.dev/pt/tags/zoxide/</link><pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/zoxide/</guid><description/></item><item><title>Packaging</title><link>https://alra.dev/pt/tags/packaging/</link><pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/packaging/</guid><description/></item><item><title>Pip</title><link>https://alra.dev/pt/tags/pip/</link><pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/pip/</guid><description/></item><item><title>Poetry</title><link>https://alra.dev/pt/tags/poetry/</link><pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/poetry/</guid><description/></item><item><title>Uv</title><link>https://alra.dev/pt/tags/uv/</link><pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/uv/</guid><description/></item><item><title>Boas-Praticas</title><link>https://alra.dev/pt/tags/boas-praticas/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/boas-praticas/</guid><description/></item><item><title>Codigo-Limpo</title><link>https://alra.dev/pt/tags/codigo-limpo/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/codigo-limpo/</guid><description/></item><item><title>Iniciantes</title><link>https://alra.dev/pt/tags/iniciantes/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/iniciantes/</guid><description/></item><item><title>Pep8</title><link>https://alra.dev/pt/tags/pep8/</link><pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/pep8/</guid><description/></item><item><title>Flask</title><link>https://alra.dev/pt/tags/flask/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/flask/</guid><description/></item><item><title>Mock</title><link>https://alra.dev/pt/tags/mock/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/mock/</guid><description/></item><item><title>Pytest</title><link>https://alra.dev/pt/tags/pytest/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/pytest/</guid><description/></item><item><title>Testes</title><link>https://alra.dev/pt/tags/testes/</link><pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/testes/</guid><description/></item><item><title>Tests</title><link>https://alra.dev/pt/tags/tests/</link><pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/tests/</guid><description/></item><item><title>Unittest</title><link>https://alra.dev/pt/tags/unittest/</link><pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate><guid>https://alra.dev/pt/tags/unittest/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Alra</title>
+		<link>http://localhost:1313/pt/tags/</link>
+		<description>Recent content in Tags on Alra</description>
+		<generator>Hugo</generator>
+		<language>pt-BR</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/pt/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Backend</title>
+				<link>http://localhost:1313/pt/tags/backend/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/backend/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Celery</title>
+				<link>http://localhost:1313/pt/tags/celery/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/celery/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fastapi</title>
+				<link>http://localhost:1313/pt/tags/fastapi/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/fastapi/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pydantic</title>
+				<link>http://localhost:1313/pt/tags/pydantic/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/pydantic/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>http://localhost:1313/pt/tags/python/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/python/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Rabbitmq</title>
+				<link>http://localhost:1313/pt/tags/rabbitmq/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/rabbitmq/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Validação-De-Dados</title>
+				<link>http://localhost:1313/pt/tags/valida%C3%A7%C3%A3o-de-dados/</link>
+				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/valida%C3%A7%C3%A3o-de-dados/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Feature-Branch</title>
+				<link>http://localhost:1313/pt/tags/feature-branch/</link>
+				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/feature-branch/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Git</title>
+				<link>http://localhost:1313/pt/tags/git/</link>
+				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/git/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Github</title>
+				<link>http://localhost:1313/pt/tags/github/</link>
+				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/github/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Rebase</title>
+				<link>http://localhost:1313/pt/tags/rebase/</link>
+				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/rebase/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Versionamento</title>
+				<link>http://localhost:1313/pt/tags/versionamento/</link>
+				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/versionamento/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Workflow</title>
+				<link>http://localhost:1313/pt/tags/workflow/</link>
+				<pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/workflow/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Async</title>
+				<link>http://localhost:1313/pt/tags/async/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/async/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Asyncio</title>
+				<link>http://localhost:1313/pt/tags/asyncio/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/asyncio/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Concorrência</title>
+				<link>http://localhost:1313/pt/tags/concorr%C3%AAncia/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/concorr%C3%AAncia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>I/O</title>
+				<link>http://localhost:1313/pt/tags/i/o/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/i/o/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Performance</title>
+				<link>http://localhost:1313/pt/tags/performance/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/performance/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Best-Practices</title>
+				<link>http://localhost:1313/pt/tags/best-practices/</link>
+				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/best-practices/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Database</title>
+				<link>http://localhost:1313/pt/tags/database/</link>
+				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/database/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Django</title>
+				<link>http://localhost:1313/pt/tags/django/</link>
+				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/django/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Orm</title>
+				<link>http://localhost:1313/pt/tags/orm/</link>
+				<pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/orm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cli</title>
+				<link>http://localhost:1313/pt/tags/cli/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/cli/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fzf</title>
+				<link>http://localhost:1313/pt/tags/fzf/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/fzf/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Produtividade</title>
+				<link>http://localhost:1313/pt/tags/produtividade/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/produtividade/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Shell</title>
+				<link>http://localhost:1313/pt/tags/shell/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/shell/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Terminal</title>
+				<link>http://localhost:1313/pt/tags/terminal/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/terminal/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Zoxide</title>
+				<link>http://localhost:1313/pt/tags/zoxide/</link>
+				<pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/zoxide/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Packaging</title>
+				<link>http://localhost:1313/pt/tags/packaging/</link>
+				<pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/packaging/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pip</title>
+				<link>http://localhost:1313/pt/tags/pip/</link>
+				<pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/pip/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Poetry</title>
+				<link>http://localhost:1313/pt/tags/poetry/</link>
+				<pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/poetry/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Uv</title>
+				<link>http://localhost:1313/pt/tags/uv/</link>
+				<pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/uv/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Boas-Praticas</title>
+				<link>http://localhost:1313/pt/tags/boas-praticas/</link>
+				<pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/boas-praticas/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Codigo-Limpo</title>
+				<link>http://localhost:1313/pt/tags/codigo-limpo/</link>
+				<pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/codigo-limpo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Iniciantes</title>
+				<link>http://localhost:1313/pt/tags/iniciantes/</link>
+				<pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/iniciantes/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pep8</title>
+				<link>http://localhost:1313/pt/tags/pep8/</link>
+				<pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/pep8/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Flask</title>
+				<link>http://localhost:1313/pt/tags/flask/</link>
+				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/flask/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mock</title>
+				<link>http://localhost:1313/pt/tags/mock/</link>
+				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/mock/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Pytest</title>
+				<link>http://localhost:1313/pt/tags/pytest/</link>
+				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/pytest/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Testes</title>
+				<link>http://localhost:1313/pt/tags/testes/</link>
+				<pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/testes/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Tests</title>
+				<link>http://localhost:1313/pt/tags/tests/</link>
+				<pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/tests/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Unittest</title>
+				<link>http://localhost:1313/pt/tags/unittest/</link>
+				<pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/unittest/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

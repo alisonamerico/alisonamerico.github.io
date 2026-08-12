@@ -6,11 +6,12 @@ tags: ["python", "pydantic", "data-validation", "backend", "fastapi", "rabbitmq"
 categories: ["Python"]
 description: "Explore custom validators, model_config, nested models, Annotated, computed_field, discriminated unions, aliases, generics, and Pydantic Settings through a practical order-processing project."
 series: ["Pydantic in Practice"]
+cover: pydantic-advanced.png
 ---
 
 ## Recap of Part 1
 
-In [Part 1](/blog/pydantic-part-1-fundamentals) of this series we covered the fundamentals: what Pydantic is, who created it, installation with `uv`, building models with `BaseModel`, automatic type validation, the difference between valid/invalid data, and JSON serialization/deserialization. If you haven't read it yet, it's worth starting there - this post assumes you already know how to build a simple model and understand what a `ValidationError` is.
+In [Part 1]({{< relref "posts/pydantic-part-1-fundamentals/index.md" >}}) of this series we covered the fundamentals: what Pydantic is, who created it, installation with `uv`, building models with `BaseModel`, automatic type validation, the difference between valid/invalid data, and JSON serialization/deserialization. If you haven't read it yet, it's worth starting there - this post assumes you already know how to build a simple model and understand what a `ValidationError` is.
 
 Here we'll move on to what actually separates "basic" Pydantic usage from "professional" production usage: custom validation rules, fine-tuning model behavior, composing complex models, reusable types, and application configuration management. We'll close with a **complete practical project**, simulating a real order-processing service consuming messages from a queue.
 
@@ -532,4 +533,4 @@ With both posts in this series, you now have a solid foundation - from the funda
 - [Official docs - Validators](https://docs.pydantic.dev/latest/concepts/validators/)
 - [Official docs - Pydantic Settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/)
 - [Official GitHub repository](https://github.com/pydantic/pydantic)
-- [Pydantic Part 1 - Fundamentals](/blog/pydantic-part-1-fundamentals)
+- [Pydantic Part 1 - Fundamentals]({{< relref "posts/pydantic-part-1-fundamentals/index.md" >}})

@@ -6,11 +6,12 @@ tags: ["python", "pydantic", "validação-de-dados", "backend", "fastapi", "rabb
 categories: ["Python"]
 description: "Explore validators customizados, model_config, modelos aninhados, Annotated, computed_field, discriminated unions, aliases, Generics e Pydantic Settings por meio de um projeto prático de processamento de pedidos baseado em filas."
 series: ["Pydantic na Prática"]
+cover: pydantic-advanced.png
 ---
 
 ## Recapitulando a Parte 1
 
-Na [Parte 1](/blog/pydantic-parte-1-fundamentos) desta série vimos os fundamentos: o que é o Pydantic, quem o criou, instalação com `uv`, criação de modelos com `BaseModel`, validação automática de tipos, a diferença entre dados válidos/inválidos e serialização/desserialização de JSON. Se você ainda não leu, vale a pena começar por lá - este post assume que você já sabe criar um modelo simples e entende o que é um `ValidationError`.
+Na [Parte 1]({{< relref "posts/pydantic-parte-1-fundamentos/index.md" >}}) desta série vimos os fundamentos: o que é o Pydantic, quem o criou, instalação com `uv`, criação de modelos com `BaseModel`, validação automática de tipos, a diferença entre dados válidos/inválidos e serialização/desserialização de JSON. Se você ainda não leu, vale a pena começar por lá - este post assume que você já sabe criar um modelo simples e entende o que é um `ValidationError`.
 
 Aqui vamos avançar para o que realmente diferencia um uso "básico" de um uso "profissional" do Pydantic em produção: regras de validação customizadas, configuração fina do comportamento dos modelos, composição de modelos complexos, tipos reutilizáveis, e gerenciamento de configuração de aplicação. Fechamos com um **projeto prático completo**, simulando um serviço real de processamento de pedidos consumidos de uma fila.
 
@@ -532,4 +533,4 @@ Com os dois posts desta série, você tem hoje uma base sólida - dos fundamento
 - [Documentação oficial - Validators](https://docs.pydantic.dev/latest/concepts/validators/)
 - [Documentação oficial - Pydantic Settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/)
 - [Repositório oficial no GitHub](https://github.com/pydantic/pydantic)
-- [Pydantic Parte 1 - Fundamentos](/blog/pydantic-parte-1-fundamentos)
+- [Pydantic Parte 1 - Fundamentos]({{< relref "posts/pydantic-parte-1-fundamentos/index.md" >}})
