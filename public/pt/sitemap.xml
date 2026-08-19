@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/pt/tags/backend/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -15,8 +15,21 @@
                 href="http://localhost:1313/pt/tags/backend/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pt/tags/boilerplate/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/boilerplate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="http://localhost:1313/pt/tags/boilerplate/"
+                />
+  </url><url>
     <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -26,6 +39,77 @@
                 rel="alternate"
                 hreflang="pt-BR"
                 href="http://localhost:1313/pt/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/dataclasses/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/dataclasses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="http://localhost:1313/pt/tags/dataclasses/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/dataclasses-na-pr%C3%A1tica-fundamentos-e-modelagem-de-dados-em-python/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/poo/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pt/posts/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="http://localhost:1313/pt/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/categories/python/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="http://localhost:1313/pt/categories/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/python/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="http://localhost:1313/pt/tags/python/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/pt/tags/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-BR"
+                href="http://localhost:1313/pt/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/celery/</loc>
@@ -54,19 +138,6 @@
                 href="http://localhost:1313/pt/tags/fastapi/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/posts/"
-                />
-  </url><url>
     <loc>http://localhost:1313/pt/tags/pydantic/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -85,32 +156,6 @@
   </url><url>
     <loc>http://localhost:1313/pt/posts/pydantic-na-pr%C3%A1tica-parte-2-t%C3%B3picos-intermedi%C3%A1rios-avan%C3%A7ados-e-um-projeto-real/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pt/categories/python/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/categories/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/categories/python/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/python/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/python/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/tags/python/"
-                />
   </url><url>
     <loc>http://localhost:1313/pt/tags/rabbitmq/</loc>
     <lastmod>2026-08-12T00:00:00+00:00</lastmod>
@@ -136,19 +181,6 @@
                 rel="alternate"
                 hreflang="pt-BR"
                 href="http://localhost:1313/pt/series/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-BR"
-                href="http://localhost:1313/pt/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/valida%C3%A7%C3%A3o-de-dados/</loc>

@@ -10,14 +10,42 @@
 		
 		
 		
-			<lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/pt/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Backend</title>
 				<link>http://localhost:1313/pt/tags/backend/</link>
-				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/pt/tags/backend/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Boilerplate</title>
+				<link>http://localhost:1313/pt/tags/boilerplate/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/boilerplate/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Dataclasses</title>
+				<link>http://localhost:1313/pt/tags/dataclasses/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/dataclasses/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Poo</title>
+				<link>http://localhost:1313/pt/tags/poo/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/poo/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>http://localhost:1313/pt/tags/python/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -39,13 +67,6 @@
 				<link>http://localhost:1313/pt/tags/pydantic/</link>
 				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/pt/tags/pydantic/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Python</title>
-				<link>http://localhost:1313/pt/tags/python/</link>
-				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/pt/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>

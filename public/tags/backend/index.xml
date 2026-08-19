@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Dataclasses in Practice - Fundamentals and Data Modeling in Python</title>
+				<link>http://localhost:1313/posts/dataclasses-in-practice-fundamentals-and-data-modeling-in-python/</link>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/dataclasses-in-practice-fundamentals-and-data-modeling-in-python/</guid>
+				<description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When a Python class exists primarily to represent data, we often write repetitive code. We need to define &lt;code&gt;__init__()&lt;/code&gt;, assign attributes, implement &lt;code&gt;__repr__()&lt;/code&gt; for debugging, and often implement &lt;code&gt;__eq__()&lt;/code&gt; to compare objects.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dataclasses&lt;/strong&gt; reduce this boilerplate and make the intent of the class more explicit.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-are-dataclasses&#34;&gt;What are Dataclasses?&lt;/h2&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Dataclass&lt;/strong&gt; is a regular class processed by the &lt;code&gt;@dataclass&lt;/code&gt; decorator. The decorator examines type annotations and adds generated methods such as &lt;code&gt;__init__()&lt;/code&gt;, &lt;code&gt;__repr__()&lt;/code&gt;, and &lt;code&gt;__eq__()&lt;/code&gt;.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Pydantic in Practice (Part 2) - Intermediate &amp; Advanced Topics with a Real-World Project</title>
 				<link>http://localhost:1313/posts/pydantic-in-practice-part-2-intermediate-advanced-topics-with-a-real-world-project/</link>

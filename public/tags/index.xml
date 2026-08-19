@@ -10,14 +10,42 @@
 		
 		
 		
-			<lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Backend</title>
 				<link>http://localhost:1313/tags/backend/</link>
-				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/tags/backend/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Boilerplate</title>
+				<link>http://localhost:1313/tags/boilerplate/</link>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/boilerplate/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Dataclasses</title>
+				<link>http://localhost:1313/tags/dataclasses/</link>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/dataclasses/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Oop</title>
+				<link>http://localhost:1313/tags/oop/</link>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/oop/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>http://localhost:1313/tags/python/</link>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -46,13 +74,6 @@
 				<link>http://localhost:1313/tags/pydantic/</link>
 				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/tags/pydantic/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Python</title>
-				<link>http://localhost:1313/tags/python/</link>
-				<pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>
