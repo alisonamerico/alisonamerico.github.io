@@ -10,14 +10,14 @@
 		
 		
 		
-			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 19 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/pt/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Dataclasses na Prática - Fundamentos e Modelagem de Dados em Python</title>
-				<link>http://localhost:1313/pt/posts/dataclasses-na-pr%C3%A1tica-fundamentos-e-modelagem-de-dados-em-python/</link>
-				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/pt/posts/dataclasses-na-pr%C3%A1tica-fundamentos-e-modelagem-de-dados-em-python/</guid>
+				<title>Dataclasses em Python Explicado - Conceitos, Código e Boas Práticas</title>
+				<link>http://localhost:1313/pt/posts/dataclasses-em-python-explicado-conceitos-c%C3%B3digo-e-boas-pr%C3%A1ticas/</link>
+				<pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pt/posts/dataclasses-em-python-explicado-conceitos-c%C3%B3digo-e-boas-pr%C3%A1ticas/</guid>
 				<description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Quando uma classe Python existe principalmente para representar dados, é comum escrevermos muito código repetitivo. Precisamos declarar &lt;code&gt;__init__()&lt;/code&gt;, atribuir atributos, implementar &lt;code&gt;__repr__()&lt;/code&gt; para debugging e, muitas vezes, &lt;code&gt;__eq__()&lt;/code&gt; para comparar objetos.&lt;/p&gt;&#xA;&lt;p&gt;As &lt;strong&gt;Dataclasses&lt;/strong&gt; reduzem esse &lt;em&gt;boilerplate&lt;/em&gt; e tornam a intenção da classe mais explícita.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;o-que-são-dataclasses&#34;&gt;O que são Dataclasses?&lt;/h2&gt;&#xA;&lt;p&gt;Uma &lt;strong&gt;Dataclass&lt;/strong&gt; é uma classe normal que foi processada pelo decorador &lt;code&gt;@dataclass&lt;/code&gt;. O decorador examina as anotações de tipo e adiciona métodos gerados, como &lt;code&gt;__init__()&lt;/code&gt;, &lt;code&gt;__repr__()&lt;/code&gt; e &lt;code&gt;__eq__()&lt;/code&gt;.&lt;/p&gt;</description>
 			</item>
 			<item>

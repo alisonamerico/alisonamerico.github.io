@@ -54,9 +54,6 @@
                 href="http://localhost:1313/pt/tags/dataclasses/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/dataclasses-in-practice-fundamentals-and-data-modeling-in-python/</loc>
-    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/oop/</loc>
     <lastmod>2026-08-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -98,6 +95,9 @@
                 hreflang="pt-BR"
                 href="http://localhost:1313/pt/tags/python/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/posts/python-dataclasses-explained-concepts-code-and-real-world-use/</loc>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-08-19T00:00:00+00:00</lastmod>

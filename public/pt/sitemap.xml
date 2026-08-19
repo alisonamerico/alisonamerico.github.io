@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/pt/tags/backend/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/boilerplate/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/dataclasses/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -54,14 +54,14 @@
                 href="http://localhost:1313/pt/tags/dataclasses/"
                 />
   </url><url>
-    <loc>http://localhost:1313/pt/posts/dataclasses-na-pr%C3%A1tica-fundamentos-e-modelagem-de-dados-em-python/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/pt/posts/dataclasses-em-python-explicado-conceitos-c%C3%B3digo-e-boas-pr%C3%A1ticas/</loc>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pt/tags/poo/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pt/posts/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -74,7 +74,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/categories/python/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -87,7 +87,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/python/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -100,7 +100,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/pt/tags/</loc>
-    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
